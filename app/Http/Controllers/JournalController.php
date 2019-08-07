@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class ContactController extends Controller
+class JournalController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -23,7 +23,7 @@ class ContactController extends Controller
      */
     public function create()
     {
-        return view('contact.create');
+        //
     }
 
     /**
