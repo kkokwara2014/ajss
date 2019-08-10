@@ -81,4 +81,8 @@ class ContactController extends Controller
     {
         //
     }
+
+    public function showContactUsPage(){
+        return view('contact.contact');
+    }
 }

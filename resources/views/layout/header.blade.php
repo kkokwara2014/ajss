@@ -78,7 +78,7 @@
 									</ul>
 								</li>
 								
-								<li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+							<li class="nav-item"><a class="nav-link" href="{{ route('contact.us') }}">Contact</a></li>
 								<li class="nav-item"><a class="nav-link" href="#">Editorial</a></li>
 
 							</ul>
