@@ -79,7 +79,8 @@
 										<li class="nav-item"><a class="nav-link" href="#">Conference to Come</a></li>
 									</ul>
 								</li>
-								<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+								<li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
+								<li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
 
 							</ul>
 							<ul class="nav navbar-nav navbar-right">

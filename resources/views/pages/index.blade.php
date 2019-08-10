@@ -27,28 +27,7 @@
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
-                                <div class="timer_inner">
-                                    <div id="timer" class="timer">
-                                        <div class="timer__section days">
-                                            <div class="timer__number"></div>
-                                            <div class="timer__label">days</div>
-                                        </div>
-                                        <div class="timer__section hours">
-                                            <div class="timer__number"></div>
-                                            <div class="timer__label">hours</div>
-                                        </div>
-                                        <div class="timer__section minutes">
-                                            <div class="timer__number"></div>
-                                            <div class="timer__label">Minutes</div>
-                                        </div>
-                                        <div class="timer__section seconds">
-                                            <div class="timer__number"></div>
-                                            <div class="timer__label">seconds</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -59,17 +38,21 @@
             <section class="welcome_area pad_btm">
                 <div class="container">
                     <div class="welcome_inner row">
-                        <div class="col-lg-5">
-                            <div class="welcome_img">
-                                <img class="img-fluid" src="{{asset('bootstrap_assets/img/welcome-1.jpg')}}" alt="">
-                            </div>
-                        </div>
-                        <div class="col-lg-6 offset-lg-1">
+                        
+                        <div class="col-lg-9 col-sm-9">
                             <div class="welcome_text">
-                                <h3>Welcome to Eventure</h3>
+                                <h3>Welcome to AIFPU Journal of School Science (AJSS)</h3>
                                 <p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why it’s crucial that, as women, our behavior on the job is beyond reproach. inappropriate behavior is often laughed.</p>
                                 <p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace.</p>
                                 <a class="main_btn" href="#">View More Details</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-3">
+                            <div class="welcome_text">
+                                <h3>Useful Links</h3>
+                                
+                               
+                                
                             </div>
                         </div>
                     </div>
