@@ -28,8 +28,9 @@
 				<nav class="navbar navbar-expand-lg navbar-light">
 					<div class="container box_1620">
 						<!-- Brand and toggle get grouped for better mobile display -->
-						<a class="navbar-brand logo_h" href="index.html"><img
-								src="{{asset('bootstrap_assets/img/logo.png')}}" alt=""></a>
+						{{-- <img --}}
+								{{-- src="{{asset('bootstrap_assets/img/logo.png')}}" alt=""> --}}
+						<a class="navbar-brand logo_h" href="#" style="color: whitesmoke; font-weight: bold">AJSS</a>
 						<button class="navbar-toggler" type="button" data-toggle="collapse"
 							data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
 							aria-expanded="false" aria-label="Toggle navigation">
@@ -43,15 +44,7 @@
 								<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
 								<li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li>
 
-								<li class="nav-item submenu dropdown">
-									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
-										aria-haspopup="true" aria-expanded="false">Menu</a>
-									<ul class="dropdown-menu">
-										<li class="nav-item"><a class="nav-link" href="#">How to publish Paper</a></li>
-										<li class="nav-item"><a class="nav-link" href="#">Mode of Payment</a></li>
-										<li class="nav-item"><a class="nav-link" href="#">Query Paper Status</a></li>
-									</ul>
-								</li>
+								
 								<li class="nav-item submenu dropdown">
 									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
 										aria-haspopup="true" aria-expanded="false">Publication</a>
@@ -60,6 +53,9 @@
 										<li class="nav-item"><a class="nav-link" href="#">Steps</a></li>
 										<li class="nav-item"><a class="nav-link" href="#">Ethics</a></li>
 										<li class="nav-item"><a class="nav-link" href="#">Review Process</a></li>
+										<li class="nav-item"><a class="nav-link" href="#">Guidelines</a></li>
+										<li class="nav-item"><a class="nav-link" href="#">Mode of Payment</a></li>
+										<li class="nav-item"><a class="nav-link" href="#">Query Paper Status</a></li>
 									</ul>
 								</li>
 								<li class="nav-item submenu dropdown">
@@ -71,22 +67,23 @@
 									</ul>
 								</li>
 
+								{{-- <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li> --}}
+
 								<li class="nav-item submenu dropdown">
 									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
 										aria-haspopup="true" aria-expanded="false">Special Events</a>
 									<ul class="dropdown-menu">
 										<li class="nav-item"><a class="nav-link" href="#">Call for Conference</a></li>
-										<li class="nav-item"><a class="nav-link" href="#">Conference to Come</a></li>
+										<li class="nav-item"><a class="nav-link" href="#">Future Conference</a></li>
 									</ul>
 								</li>
-								<li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
+								
 								<li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+								<li class="nav-item"><a class="nav-link" href="#">Editorial</a></li>
 
 							</ul>
 							<ul class="nav navbar-nav navbar-right">
 								<li class="nav-item"><a href="#" class="tickets_btn">Submit Paper</a></li>
-								{{-- <li class="nav-item"><small class="nav-link">ISSN: </small></li>
-								<li class="nav-item"><small class="nav-link">Email:</small></li> --}}
 							</ul>
 						</div>
 					</div>
