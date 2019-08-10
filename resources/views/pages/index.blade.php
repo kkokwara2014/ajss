@@ -1,4 +1,3 @@
-{{-- @include('layout.header') --}}
         
 @extends('layout.main')
 
@@ -62,7 +61,7 @@
                     <div class="welcome_inner row">
                         <div class="col-lg-5">
                             <div class="welcome_img">
-                                <img class="img-fluid" src="img/welcome-1.jpg" alt="">
+                                <img class="img-fluid" src="{{asset('bootstrap_assets/img/welcome-1.jpg')}}" alt="">
                             </div>
                         </div>
                         <div class="col-lg-6 offset-lg-1">
@@ -89,7 +88,7 @@
                         <div class="col-lg-3 col-sm-6">
                             <div class="team_item">
                                 <div class="team_img">
-                                    <img class="img-fluid" src="img/team/team-1.jpg" alt="">
+                                    <img class="img-fluid" src="{{asset('bootstrap_assets/img/team/team-1.jpg')}}" alt="">
                                     <div class="hover">
                                         <a href="#"><i class="fa fa-facebook"></i></a>
                                         <a href="#"><i class="fa fa-twitter"></i></a>
@@ -105,7 +104,7 @@
                         <div class="col-lg-3 col-sm-6">
                             <div class="team_item">
                                 <div class="team_img">
-                                    <img class="img-fluid" src="img/team/team-2.jpg" alt="">
+                                    <img class="img-fluid" src="{{asset('bootstrap_assets/img/team/team-2.jpg')}}" alt="">
                                     <div class="hover">
                                         <a href="#"><i class="fa fa-facebook"></i></a>
                                         <a href="#"><i class="fa fa-twitter"></i></a>
@@ -121,7 +120,7 @@
                         <div class="col-lg-3 col-sm-6">
                             <div class="team_item">
                                 <div class="team_img">
-                                    <img class="img-fluid" src="img/team/team-3.jpg" alt="">
+                                    <img class="img-fluid" src="{{asset('bootstrap_assets/img/team/team-3.jpg')}}" alt="">
                                     <div class="hover">
                                         <a href="#"><i class="fa fa-facebook"></i></a>
                                         <a href="#"><i class="fa fa-twitter"></i></a>
@@ -137,7 +136,7 @@
                         <div class="col-lg-3 col-sm-6">
                             <div class="team_item">
                                 <div class="team_img">
-                                    <img class="img-fluid" src="img/team/team-4.jpg" alt="">
+                                    <img class="img-fluid" src="{{asset('bootstrap_assets/img/team/team-4.jpg')}}" alt="">
                                     <div class="hover">
                                         <a href="#"><i class="fa fa-facebook"></i></a>
                                         <a href="#"><i class="fa fa-twitter"></i></a>
@@ -178,7 +177,7 @@
                             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                                 <div class="media">
                                     <div class="d-flex">
-                                        <img src="img/schedule-1.jpg" alt="">
+                                        <img src="{{asset('bootstrap_assets/img/schedule-1.jpg')}}" alt="">
                                     </div>
                                     <div class="media-body">
                                         <h5>09.00 am</h5>
@@ -188,7 +187,7 @@
                                 </div>
                                 <div class="media">
                                     <div class="d-flex">
-                                        <img src="img/schedule-1.jpg" alt="">
+                                        <img src="{{asset('bootstrap_assets/img/schedule-1.jpg')}}" alt="">
                                     </div>
                                     <div class="media-body">
                                         <h5>09.00 am</h5>
@@ -198,7 +197,7 @@
                                 </div>
                                 <div class="media">
                                     <div class="d-flex">
-                                        <img src="img/schedule-1.jpg" alt="">
+                                        <img src="{{asset('bootstrap_assets/img/schedule-1.jpg')}}" alt="">
                                     </div>
                                     <div class="media-body">
                                         <h5>09.00 am</h5>
@@ -208,7 +207,7 @@
                                 </div>
                                 <div class="media">
                                     <div class="d-flex">
-                                        <img src="img/schedule-1.jpg" alt="">
+                                        <img src="{{asset('bootstrap_assets/img/schedule-1.jpg')}}" alt="">
                                     </div>
                                     <div class="media-body">
                                         <h5>09.00 am</h5>
@@ -218,7 +217,7 @@
                                 </div>
                                 <div class="media">
                                     <div class="d-flex">
-                                        <img src="img/schedule-1.jpg" alt="">
+                                        <img src="{{asset('bootstrap_assets/img/schedule-1.jpg')}}" alt="">
                                     </div>
                                     <div class="media-body">
                                         <h5>09.00 am</h5>
@@ -230,7 +229,7 @@
                             <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                                 <div class="media">
                                     <div class="d-flex">
-                                        <img src="img/schedule-1.jpg" alt="">
+                                        <img src="{{asset('bootstrap_assets/img/schedule-1.jpg')}}" alt="">
                                     </div>
                                     <div class="media-body">
                                         <h5>09.00 am</h5>
@@ -240,7 +239,7 @@
                                 </div>
                                 <div class="media">
                                     <div class="d-flex">
-                                        <img src="img/schedule-1.jpg" alt="">
+                                        <img src="{{asset('bootstrap_assets/img/schedule-1.jpg')}}" alt="">
                                     </div>
                                     <div class="media-body">
                                         <h5>09.00 am</h5>
@@ -250,7 +249,7 @@
                                 </div>
                                 <div class="media">
                                     <div class="d-flex">
-                                        <img src="img/schedule-1.jpg" alt="">
+                                        <img src="{{asset('bootstrap_assets/img/schedule-1.jpg')}}" alt="">
                                     </div>
                                     <div class="media-body">
                                         <h5>09.00 am</h5>
@@ -260,7 +259,7 @@
                                 </div>
                                 <div class="media">
                                     <div class="d-flex">
-                                        <img src="img/schedule-1.jpg" alt="">
+                                        <img src="{{asset('bootstrap_assets/img/schedule-1.jpg')}}" alt="">
                                     </div>
                                     <div class="media-body">
                                         <h5>09.00 am</h5>
@@ -270,7 +269,7 @@
                                 </div>
                                 <div class="media">
                                     <div class="d-flex">
-                                        <img src="img/schedule-1.jpg" alt="">
+                                        <img src="{{asset('bootstrap_assets/img/schedule-1.jpg')}}" alt="">
                                     </div>
                                     <div class="media-body">
                                         <h5>09.00 am</h5>
@@ -282,7 +281,7 @@
                             <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
                                 <div class="media">
                                     <div class="d-flex">
-                                        <img src="img/schedule-1.jpg" alt="">
+                                        <img src="{{asset('bootstrap_assets/img/schedule-1.jpg')}}" alt="">
                                     </div>
                                     <div class="media-body">
                                         <h5>09.00 am</h5>
@@ -292,7 +291,7 @@
                                 </div>
                                 <div class="media">
                                     <div class="d-flex">
-                                        <img src="img/schedule-1.jpg" alt="">
+                                        <img src="{{asset('bootstrap_assets/img/schedule-1.jpg')}}" alt="">
                                     </div>
                                     <div class="media-body">
                                         <h5>09.00 am</h5>
@@ -302,7 +301,7 @@
                                 </div>
                                 <div class="media">
                                     <div class="d-flex">
-                                        <img src="img/schedule-1.jpg" alt="">
+                                        <img src="{{asset('bootstrap_assets/img/schedule-1.jpg')}}" alt="">
                                     </div>
                                     <div class="media-body">
                                         <h5>09.00 am</h5>
@@ -312,7 +311,7 @@
                                 </div>
                                 <div class="media">
                                     <div class="d-flex">
-                                        <img src="img/schedule-1.jpg" alt="">
+                                        <img src="{{asset('bootstrap_assets/img/schedule-1.jpg')}}" alt="">
                                     </div>
                                     <div class="media-body">
                                         <h5>09.00 am</h5>
@@ -322,7 +321,7 @@
                                 </div>
                                 <div class="media">
                                     <div class="d-flex">
-                                        <img src="img/schedule-1.jpg" alt="">
+                                        <img src="{{asset('bootstrap_assets/img/schedule-1.jpg')}}" alt="">
                                     </div>
                                     <div class="media-body">
                                         <h5>09.00 am</h5>
@@ -384,7 +383,7 @@
             <!--================End Event Schedule Area =================-->
             
             <!--================Price Area =================-->
-            <section class="price_area p_120">
+            {{-- <section class="price_area p_120">
                 <div class="container">	
                     <div class="main_title">
                         <h2>Ticket Pricing</h2>
@@ -461,8 +460,6 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> --}}
             <!--================End Price Area =================-->
 @endsection
-        
-       {{-- @include('layout.footer') --}}
