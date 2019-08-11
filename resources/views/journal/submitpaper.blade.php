@@ -102,8 +102,8 @@
                 <div class="container">
                     <div class="banner_content text-center">
                         <div class="page_link">
-                            <a href="index.html">Home</a>
-                            <a href="contact.html">Submit Paper</a>
+                            <a href="{{ route('index') }}">Home</a>
+                            <a href="#">Submit Paper</a>
                         </div>
                         <h2>Submit Paper</h2>
                     </div>
@@ -136,7 +136,7 @@
                                 <div class="input-group-icon mt-10 form-group">
                                     <div class="icon"><i class="fa fa-globe" aria-hidden="true"></i></div>
                                     <div class="form-select" id="default-select2">
-                                        <select>
+                                        <select name="country">
                                             <option value="1">Country</option>
                                             <option value="1">Bangladesh</option>
                                             <option value="1">India</option>
@@ -157,7 +157,7 @@
                                 <div class="form-group">
                                                                       
                                     <input type="file" name="filename">
-                                    <i style="color: red">Upload file (.doc or .docx not more than 3MB)</i>
+                                    <i style="color: red">Upload file (.doc or .docx max size: 3MB)</i>
                                 </div>
                             </div>
                             <div class="col-md-12">

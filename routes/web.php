@@ -30,4 +30,15 @@ Route::get('/','PagesController@index')->name('index');
 Route::get('contact','ContactController@showContactUsPage')->name('contact.us');
 Route::get('about','AboutController@index')->name('about.us');
 Route::get('editorial','EditorialController@showEditors')->name('editors');
-Route::get('publication/submit_paper','PaperController@showSubmitPaperForm')->name('submit.paper.form');
+
+Route::group(['prefix'=>'publication'], function(){
+    Route::get('/submit_paper','PaperController@showSubmitPaperForm')->name('submit.paper.form');
+    Route::get('/charges','PaperController@charges')->name('charges');
+    Route::get('/steps','PaperController@steps')->name('steps');
+    Route::get('/ethics','PaperController@ethics')->name('ethics');
+    Route::get('/reviewprocess','PaperController@reviewprocess')->name('review.process');
+    Route::get('/guidelines','PaperController@guidelines')->name('guidelines');
+    Route::get('/mode_of_payment','PaperController@modeofpayment')->name('payment.mode');
+    Route::get('/check_paper_status','PaperController@paperstatus')->name('paper.status');
+
+});
