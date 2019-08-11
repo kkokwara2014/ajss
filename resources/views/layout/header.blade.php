@@ -83,7 +83,7 @@
 
 							</ul>
 							<ul class="nav navbar-nav navbar-right">
-								<li class="nav-item"><a href="#" class="tickets_btn">Submit Paper</a></li>
+							<li class="nav-item"><a href="{{ route('submit.paper.form') }}" class="tickets_btn">Submit Paper</a></li>
 							</ul>
 						</div>
 					</div>

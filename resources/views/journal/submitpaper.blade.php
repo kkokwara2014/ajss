@@ -118,16 +118,16 @@
 
                 <div class="row">
 
-                    <div class="col-lg-6">
+                    <div class="col-lg-8">
                         <form class="row contact_form" action="" method="post" id="contactForm" novalidate="novalidate">
-                            <div class="col-md-6">
+                            <div class="col-md-10">
                                 <div class="form-group">
                                     <input type="text" class="form-control" id="name" name="name"
                                         placeholder="Enter your name">
                                 </div>
                                 <div class="form-group">
                                     <input type="email" class="form-control" id="email" name="email"
-                                        placeholder="Enter email address">
+                                        placeholder="Enter Email address">
                                 </div>
                                 <div class="form-group">
                                     <input type="tel" class="form-control" id="phone" name="phone"
@@ -149,16 +149,16 @@
                                     <input type="text" class="form-control" id="papertitle" name="papertitle"
                                         placeholder="Paper Title">
                                 </div>
-                            </div>
-                            <div class="col-md-6">
                                 <div class="form-group">
                                     <textarea class="form-control" name="abstract" id="abstract" rows="3"
                                         placeholder="Enter Abstract"></textarea>
                                 </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="filename">Upload file (.doc or .docx)</label>
-                                <input type="file" name="filename">
+
+                                <div class="form-group">
+                                                                      
+                                    <input type="file" name="filename">
+                                    <i style="color: red">Upload file (.doc or .docx not more than 4MB)</i>
+                                </div>
                             </div>
                             <div class="col-md-12">
                                 <button type="submit" value="submit" class="btn submit_btn">Submit</button>

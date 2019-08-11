@@ -81,4 +81,9 @@ class JournalController extends Controller
     {
         //
     }
+
+
+    public function showSubmitPaperForm(){
+        return view('journal.submitpaper');
+    }
 }
