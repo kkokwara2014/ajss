@@ -81,4 +81,8 @@ class EditorialController extends Controller
     {
         //
     }
+
+    public function showEditors(){
+        return view('editorial.editors');
+    }
 }

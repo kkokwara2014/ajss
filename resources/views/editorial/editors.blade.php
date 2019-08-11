@@ -6,7 +6,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="icon" href="{{asset('bootstrap_assets/img/favicon.png')}}" type="image/png">
-        <title>About Us</title>
+        <title>Editorial Board</title>
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="{{asset('bootstrap_assets/css/bootstrap.css')}}">
         <link rel="stylesheet" href="{{asset('bootstrap_assets/vendors/linericon/style.css')}}">
@@ -28,7 +28,7 @@
                         <div class="container box_1620">
                             <!-- Brand and toggle get grouped for better mobile display -->
                             {{-- <img src="img/logo.png" alt=""> --}}
-                            <a class="navbar-brand logo_h" href="#" style="color: whitesmoke; font-weight: bold;">AJSS</a>
+                            <a class="navbar-brand logo_h" href="{{ route('index') }}" style="color: whitesmoke; font-weight: bold;">AJSS</a>
                             <button class="navbar-toggler" type="button" data-toggle="collapse"
                                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                                 aria-expanded="false" aria-label="Toggle navigation">
@@ -39,7 +39,7 @@
                             <!-- Collect the nav links, forms, and other content for toggling -->
                             <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                                 <ul class="nav navbar-nav menu_nav ml-auto">
-                                    <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                                    <li class="nav-item active"><a class="nav-link" href="{{ route('index') }}">Home</a></li>
                                     <li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li>
     
     
@@ -77,7 +77,7 @@
                                     </li>
     
                                     <li class="nav-item"><a class="nav-link" href="{{ route('contact.us') }}">Contact</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#">Editorial</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="{{ route('editors') }}">Editorial</a></li>
     
                                 </ul>
                                 <ul class="nav navbar-nav navbar-right">
@@ -97,55 +97,17 @@
 				<div class="container">
 					<div class="banner_content text-center">
 						<div class="page_link">
-							<a href="index.html">Home</a>
-							<a href="about-us.html">About</a>
+							<a href="{{ route('index') }}">Home</a>
+							<a href="{{ route('editors') }}">Editorial Board</a>
 						</div>
-						<h2>About Us</h2>
+						<h2>Editorial Board</h2>
 					</div>
 				</div>
             </div>
         </section>
         <!--================End Home Banner Area =================-->
         
-        {{-- <!--================Event Time Area =================-->
-        <section class="event_time_area ab_event pad_top">
-        	<div class="container">
-        		<div class="event_time_inner">
-        			<div class="row">
-        				<div class="col-lg-6">
-        					<div class="event_text">
-        						<h3>Next Event will Start in</h3>
-        						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
-        					</div>
-        				</div>
-        				<div class="col-lg-6">
-        					<div class="timer_inner">
-								<div id="timer" class="timer">
-									<div class="timer__section days">
-										<div class="timer__number"></div>
-										<div class="timer__label">days</div>
-									</div>
-									<div class="timer__section hours">
-										<div class="timer__number"></div>
-										<div class="timer__label">hours</div>
-									</div>
-									<div class="timer__section minutes">
-										<div class="timer__number"></div>
-										<div class="timer__label">Minutes</div>
-									</div>
-									<div class="timer__section seconds">
-										<div class="timer__number"></div>
-										<div class="timer__label">seconds</div>
-									</div>
-								</div>
-							</div>
-        				</div>
-        			</div>
-        		</div>
-        	</div>
-        </section>
-        <!--================End Event Time Area =================--> --}}
-        
+               
         <!--================Welcome Area =================-->
         <section class="welcome_area pad_btm">
         	<div class="container">
@@ -164,12 +126,7 @@
         </section>
         <!--================End Welcome Area =================-->
         
-        
-        
-        
-        
-        
-        
+               
         <!--================ start footer Area  =================-->	
         <footer class="footer-area p_120">
                 <div class="container">
@@ -178,7 +135,7 @@
                             <div class="single-footer-widget tp_widgets">
                                 <h6 class="footer_title">Useful Links</h6>
                                 <ul class="list">
-                                    <li><a href="#">Home</a></li>
+                                    <li><a href="{{ route('index') }}">Home</a></li>
                                     <li><a href="#">About</a></li>
                                     <li><a href="{{ route('contact.us') }}">Contact</a></li>
                                     <li><a href="#">Editorial</a></li>

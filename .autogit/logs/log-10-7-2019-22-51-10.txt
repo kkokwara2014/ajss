@@ -1,0 +1,19 @@
+-------------------- Auto-Git Log --------------------
+		Sat Aug 10 2019 22:51:10 GMT+0100 (West Africa Standard Time)
+------------------------------------------------------
+
+Modified files:
+* resources/views/about/index.blade.php
+* resources/views/contact/contact.blade.php
+* resources/views/layout/header.blade.php
+* routes/web.php
+
+
+Created files:
+* .autogit/logs/log-10-7-2019-22-20-56.txt
+
+
+Deleted files:
+
+
+Renamed files:

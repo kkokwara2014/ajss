@@ -30,7 +30,7 @@
 						<!-- Brand and toggle get grouped for better mobile display -->
 						{{-- <img --}}
 								{{-- src="{{asset('bootstrap_assets/img/logo.png')}}" alt=""> --}}
-						<a class="navbar-brand logo_h" href="#" style="color: whitesmoke; font-weight: bold">AJSS</a>
+						<a class="navbar-brand logo_h" href="{{ route('index') }}" style="color: whitesmoke; font-weight: bold">AJSS</a>
 						<button class="navbar-toggler" type="button" data-toggle="collapse"
 							data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
 							aria-expanded="false" aria-label="Toggle navigation">
@@ -41,7 +41,7 @@
 						<!-- Collect the nav links, forms, and other content for toggling -->
 						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 							<ul class="nav navbar-nav menu_nav ml-auto">
-								<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+								<li class="nav-item active"><a class="nav-link" href="{{ route('index') }}">Home</a></li>
 								<li class="nav-item"><a class="nav-link" href="{{ route('about.us') }}">About</a></li>
 
 								
@@ -79,7 +79,7 @@
 								</li>
 								
 							<li class="nav-item"><a class="nav-link" href="{{ route('contact.us') }}">Contact</a></li>
-								<li class="nav-item"><a class="nav-link" href="#">Editorial</a></li>
+							<li class="nav-item"><a class="nav-link" href="{{ route('editors') }}">Editorial</a></li>
 
 							</ul>
 							<ul class="nav navbar-nav navbar-right">
