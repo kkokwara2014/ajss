@@ -21,7 +21,9 @@
     </head>
     <body>
         
+        <!--================Header Menu Area =================-->
         @include('layout.headmenu')	
+        <!--================Header Menu Area =================-->
         
         <!--================Home Banner Area =================-->
         <section class="banner_area">
@@ -121,7 +123,7 @@
             
                             Copyright &copy; <script>
                                 document.write(new Date().getFullYear());
-                            </script> ajss.org | All rights reserved
+                            </script> ajssaifpu.org | All rights reserved
                             {{-- <div class="col-lg-4 col-md-4 footer-social">
                                 <a href="#"><i class="fa fa-facebook"></i></a>
                                 <a href="#"><i class="fa fa-twitter"></i></a>
