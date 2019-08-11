@@ -40,7 +40,7 @@
                             <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                                 <ul class="nav navbar-nav menu_nav ml-auto">
                                     <li class="nav-item active"><a class="nav-link" href="{{ route('index') }}"><span class="fa fa-home"></span></a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="{{ route('about.us') }}">About</a></li>
     
     
                                     <li class="nav-item submenu dropdown">
@@ -81,7 +81,7 @@
     
                                 </ul>
                                 <ul class="nav navbar-nav navbar-right">
-                                    <li class="nav-item"><a href="#" class="tickets_btn">Submit Paper</a></li>
+                                    <li class="nav-item"><a href="{{ route('submit.paper.form') }}" class="tickets_btn">Submit Paper</a></li>
                                 </ul>
                             </div>
                         </div>

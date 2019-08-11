@@ -40,7 +40,7 @@
                         <!-- Collect the nav links, forms, and other content for toggling -->
                         <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                             <ul class="nav navbar-nav menu_nav ml-auto">
-                                <li class="nav-item active"><a class="nav-link" href="{{ route('index') }}">Home</a>
+                                <li class="nav-item active"><a class="nav-link" href="{{ route('index') }}"><span class="fa fa-home"></span></a>
                                 </li>
                                 <li class="nav-item"><a class="nav-link" href="{{ route('about.us') }}">About</a></li>
 
@@ -55,7 +55,7 @@
                                         <li class="nav-item"><a class="nav-link" href="#">Review Process</a></li>
                                         <li class="nav-item"><a class="nav-link" href="#">Guidelines</a></li>
                                         <li class="nav-item"><a class="nav-link" href="#">Mode of Payment</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="#">Query Paper Status</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#">Check Paper Status</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item submenu dropdown">
@@ -85,7 +85,7 @@
 
                             </ul>
                             <ul class="nav navbar-nav navbar-right">
-                                <li class="nav-item"><a href="#" class="tickets_btn">Submit Paper</a></li>
+                                <li class="nav-item"><a href="{{ route('submit.paper.form') }}" class="tickets_btn">Submit Paper</a></li>
                             </ul>
                         </div>
                     </div>
@@ -195,7 +195,7 @@
                                 <li><a href="#">Review Process</a></li>
                                 <li><a href="#">Guidelines</a></li>
                                 <li><a href="#">Mode of Payment</a></li>
-                                <li><a href="#">Query Paper Status</a></li>
+                                <li><a href="#">Check Paper Status</a></li>
                             </ul>
                         </div>
                     </div>
