@@ -1,0 +1,17 @@
+-------------------- Auto-Git Log --------------------
+		Sun Aug 11 2019 19:16:51 GMT+0100 (West Africa Standard Time)
+------------------------------------------------------
+
+Modified files:
+* app/Http/Controllers/AboutController.php
+* resources/views/about/ajssaifpu.blade.php
+
+
+Created files:
+* .autogit/logs/log-11-7-2019-18-46-43.txt
+
+
+Deleted files:
+
+
+Renamed files:
