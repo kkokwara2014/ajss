@@ -1,0 +1,16 @@
+-------------------- Auto-Git Log --------------------
+		Sun Aug 11 2019 21:17:40 GMT+0100 (West Africa Standard Time)
+------------------------------------------------------
+
+Modified files:
+* resources/views/about/authorship.blade.php
+* resources/views/journal/ethics.blade.php
+
+
+Created files:
+
+
+Deleted files:
+
+
+Renamed files:
