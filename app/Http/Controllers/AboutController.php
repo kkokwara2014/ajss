@@ -8,7 +8,7 @@ class AboutController extends Controller
 {
     public function ajssaifpu()
     {
-        return view('about.index');
+        return view('about.ajssaifpu');
     }
     public function authorshop()
     {
