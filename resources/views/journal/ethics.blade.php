@@ -53,12 +53,20 @@
 
                     <div class="col-lg-9 col-sm-9">
                         <div class="welcome_text">
-
-                            <p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher
-                                conduct standards especially in the workplace. That’s why it’s crucial that, as women,
-                                our behavior on the job is beyond reproach. inappropriate behavior is often laughed.</p>
-                            <p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher
-                                conduct standards especially in the workplace.</p>
+                            <h3>Publication Ethics</h3>
+                            <p style="text-align: justify">
+                                Papers must be submitted with the understanding that they have not been published
+                                elsewhere (except in the form of an abstract or as part of a published lecture, review,
+                                or thesis) and are not currently under consideration by another journal published by or
+                                any other publisher. The submitting (Coresponding) author is responsible for ensuring
+                                that the article's publication has been approved by all the other coauthors. It is also
+                                the authors' responsibility to ensure that the articles emanating from a particular
+                                institution are submitted with the approval of the necessary institution. Only an
+                                acknowledgment from the editorial office officially establishes the date of receipt.
+                                Further correspondence and proofs will be sent to the corresponding author(s) before
+                                publication unless otherwise indicated. It is a condition for submission of a paper that
+                                the authors permit editing of the paper for readability.
+                            </p>
 
                         </div>
                     </div>

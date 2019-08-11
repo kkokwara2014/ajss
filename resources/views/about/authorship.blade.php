@@ -23,7 +23,7 @@
     <body>
 
         <!--================Header Menu Area =================-->
-        @include('layout.headmenu')	
+        @include('layout.headmenu')
         <!--================Header Menu Area =================-->
 
         <!--================Home Banner Area =================-->
@@ -53,12 +53,51 @@
 
                     <div class="col-lg-9 col-sm-9">
                         <div class="welcome_text">
+                            <h3>About Authorship</h3>
 
-                            <p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher
-                                conduct standards especially in the workplace. That’s why it’s crucial that, as women,
-                                our behavior on the job is beyond reproach. inappropriate behavior is often laughed.</p>
-                            <p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher
-                                conduct standards especially in the workplace.</p>
+                            <p style="text-align: justify">
+                                Authorship is an explicit way of assigning responsibility and giving credit for
+                                intellectual work. The two are linked. Authorship practices should be judged by how
+                                honestly they reflect actual contributions to the final product. Authorship is important
+                                to the reputation, academic promotion, and grant support of the individuals involved as
+                                well as to the strength and reputation of their institution. Disputes sometimes arise
+                                about who should be listed as authors of an intellectual product and the order in which
+                                they should be listed. When disagreements over authorship arise, they can take a
+                                substantial toll on the good will, effectiveness, and reputation of the individuals
+                                involved and their academic community. Many such disagreements result from
+                                misunderstanding and failed communication among colleagues and might have been prevented
+                                by a clear, early understanding of standards for authorship that are shared by the
+                                academic community as a whole.
+                            </p>
+                            <p style="text-align: justify">
+                                AIFPU Journal of school of Science and Technölogy do not require all authors of a paper
+                                to sign the letter of submission and will not impose an order on the list of authors.
+                                Submission to Journal is taken by the Editors to mean that all the listed authors have
+                                agreed on all of the contents. The corresponding (submitting) author will be responsible
+                                for having ensured that this agreement has been attained and for managing all
+                                correspondence between the journal and all coauthors, before and after publication. Any
+                                change to the authors list after submission, such as a change in the order of the
+                                authors or the deletion or addition of authors needs to be approved by a signed letter
+                                from every author.
+                            </p>
+                            <br>
+                            <h4>Minimum Requirements for Authorship</h4>
+                            <p style="text-align: justify">
+                                All persons designated as authors should qualify for authorship, and all• those who
+                                qualify should be listed. Each author should have participated sufficiently in the work
+                                to take public responsibility for appropriate portions of the content. One or more
+                                authors should take responsibility for the integrity of the work as a whole, from
+                                inception to published article. Authorship credit should be based only on substantial
+                                contributions to conception and design, or acquisition of data, or analysis and
+                                interpretation of data and final approval of the version to be published.
+                            </p>
+                            <p style="text-align: justify">
+                                Acquisition of funding, the collection of data, or general supervision of a research
+                                group, by themselves, do not justify authorship. Authors should provide a description of
+                                what each contributed, and editors should publish that information. All others who
+                                contributed to the work who are not authors should be named in the Acknowledgments, and
+                                what they did should be described.
+                            </p>
 
                         </div>
                     </div>
