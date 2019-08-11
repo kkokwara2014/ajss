@@ -112,9 +112,10 @@
                     <div class="banner_content text-center">
                         <div class="page_link">
                             <a href="{{ route('index') }}">Home</a>
-                            <a href="{{ route('editors') }}">Editorial Board</a>
+                            <a href="#">Publication</a>
+                            <a href="{{ route('steps') }}">Publication Charges</a>
                         </div>
-                        <h2>Editorial Board</h2>
+                        <h2>Publication Charges</h2>
                     </div>
                 </div>
             </div>
@@ -200,7 +201,7 @@
 
                         Copyright &copy; <script>
                             document.write(new Date().getFullYear());
-                        </script> ajss.org | All rights reserved
+                        </script> ajssaifpu.org | All rights reserved
                         {{-- <div class="col-lg-4 col-md-4 footer-social">
                                 <a href="#"><i class="fa fa-facebook"></i></a>
                                 <a href="#"><i class="fa fa-twitter"></i></a>

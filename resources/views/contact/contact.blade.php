@@ -38,53 +38,53 @@
                             <span class="icon-bar"></span>
                         </button>
                         <!-- Collect the nav links, forms, and other content for toggling -->
-                        <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-                            <ul class="nav navbar-nav menu_nav ml-auto">
-                                <li class="nav-item active"><a class="nav-link" href="{{ route('index') }}"><span class="fa fa-home"></span></a></li>
-                                <li class="nav-item"><a class="nav-link" href="{{ route('about.us') }}">About</a></li>
+						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+							<ul class="nav navbar-nav menu_nav ml-auto">
+								<li class="nav-item active"><a class="nav-link" href="{{ route('index') }}"><span class="fa fa-home"></span></a></li>
+								<li class="nav-item"><a class="nav-link" href="{{ route('about.us') }}">About</a></li>
 
+								
+								<li class="nav-item submenu dropdown">
+									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
+										aria-haspopup="true" aria-expanded="false">Publication</a>
+									<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="{{ route('charges') }}">Charges</a></li>
+										<li class="nav-item"><a class="nav-link" href="{{ route('steps') }}">Steps</a></li>
+										<li class="nav-item"><a class="nav-link" href="{{ route('ethics') }}">Ethics</a></li>
+										<li class="nav-item"><a class="nav-link" href="{{ route('review.process') }}">Review Process</a></li>
+										<li class="nav-item"><a class="nav-link" href="{{ route('guidelines') }}">Guidelines</a></li>
+										<li class="nav-item"><a class="nav-link" href="{{ route('payment.mode') }}">Mode of Payment</a></li>
+										<li class="nav-item"><a class="nav-link" href="{{ route('paper.status') }}">Check Paper Status</a></li>
+									</ul>
+								</li>
+								<li class="nav-item submenu dropdown">
+									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
+										aria-haspopup="true" aria-expanded="false">Downloads</a>
+									<ul class="dropdown-menu">
+										<li class="nav-item"><a class="nav-link" href="#">Copyright Form</a></li>
+										<li class="nav-item"><a class="nav-link" href="#">Paper Template</a></li>
+									</ul>
+								</li>
 
-                                <li class="nav-item submenu dropdown">
-                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
-                                        aria-haspopup="true" aria-expanded="false">Publication</a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item"><a class="nav-link" href="#">Charges</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="#">Steps</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="#">Ethics</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="#">Review Process</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="#">Guidelines</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="#">Mode of Payment</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="#">Check Paper Status</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item submenu dropdown">
-                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
-                                        aria-haspopup="true" aria-expanded="false">Downloads</a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item"><a class="nav-link" href="#">Copyright Form</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="#">Paper Template</a></li>
-                                    </ul>
-                                </li>
+								{{-- <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li> --}}
 
-                                {{-- <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li> --}}
+								<li class="nav-item submenu dropdown">
+									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
+										aria-haspopup="true" aria-expanded="false">Special Events</a>
+									<ul class="dropdown-menu">
+										<li class="nav-item"><a class="nav-link" href="#">Call for Conference</a></li>
+										<li class="nav-item"><a class="nav-link" href="#">Future Conference</a></li>
+									</ul>
+								</li>
+								
+							<li class="nav-item"><a class="nav-link" href="{{ route('contact.us') }}">Contact</a></li>
+							<li class="nav-item"><a class="nav-link" href="{{ route('editors') }}">Editorial</a></li>
 
-                                <li class="nav-item submenu dropdown">
-                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
-                                        aria-haspopup="true" aria-expanded="false">Special Events</a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item"><a class="nav-link" href="#">Call for Conference</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="#">Future Conference</a></li>
-                                    </ul>
-                                </li>
-
-                                <li class="nav-item"><a class="nav-link" href="{{ route('contact.us') }}">Contact</a></li>
-                                <li class="nav-item"><a class="nav-link" href="{{ route('editors') }}">Editorial</a></li>
-
-                            </ul>
-                            <ul class="nav navbar-nav navbar-right">
-                                <li class="nav-item"><a href="{{ route('submit.paper.form') }}" class="tickets_btn">Submit Paper</a></li>
-                            </ul>
-                        </div>
+							</ul>
+							<ul class="nav navbar-nav navbar-right">
+							<li class="nav-item"><a href="{{ route('submit.paper.form') }}" class="tickets_btn">Submit Paper</a></li>
+							</ul>
+						</div>
                     </div>
                 </nav>
             </div>

@@ -49,13 +49,13 @@
 									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
 										aria-haspopup="true" aria-expanded="false">Publication</a>
 									<ul class="dropdown-menu">
-										<li class="nav-item"><a class="nav-link" href="#">Charges</a></li>
-										<li class="nav-item"><a class="nav-link" href="#">Steps</a></li>
-										<li class="nav-item"><a class="nav-link" href="#">Ethics</a></li>
-										<li class="nav-item"><a class="nav-link" href="#">Review Process</a></li>
-										<li class="nav-item"><a class="nav-link" href="#">Guidelines</a></li>
-										<li class="nav-item"><a class="nav-link" href="#">Mode of Payment</a></li>
-										<li class="nav-item"><a class="nav-link" href="#">Check Paper Status</a></li>
+									<li class="nav-item"><a class="nav-link" href="{{ route('charges') }}">Charges</a></li>
+										<li class="nav-item"><a class="nav-link" href="{{ route('steps') }}">Steps</a></li>
+										<li class="nav-item"><a class="nav-link" href="{{ route('ethics') }}">Ethics</a></li>
+										<li class="nav-item"><a class="nav-link" href="{{ route('review.process') }}">Review Process</a></li>
+										<li class="nav-item"><a class="nav-link" href="{{ route('guidelines') }}">Guidelines</a></li>
+										<li class="nav-item"><a class="nav-link" href="{{ route('payment.mode') }}">Mode of Payment</a></li>
+										<li class="nav-item"><a class="nav-link" href="{{ route('paper.status') }}">Check Paper Status</a></li>
 									</ul>
 								</li>
 								<li class="nav-item submenu dropdown">

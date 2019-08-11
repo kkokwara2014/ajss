@@ -86,4 +86,25 @@ class PaperController extends Controller
     public function showSubmitPaperForm(){
         return view('journal.submitpaper');
     }
+    public function charges(){
+        return view('journal.charges');
+    }
+    public function steps(){
+        return view('journal.steps');
+    }
+    public function ethics(){
+        return view('journal.ethics');
+    }
+    public function reviewprocess(){
+        return view('journal.reviewprocess');
+    }
+    public function guidelines(){
+        return view('journal.guidelines');
+    }
+    public function modeofpayment(){
+        return view('journal.modeofpayment');
+    }
+    public function paperstatus(){
+        return view('journal.paperstatus');
+    }
 }
