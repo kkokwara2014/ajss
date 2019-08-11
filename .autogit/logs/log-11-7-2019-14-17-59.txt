@@ -1,0 +1,21 @@
+-------------------- Auto-Git Log --------------------
+		Sun Aug 11 2019 14:17:59 GMT+0100 (West Africa Standard Time)
+------------------------------------------------------
+
+Modified files:
+* resources/views/layout/header.blade.php
+* routes/web.php
+
+
+Created files:
+* resources/views/about/authorship.blade.php
+* resources/views/about/duppublication.blade.php
+* resources/views/about/peerreview.blade.php
+* resources/views/about/plagiarism.blade.php
+
+
+Deleted files:
+
+
+Renamed files:
+* [object Object]

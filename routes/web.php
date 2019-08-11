@@ -44,7 +44,7 @@ Route::group(['prefix'=>'publication'], function(){
 });
 
 Route::group(['prefix'=>'about'],function(){
-    Route::get('/ajssaifpu','AboutController@ajssaifpu')->name('about.us');
+    Route::get('/ajssaifpu','AboutController@ajssaifpu')->name('ajssaifpu');
     Route::get('/authorship','AboutController@authorship')->name('authorship');
     Route::get('/peer-review','AboutController@peerreview')->name('peer.review');
     Route::get('/duplicate-publication','AboutController@duplicatepublication')->name('duplicate.publication');

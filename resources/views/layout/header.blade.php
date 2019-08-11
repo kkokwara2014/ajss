@@ -51,10 +51,9 @@
 									<li class="nav-item"><a class="nav-link" href="{{ route('ajssaifpu') }}">AJSSAIFPU</a></li>
 										<li class="nav-item"><a class="nav-link" href="{{ route('authorship') }}">Authorship</a></li>
 										<li class="nav-item"><a class="nav-link" href="{{ route('peer.review') }}">Peer Review</a></li>
-										<li class="nav-item"><a class="nav-link" href="{{ route('review.process') }}">Duplicate Publication</a></li>
-										<li class="nav-item"><a class="nav-link" href="{{ route('guidelines') }}">Guidelines</a></li>
-										<li class="nav-item"><a class="nav-link" href="{{ route('payment.mode') }}">Mode of Payment</a></li>
-										<li class="nav-item"><a class="nav-link" href="{{ route('paper.status') }}">Check Paper Status</a></li>
+										<li class="nav-item"><a class="nav-link" href="{{ route('duplicate.publication') }}">Duplicate Publication</a></li>
+										<li class="nav-item"><a class="nav-link" href="{{ route('plagiarism') }}">Plagiarism</a></li>
+										
 									</ul>
 								</li>
 								

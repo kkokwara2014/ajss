@@ -6,8 +6,12 @@ use Illuminate\Http\Request;
 
 class AboutController extends Controller
 {
-    public function index()
+    public function ajssaifpu()
     {
         return view('about.index');
+    }
+    public function authorshop()
+    {
+        return view('about.authorship');
     }
 }
