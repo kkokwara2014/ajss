@@ -53,7 +53,7 @@
                                             <li class="nav-item"><a class="nav-link" href="#">Review Process</a></li>
                                             <li class="nav-item"><a class="nav-link" href="#">Guidelines</a></li>
                                             <li class="nav-item"><a class="nav-link" href="#">Mode of Payment</a></li>
-                                            <li class="nav-item"><a class="nav-link" href="#">Query Paper Status</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="#">Check Paper Status</a></li>
                                         </ul>
                                     </li>
                                     <li class="nav-item submenu dropdown">
