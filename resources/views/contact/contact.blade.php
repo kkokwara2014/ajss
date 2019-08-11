@@ -29,7 +29,7 @@
                     <div class="container box_1620">
                         <!-- Brand and toggle get grouped for better mobile display -->
                         {{-- <img src="img/logo.png" alt=""> --}}
-                        <a class="navbar-brand logo_h" href="#" style="color: whitesmoke; font-weight: bold;">AJSS</a>
+                        <a class="navbar-brand logo_h" href="#" style="color: whitesmoke; font-weight: bold;">AJSSAIFPU</a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
@@ -119,20 +119,20 @@
                             
                             <div class="info_item">
                                 <i class="lnr lnr-phone-handset"></i>
-                                <h6><a href="#">+234 (0) 9865 562</a></h6>
+                                <h6><a href="#">+234 (0) 803 888 3919</a></h6>
                                 <p>24/7</p>
                             </div>
                             <div class="info_item">
                                 <i class="lnr lnr-envelope"></i>
-                                <h6><a href="#">support@ajss.org</a></h6>
+                                <h6><a href="#">mailus@ajssaifpu.org</a></h6>
                                 <p>Send us email</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-9">
-                        <form class="row contact_form" action="contact_process.php" method="post" id="contactForm"
+                        <form class="row contact_form" action="" method="post" id="contactForm"
                             novalidate="novalidate">
-                            <div class="col-md-6">
+                            <div class="col-md-9">
                                 <div class="form-group">
                                     <input type="text" class="form-control" id="name" name="name"
                                         placeholder="Enter your name">
@@ -145,16 +145,15 @@
                                     <input type="text" class="form-control" id="subject" name="subject"
                                         placeholder="Enter Subject">
                                 </div>
-                            </div>
-                            <div class="col-md-6">
                                 <div class="form-group">
                                     <textarea class="form-control" name="message" id="message" rows="1"
                                         placeholder="Enter Message"></textarea>
                                 </div>
+                                <div>
+                                    <button type="submit" value="submit" class="btn submit_btn">Send Message</button>
+                                </div>
                             </div>
-                            <div class="col-md-12 text-right">
-                                <button type="submit" value="submit" class="btn submit_btn">Send Message</button>
-                            </div>
+                                                      
                         </form>
                     </div>
                 </div>

@@ -1,0 +1,21 @@
+-------------------- Auto-Git Log --------------------
+		Sun Aug 11 2019 10:15:51 GMT+0100 (West Africa Standard Time)
+------------------------------------------------------
+
+Modified files:
+* resources/views/contact/contact.blade.php
+* resources/views/editorial/editors.blade.php
+* resources/views/journal/submitpaper.blade.php
+
+
+Created files:
+* app/Country.php
+* app/Editorial.php
+* database/migrations/2019_08_11_091303_create_countries_table.php
+* database/migrations/2019_08_11_091428_create_editorials_table.php
+
+
+Deleted files:
+
+
+Renamed files:
