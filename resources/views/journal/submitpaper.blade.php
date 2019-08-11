@@ -47,10 +47,19 @@
         <!--================Submit Paper Area =================-->
         <section class="contact_area p_120">
             <div class="container">
-
+                <div class="welcome_text">
+                    <h3>Submit Paper</h3>
+                </div>
                 <div class="row">
 
                     <div class="col-lg-8">
+                        <p>
+                            Please report any difficulty on using the online paper submission
+                            or failure in getting acknowledgment letter after 24 hrs
+                            to <strong>papersubmission@ajssaifpu.org</strong>
+                        </p>
+                        <br>
+
                         <form class="row contact_form" action="" method="post" id="contactForm" novalidate="novalidate">
                             <div class="col-md-10">
                                 <div class="form-group">
@@ -87,7 +96,7 @@
                                 </div>
 
                                 <div class="form-group">
-                                                                      
+
                                     <input type="file" name="filename">
                                     <i style="color: red">Upload file (.doc or .docx max size: 3MB)</i>
                                 </div>
