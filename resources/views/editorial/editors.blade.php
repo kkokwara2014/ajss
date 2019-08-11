@@ -39,8 +39,8 @@
                             <!-- Collect the nav links, forms, and other content for toggling -->
                             <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                                 <ul class="nav navbar-nav menu_nav ml-auto">
-                                    <li class="nav-item active"><a class="nav-link" href="{{ route('index') }}">Home</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li>
+                                    <li class="nav-item active"><a class="nav-link" href="{{ route('index') }}"><span class="fa fa-home"></span></a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
     
     
                                     <li class="nav-item submenu dropdown">
@@ -152,7 +152,7 @@
                                         <li><a href="#">Review Process</a></li>
                                         <li><a href="#">Guidelines</a></li>
                                         <li><a href="#">Mode of Payment</a></li>
-                                        <li><a href="#">Query Paper Status</a></li>
+                                        <li><a href="#">Check Paper Status</a></li>
                                 </ul>
                             </div>
                         </div>

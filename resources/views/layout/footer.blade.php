@@ -23,7 +23,7 @@
                             <li><a href="#">Review Process</a></li>
                             <li><a href="#">Guidelines</a></li>
                             <li><a href="#">Mode of Payment</a></li>
-                            <li><a href="#">Query Paper Status</a></li>
+                            <li><a href="#">Check Paper Status</a></li>
                     </ul>
                 </div>
             </div>
