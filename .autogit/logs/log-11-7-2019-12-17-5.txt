@@ -1,0 +1,15 @@
+-------------------- Auto-Git Log --------------------
+		Sun Aug 11 2019 12:17:05 GMT+0100 (West Africa Standard Time)
+------------------------------------------------------
+
+Modified files:
+* resources/views/admin/layouts/inc/sidebar.blade.php
+
+
+Created files:
+
+
+Deleted files:
+
+
+Renamed files:
