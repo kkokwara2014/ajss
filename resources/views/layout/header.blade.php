@@ -42,8 +42,21 @@
 						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 							<ul class="nav navbar-nav menu_nav ml-auto">
 								<li class="nav-item active"><a class="nav-link" href="{{ route('index') }}"><span class="fa fa-home"></span></a></li>
-								<li class="nav-item"><a class="nav-link" href="{{ route('about.us') }}">About</a></li>
+								{{-- <li class="nav-item"><a class="nav-link" href="{{ route('about.us') }}">About</a></li> --}}
 
+								<li class="nav-item submenu dropdown">
+									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
+										aria-haspopup="true" aria-expanded="false">About</a>
+									<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="{{ route('ajssaifpu') }}">AJSSAIFPU</a></li>
+										<li class="nav-item"><a class="nav-link" href="{{ route('authorship') }}">Authorship</a></li>
+										<li class="nav-item"><a class="nav-link" href="{{ route('peer.review') }}">Peer Review</a></li>
+										<li class="nav-item"><a class="nav-link" href="{{ route('review.process') }}">Duplicate Publication</a></li>
+										<li class="nav-item"><a class="nav-link" href="{{ route('guidelines') }}">Guidelines</a></li>
+										<li class="nav-item"><a class="nav-link" href="{{ route('payment.mode') }}">Mode of Payment</a></li>
+										<li class="nav-item"><a class="nav-link" href="{{ route('paper.status') }}">Check Paper Status</a></li>
+									</ul>
+								</li>
 								
 								<li class="nav-item submenu dropdown">
 									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"

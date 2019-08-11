@@ -6,7 +6,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="icon" href="{{asset('bootstrap_assets/img/favicon.png')}}" type="image/png">
-        <title>About Us</title>
+        <title>About AJSSAIFPU</title>
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="{{asset('bootstrap_assets/css/bootstrap.css')}}">
         <link rel="stylesheet" href="{{asset('bootstrap_assets/vendors/linericon/style.css')}}">
@@ -97,54 +97,16 @@
 				<div class="container">
 					<div class="banner_content text-center">
 						<div class="page_link">
-							<a href="index.html">Home</a>
-							<a href="about-us.html">About</a>
+							<a href="{{ route('index') }}">Home</a>
+							<a href="#">About</a>
+							<a href="#">ajssaifpu</a>
 						</div>
-						<h2>About Us</h2>
+						<h2>About AjSSAIFPU</h2>
 					</div>
 				</div>
             </div>
         </section>
         <!--================End Home Banner Area =================-->
-        
-        {{-- <!--================Event Time Area =================-->
-        <section class="event_time_area ab_event pad_top">
-        	<div class="container">
-        		<div class="event_time_inner">
-        			<div class="row">
-        				<div class="col-lg-6">
-        					<div class="event_text">
-        						<h3>Next Event will Start in</h3>
-        						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
-        					</div>
-        				</div>
-        				<div class="col-lg-6">
-        					<div class="timer_inner">
-								<div id="timer" class="timer">
-									<div class="timer__section days">
-										<div class="timer__number"></div>
-										<div class="timer__label">days</div>
-									</div>
-									<div class="timer__section hours">
-										<div class="timer__number"></div>
-										<div class="timer__label">hours</div>
-									</div>
-									<div class="timer__section minutes">
-										<div class="timer__number"></div>
-										<div class="timer__label">Minutes</div>
-									</div>
-									<div class="timer__section seconds">
-										<div class="timer__number"></div>
-										<div class="timer__label">seconds</div>
-									</div>
-								</div>
-							</div>
-        				</div>
-        			</div>
-        		</div>
-        	</div>
-        </section>
-        <!--================End Event Time Area =================--> --}}
         
         <!--================Welcome Area =================-->
         <section class="welcome_area pad_btm">

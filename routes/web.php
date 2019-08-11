@@ -28,7 +28,7 @@ Route::get('/logout', 'Auth\LoginController@logout')->name('logout');
 
 Route::get('/','PagesController@index')->name('index');
 Route::get('contact','ContactController@showContactUsPage')->name('contact.us');
-Route::get('about','AboutController@index')->name('about.us');
+
 Route::get('editorial','EditorialController@showEditors')->name('editors');
 
 Route::group(['prefix'=>'publication'], function(){
@@ -41,4 +41,12 @@ Route::group(['prefix'=>'publication'], function(){
     Route::get('/mode_of_payment','PaperController@modeofpayment')->name('payment.mode');
     Route::get('/check_paper_status','PaperController@paperstatus')->name('paper.status');
 
+});
+
+Route::group(['prefix'=>'about'],function(){
+    Route::get('/ajssaifpu','AboutController@ajssaifpu')->name('about.us');
+    Route::get('/authorship','AboutController@authorship')->name('authorship');
+    Route::get('/peer-review','AboutController@peerreview')->name('peer.review');
+    Route::get('/duplicate-publication','AboutController@duplicatepublication')->name('duplicate.publication');
+    Route::get('/plagiarism','AboutController@plagiarism')->name('plagiarism');
 });
