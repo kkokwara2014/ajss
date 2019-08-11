@@ -6,7 +6,7 @@
     <div class="banner_inner">
         <div class="container">
             <div class="banner_content">
-                <h2>Akanu Ibiam Federal Polytechnic, Unwana<br />Journal of School of Science (AJSS)</h2>
+                <h2>Akanu Ibiam Federal Polytechnic, Unwana<br />Journal of School of Science (ajssaifpu)</h2>
                 <p>...providing enabling platform for publishing quality academic research.</p>
                 
             </div>
@@ -30,7 +30,7 @@
                 <div class="col-lg-4 col-sm-4">
                     <div class="event_text">
                         <h5>Email</h5>
-                        <p>mailajssteam@ajss.com</p>
+                        <p>mailus@ajssaifpu.org</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-4">
@@ -52,7 +52,7 @@
 
             <div class="col-lg-9 col-sm-9" style="text-align: justify">
                 <div class="welcome_text">
-                    <h3>Welcome to AJSS</h3>
+                    <h3>Welcome to AJSSAIFPU</h3>
                     <p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct
                         standards especially in the workplace. That’s why it’s crucial that, as women, our behavior on
                         the job is beyond reproach. inappropriate behavior is often laughed.</p>

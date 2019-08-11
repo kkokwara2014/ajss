@@ -20,6 +20,10 @@ Route::group(['prefix'=>'admin','middleware'=>'auth'], function(){
     Route::get('/','AdminController@index')->name('admin.index');
 });
 
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
 Route::get('/logout', 'Auth\LoginController@logout')->name('logout');
 
 Route::get('/','PagesController@index')->name('index');
