@@ -157,7 +157,7 @@
                                 <div class="form-group">
                                                                       
                                     <input type="file" name="filename">
-                                    <i style="color: red">Upload file (.doc or .docx not more than 4MB)</i>
+                                    <i style="color: red">Upload file (.doc or .docx not more than 3MB)</i>
                                 </div>
                             </div>
                             <div class="col-md-12">
