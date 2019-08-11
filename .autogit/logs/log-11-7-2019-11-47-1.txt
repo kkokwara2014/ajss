@@ -1,0 +1,22 @@
+-------------------- Auto-Git Log --------------------
+		Sun Aug 11 2019 11:47:01 GMT+0100 (West Africa Standard Time)
+------------------------------------------------------
+
+Modified files:
+* app/Country.php
+* app/Editorial.php
+* database/migrations/2019_08_11_091303_create_countries_table.php
+* database/migrations/2019_08_11_091428_create_editorials_table.php
+* routes/web.php
+
+
+Created files:
+* app/Paper.php
+* database/migrations/2019_08_11_103039_create_papers_table.php
+
+
+Deleted files:
+
+
+Renamed files:
+* [object Object]

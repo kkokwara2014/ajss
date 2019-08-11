@@ -12,4 +12,9 @@ class Country extends Model
     {
         return $this->hasMany(Paper::class);
     }
+
+    public function editorials()
+    {
+        return $this->hasMany(Editorial::class);
+    }
 }
