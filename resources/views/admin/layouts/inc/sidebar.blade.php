@@ -21,6 +21,7 @@
         </a>
       </li>
 
+      {{-- contact area --}}
       <li class="treeview">
         <a href="#">
           <i class="fa fa-envelope-o"></i>
@@ -36,26 +37,27 @@
         </ul>
       </li>
 
-      
+      {{-- Editor area --}}
       <li class="treeview">
-          <a href="#">
-            <i class="fa fa-user"></i>
-            <span>Editor</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="#"><i class="fa fa-circle-o"></i>
-                Create New</a>
-            </li>
-            <li><a href="#"><i class="fa fa-circle-o"></i>
-                View All</a>
-            </li>
-          </ul>
-          
-        </li>
+        <a href="#">
+          <i class="fa fa-user"></i>
+          <span>Editor</span>
+          <span class="pull-right-container">
+            <i class="fa fa-angle-left pull-right"></i>
+          </span>
+        </a>
+        <ul class="treeview-menu">
+          <li><a href="#"><i class="fa fa-circle-o"></i>
+              Create New</a>
+          </li>
+          <li><a href="#"><i class="fa fa-circle-o"></i>
+              View All</a>
+          </li>
+        </ul>
 
+      </li>
+
+      {{-- submitted paper area --}}
       <li class="treeview">
         <a href="#">
           <i class="fa fa-file-pdf-o"></i>
@@ -71,6 +73,7 @@
         </ul>
       </li>
 
+      {{-- future conference area --}}
       <li class="treeview">
         <a href="#">
           <i class="fa fa-bullhorn"></i>
@@ -87,10 +90,28 @@
               View All</a>
           </li>
         </ul>
-        
+
       </li>
 
+      <!-- the Admin links-->
+      <li class="treeview">
+        <a href="#">
+          <i class="fa fa-users"></i>
+          <span>Admins</span>
+          <span class="pull-right-container">
+            <i class="fa fa-angle-left pull-right"></i>
+          </span>
+        </a>
+        <ul class="treeview-menu">
+          <li><a href="#"><i class="fa fa-circle-o"></i>
+              Create New</a>
+          </li>
+          <li><a href="#"><i class="fa fa-circle-o"></i>
+              View All</a>
+          </li>
+        </ul>
 
+      </li>
     </ul>
   </section>
   <!-- /.sidebar -->
