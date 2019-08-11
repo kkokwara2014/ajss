@@ -20,3 +20,4 @@ Route::get('/','PagesController@index')->name('index');
 Route::get('contact','ContactController@showContactUsPage')->name('contact.us');
 Route::get('about','AboutController@index')->name('about.us');
 Route::get('editorial','EditorialController@showEditors')->name('editors');
+Route::get('publication/submit_paper','JournalController@showSubmitPaperForm')->name('submit.paper.form');
