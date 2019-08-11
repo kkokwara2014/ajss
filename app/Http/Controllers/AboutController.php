@@ -10,8 +10,24 @@ class AboutController extends Controller
     {
         return view('about.ajssaifpu');
     }
-    public function authorshop()
+
+    public function authorship()
     {
         return view('about.authorship');
+    }
+
+    public function peerreview()
+    {
+        return view('about.peerreview');
+    }
+
+    public function duplicatepublication()
+    {
+        return view('about.duppublication');
+    }
+
+    public function plagiarism()
+    {
+        return view('about.plagiarism');
     }
 }

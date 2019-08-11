@@ -113,7 +113,7 @@
 							<a href="#">About</a>
 							<a href="#">ajssaifpu</a>
 						</div>
-						<h2>About AjSSAIFPU</h2>
+						<h2>About AJSSAIFPU</h2>
 					</div>
 				</div>
             </div>
