@@ -83,6 +83,7 @@ class EditorialController extends Controller
     }
 
     public function showEditors(){
-        return view('editorial.editors');
+        $title='Editorial Board';
+        return view('editorial.editors', compact('title'));
     }
 }

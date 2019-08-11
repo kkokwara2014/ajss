@@ -23,7 +23,8 @@ class ContactController extends Controller
      */
     public function create()
     {
-        return view('contact.create');
+        $title='Contact Us';
+        return view('contact.create', compact('title'));
     }
 
     /**
@@ -83,6 +84,7 @@ class ContactController extends Controller
     }
 
     public function showContactUsPage(){
-        return view('contact.contact');
+        $title='Contact Us';
+        return view('contact.contact', compact('title'));
     }
 }

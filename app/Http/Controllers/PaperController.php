@@ -84,27 +84,35 @@ class PaperController extends Controller
 
 
     public function showSubmitPaperForm(){
-        return view('journal.submitpaper');
+        $title='Submit Paper';
+        return view('journal.submitpaper', compact('title'));
     }
     public function charges(){
-        return view('journal.charges');
+        $title='Publication Charges';
+        return view('journal.charges', compact('title'));
     }
     public function steps(){
-        return view('journal.steps');
+        $title='Publication Steps';
+        return view('journal.steps', compact('title'));
     }
     public function ethics(){
-        return view('journal.ethics');
+        $title='Publication Ethics';
+        return view('journal.ethics',compact('title'));
     }
     public function reviewprocess(){
-        return view('journal.reviewprocess');
+        $title='Publication Review Process';
+        return view('journal.reviewprocess', compact('title'));
     }
     public function guidelines(){
-        return view('journal.guidelines');
+        $title='Publication Guidelines';
+        return view('journal.guidelines',compact('title'));
     }
     public function modeofpayment(){
-        return view('journal.modeofpayment');
+        $title='Mode of Payment';
+        return view('journal.modeofpayment',compact('title'));
     }
     public function paperstatus(){
-        return view('journal.paperstatus');
+        $title='Check Paper Status';
+        return view('journal.paperstatus', compact('title'));
     }
 }

@@ -52,7 +52,7 @@ Route::group(['prefix'=>'about'],function(){
 });
 
 Route::group(['prefix'=>'conference'],function(){
-    Route::get('/call-for-paper','AboutController@callforpaper')->name('callforpaper');
-    Route::get('/future-conference','AboutController@futureconference')->name('futureconference');
+    Route::get('/call-for-paper','ConferenceController@callforpaper')->name('callforpaper');
+    Route::get('/future-conference','ConferenceController@index')->name('futureconference');
    
 });

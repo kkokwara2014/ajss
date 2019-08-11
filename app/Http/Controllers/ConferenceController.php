@@ -13,7 +13,8 @@ class ConferenceController extends Controller
      */
     public function index()
     {
-        return view('conference.futureconference');
+        $title='Future Conference';
+        return view('conference.futureconference', compact('title'));
     }
 
     /**
@@ -83,7 +84,8 @@ class ConferenceController extends Controller
     }
 
     public function callforpaper(){
-        return view('conference.callforpaper');
+        $title='Call For Paper';
+        return view('conference.callforpaper', compact('title'));
     }
 
 
