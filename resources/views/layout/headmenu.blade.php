@@ -4,8 +4,8 @@
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container box_1620">
                 <!-- Brand and toggle get grouped for better mobile display -->
-                {{-- <img --}}
-                {{-- src="{{asset('bootstrap_assets/img/logo.png')}}" alt=""> --}}
+                
+                {{-- <img src="{{asset('bootstrap_assets/img/ajssaifpu_logo.png')}}" alt="" width="50" height="50"> --}}
                 <a class="navbar-brand logo_h" href="{{ route('index') }}"
                     style="color: whitesmoke; font-weight: bold">AJSSAIFPU</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"

@@ -7,7 +7,7 @@
     <div class="row">
         <!-- Left col -->
         <section class="col-lg-9 connectedSortable">
-            <div><a href="#" class="btn btn-success btn-sm"><span class="fa fa-eye"></span> All Editors</a></div>
+        <div><a href="{{ route('admin.editor.all') }}" class="btn btn-success btn-sm"><span class="fa fa-eye"></span> All Editors</a></div>
             <p></p>
             @include('messages.success')
             <p></p>
@@ -15,7 +15,8 @@
                 <div class="col-md-12 col-lg-12">
                     <div class="panel">
                         <div class="panel-body">
-                            <form role="form">
+                            <form role="form" action="" method="POST" enctype="multipart/form-data">
+                                {{ csrf_field() }}
                                 <div class="row">
                                     <div class="col-sm-6 col-lg-6">
                                         <div class="form-group">
