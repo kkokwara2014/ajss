@@ -16,9 +16,10 @@
                                 <div class="form-group">
                                     <label>Title</label>
                                     <select class="form-control select2" style="width: 100%;">
-                                        <option selected="selected">Dr.</option>
-                                        <option>Prof.</option>
+                                        <option disabled>Select Title</option>
                                         <option>Engr.</option>
+                                        <option >Dr.</option>
+                                        <option>Prof.</option>
                                     </select>
                                 </div>
                                 <div class="form-group">
@@ -35,6 +36,11 @@
                                     <label for="othername">Other Name</label>
                                     <input type="email" class="form-control" id="othername" name="othername"
                                         placeholder="Enter Other Name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="organization">Organization</label>
+                                    <input type="email" class="form-control" id="organization" name="organization"
+                                        placeholder="Enter Organization e.g. Akanu Ibiam Federal Poly. Unwana">
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleInputPassword1">Password</label>
