@@ -15,7 +15,8 @@ class EditorialController extends Controller
      */
     public function index()
     {
-        //
+        $pageTitle='All Editors';
+        return view('admin.editor.index',compact('pageTitle'));
     }
 
     /**
@@ -39,7 +40,7 @@ class EditorialController extends Controller
     public function store(Request $request)
     {
         $editor=new Editorial;
-        
+
     }
 
     /**

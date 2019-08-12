@@ -14,7 +14,7 @@
 
     <!-- sidebar menu: : style can be found in sidebar.less -->
     <ul class="sidebar-menu" data-widget="tree">
-      <li class="header">MAIN NAVIGATION</li>
+      {{-- <li class="header">MAIN NAVIGATION</li> --}}
       <li class="active">
         <a href="#">
           <i class="fa fa-dashboard"></i> <span>Dashboard</span>
@@ -26,35 +26,15 @@
         <a href="#">
           <i class="fa fa-envelope-o"></i>
           <span>Contact</span>
-          <span class="pull-right-container">
-            <i class="fa fa-angle-left pull-right"></i>
-          </span>
         </a>
-        <ul class="treeview-menu">
-          <li><a href="#"><i class="fa fa-circle-o"></i>
-              View All</a>
-          </li>
-        </ul>
       </li>
 
       {{-- Editor area --}}
-      <li class="treeview">
-        <a href="#">
+      <li>
+        <a href="{{ route('admin.editor.all') }}">
           <i class="fa fa-user"></i>
           <span>Editor</span>
-          <span class="pull-right-container">
-            <i class="fa fa-angle-left pull-right"></i>
-          </span>
         </a>
-        <ul class="treeview-menu">
-          <li><a href="{{ route('admin.create.editor') }}"><i class="fa fa-circle-o"></i>
-              Create New</a>
-          </li>
-          <li><a href="#"><i class="fa fa-circle-o"></i>
-              View All</a>
-          </li>
-        </ul>
-
       </li>
 
       {{-- submitted paper area --}}
@@ -62,15 +42,7 @@
         <a href="#">
           <i class="fa fa-file-pdf-o"></i>
           <span>Submitted Paper</span>
-          <span class="pull-right-container">
-            <i class="fa fa-angle-left pull-right"></i>
-          </span>
         </a>
-        <ul class="treeview-menu">
-          <li><a href="#"><i class="fa fa-circle-o"></i>
-              View All</a>
-          </li>
-        </ul>
       </li>
 
       {{-- future conference area --}}
@@ -78,19 +50,7 @@
         <a href="#">
           <i class="fa fa-bullhorn"></i>
           <span>Future Conference</span>
-          <span class="pull-right-container">
-            <i class="fa fa-angle-left pull-right"></i>
-          </span>
         </a>
-        <ul class="treeview-menu">
-          <li><a href="#"><i class="fa fa-circle-o"></i>
-              Create New</a>
-          </li>
-          <li><a href="#"><i class="fa fa-circle-o"></i>
-              View All</a>
-          </li>
-        </ul>
-
       </li>
 
       <!-- the Admin links-->
@@ -98,19 +58,7 @@
         <a href="#">
           <i class="fa fa-users"></i>
           <span>Admins</span>
-          <span class="pull-right-container">
-            <i class="fa fa-angle-left pull-right"></i>
-          </span>
         </a>
-        <ul class="treeview-menu">
-          <li><a href="#"><i class="fa fa-circle-o"></i>
-              Create New</a>
-          </li>
-          <li><a href="#"><i class="fa fa-circle-o"></i>
-              View All</a>
-          </li>
-        </ul>
-
       </li>
     </ul>
   </section>
