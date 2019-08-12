@@ -1,13 +1,14 @@
 <div>
     <h3><span class="fa fa-link"></span> Useful Links</h3>
     <hr>
-    <a href="#"></a>
-
-
-
+    <div><a href="#"><span class="fa fa-file-pdf-o"></span> Published Papers</a></div>
+    <div><a href="#"><span class="fa fa-users"></span> Editorial Board</a></div>
+    <div><a href="#"><span class="fa fa-paper-plane-o"></span> Submit Paper</a></div>
 </div>
+<hr>
+<br>
 <div>
-    <h3><span class="fa fa-download"></span> Downloads</h3>
+    <h3><span class="fa fa-download"></span> Download</h3>
     <hr>
     <div> <a href="{{asset('downloads/about_authorship.pdf')}}" download="about_authorship.pdf"><span
                 class="fa fa-file-pdf-o" style="color: red"></span> About Authorship</a>
