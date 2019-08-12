@@ -61,18 +61,21 @@
                         <br>
 
                         <form class="row contact_form" action="" method="post" id="contactForm" novalidate="novalidate">
-                            <div class="col-md-12 col-lg-12">
+                            <div class="col-md-10 col-lg-10">
                                 <div class="form-group">
+                                    <label for="name">Your Name <i style="color: red">*</i></label>
                                     <input type="text" class="form-control" id="name" name="name"
                                         placeholder="Enter your name">
                                 </div>
                                 <div class="form-group">
+                                    <label for="name">Your Email Address <i style="color: red">*</i></label>
                                     <input type="email" class="form-control" id="email" name="email"
                                         placeholder="Enter Email address">
                                 </div>
                                 <div class="form-group">
+                                    <label for="name">Your Phone Number <i style="color: red">*</i></label>
                                     <input type="tel" class="form-control" id="phone" name="phone"
-                                        placeholder="Enter Phone Number" maxlength="11">
+                                        placeholder="Enter Phone Number" maxlength="14">
                                 </div>
                                 <div class="input-group-icon mt-10 form-group">
                                     <div class="icon"><i class="fa fa-globe" aria-hidden="true"></i></div>
@@ -85,30 +88,32 @@
                                             <option value="1">Srilanka</option>
                                         </select>
                                     </div>
+
                                 </div>
                                 <div class="form-group">
+                                    <label for="name">Your Paper Title <i style="color: red">*</i></label>
                                     <input type="text" class="form-control" id="papertitle" name="papertitle"
                                         placeholder="Paper Title">
                                 </div>
                                 <div class="form-group">
+                                    <label for="name">Your Paper Abstract <i style="color: red">*</i></label>
                                     <textarea class="form-control" name="abstract" id="abstract" rows="3"
                                         placeholder="Enter Abstract"></textarea>
                                 </div>
 
                                 <div class="form-group">
-
+                                    <p>Upload Paper <i style="color: red">(.doc or .docx max size: 2MB)</i></p>
                                     <input type="file" name="filename">
-                                    <i style="color: red">Upload file (.doc or .docx max size: 3MB)</i>
                                 </div>
                             </div>
-                            <div class="col-md-12">
+                            <div class="col-md-10 col-lg-10">
                                 <button type="submit" value="submit" class="btn submit_btn">Submit</button>
                             </div>
                         </form>
                     </div>
                     <div class="col-lg-3 col-sm-3">
-                            @include('layout.rightsidebar')
-                        </div>
+                        @include('layout.rightsidebar')
+                    </div>
                 </div>
             </div>
         </section>
