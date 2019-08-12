@@ -73,7 +73,7 @@
                 <div>
                     <h3><span class="fa fa-download"></span> Downloads</h3>
                     <hr>
-                    <div> <a href="#"><span class="fa fa-file-pdf-o" style="color: red"></span> About Authorship</a>
+                    <div> <a href="{{asset('downloads/about_authorship.pdf')}}" download="about_authorship.pdf"><span class="fa fa-file-pdf-o" style="color: red"></span> About Authorship</a>
                     </div>
                     <div> <a href="#"><span class="fa fa-file-pdf-o" style="color: red"></span> Peer Review</a></div>
                     <div><a href="#"><span class="fa fa-file-pdf-o" style="color: red"></span> Duplicate Publication</a>
