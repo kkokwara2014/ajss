@@ -48,13 +48,12 @@
         <!--================Welcome Area =================-->
         <section class="welcome_area pad_btm">
             <div class="container">
-                    <div class="welcome_text">
-                            <h3>About Plagiarism</h3>
-                        </div>
+                    
                 <div class="welcome_inner row" style="margin-top: 50px;">
 
                     <div class="col-lg-9 col-sm-9">
                         <div class="welcome_text">
+                                <h3>About Plagiarism</h3>
 
                             <p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher
                                 conduct standards especially in the workplace. That’s why it’s crucial that, as women,

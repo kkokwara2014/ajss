@@ -23,7 +23,7 @@
     <body>
 
         <!--================Header Menu Area =================-->
-        @include('layout.headmenu')	
+        @include('layout.headmenu')
         <!--================Header Menu Area =================-->
 
         <!--================Home Banner Area =================-->
@@ -49,13 +49,11 @@
         <section class="welcome_area pad_btm">
             <div class="container">
 
-                    <div class="welcome_text">
-                            <h3>About Duplicate Publication</h3>
-                        </div>
                 <div class="welcome_inner row" style="margin-top: 50px;">
 
                     <div class="col-lg-9 col-sm-9">
                         <div class="welcome_text">
+                            <h3>About Duplicate Publication</h3>
 
                             <p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher
                                 conduct standards especially in the workplace. That’s why it’s crucial that, as women,
@@ -66,8 +64,8 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-sm-3">
-                            @include('layout.rightsidebar')
-                        </div>
+                        @include('layout.rightsidebar')
+                    </div>
                 </div>
             </div>
         </section>

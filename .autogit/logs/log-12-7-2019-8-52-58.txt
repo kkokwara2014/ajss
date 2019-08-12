@@ -1,0 +1,34 @@
+-------------------- Auto-Git Log --------------------
+		Mon Aug 12 2019 08:52:58 GMT+0100 (West Africa Standard Time)
+------------------------------------------------------
+
+Modified files:
+* resources/views/about/ajssaifpu.blade.php
+* resources/views/about/authorship.blade.php
+* resources/views/about/duppublication.blade.php
+* resources/views/about/peerreview.blade.php
+* resources/views/about/plagiarism.blade.php
+* resources/views/conference/callforpaper.blade.php
+* resources/views/conference/futureconference.blade.php
+* resources/views/contact/contact.blade.php
+* resources/views/editorial/editors.blade.php
+* resources/views/journal/charges.blade.php
+* resources/views/journal/ethics.blade.php
+* resources/views/journal/guidelines.blade.php
+* resources/views/journal/modeofpayment.blade.php
+* resources/views/journal/paperstatus.blade.php
+* resources/views/journal/reviewprocess.blade.php
+* resources/views/journal/steps.blade.php
+* resources/views/journal/submitpaper.blade.php
+* resources/views/pages/index.blade.php
+
+
+Created files:
+* .autogit/logs/log-12-7-2019-8-22-50.txt
+* resources/views/layout/rightsidebar.blade.php
+
+
+Deleted files:
+
+
+Renamed files:

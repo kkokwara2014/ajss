@@ -49,13 +49,12 @@
         <!--================Welcome Area =================-->
         <section class="welcome_area pad_btm">
             <div class="container">
-                    <div class="welcome_text">
-                            <h3>Publication Ethics</h3>
-                        </div>
-                <div class="welcome_inner row" style="margin-top: 50px;">
-
-                    <div class="col-lg-9 col-sm-9">
-                        <div class="welcome_text">
+                    
+                    <div class="welcome_inner row" style="margin-top: 50px;">
+                            
+                            <div class="col-lg-9 col-sm-9">
+                                <div class="welcome_text">
+                                        <h3>Publication Ethics</h3>
                             
                             <p style="text-align: justify">
                                 Papers must be submitted with the understanding that they have not been published

@@ -47,13 +47,12 @@
         <!--================Contact Area =================-->
         <section class="contact_area p_120">
             <div class="container">
-                
+
                 <div class="welcome_text">
                     <h3>Contact Us</h3>
                 </div>
 
                 <div class="row">
-
                     <div class="col-lg-3 col-sm-3">
                         <div class="contact_info">
 
@@ -66,6 +65,13 @@
                                 <i class="lnr lnr-envelope"></i>
                                 <h6><a href="#">mailus@ajssaifpu.org</a></h6>
                                 <p>Send us email</p>
+                            </div>
+                            <div class="info_item">
+                                <i class="lnr lnr-map-marker"></i>
+                                <h6><a href="#">Akanu Ibiam Fed. Poly. Unwana,
+                                Afikpo. Ebonyi State, Nigeria.    
+                                </a></h6>
+                                <p>Visit us</p>
                             </div>
                         </div>
                     </div>
