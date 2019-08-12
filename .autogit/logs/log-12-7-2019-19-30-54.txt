@@ -1,0 +1,16 @@
+-------------------- Auto-Git Log --------------------
+		Mon Aug 12 2019 19:30:54 GMT+0100 (West Africa Standard Time)
+------------------------------------------------------
+
+Modified files:
+* resources/views/admin/editor/create.blade.php
+
+
+Created files:
+* .autogit/logs/log-12-7-2019-19-0-45.txt
+
+
+Deleted files:
+
+
+Renamed files:
