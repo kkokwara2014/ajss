@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Country;
+use App\Editorial;
 
 class EditorialController extends Controller
 {
@@ -23,8 +25,9 @@ class EditorialController extends Controller
      */
     public function create()
     {
+        $countries=Country::all();
         $pageTitle='Create Editor';
-        return view('admin.editor.create', compact('pageTitle'));
+        return view('admin.editor.create', compact('pageTitle','countries'));
     }
 
     /**
@@ -35,7 +38,8 @@ class EditorialController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $editor=new Editorial;
+        
     }
 
     /**
