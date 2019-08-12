@@ -115,4 +115,9 @@ class PaperController extends Controller
         $title='Check Paper Status';
         return view('journal.paperstatus', compact('title'));
     }
+
+    public function publishedpaper(){
+        $title='Published Paper';
+        return view('journal.publishedpaper',compact('title'));
+    }
 }
