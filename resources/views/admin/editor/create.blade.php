@@ -7,7 +7,7 @@
   <div class="row">
     <!-- Left col -->
     <section class="col-lg-7 connectedSortable">
-      Seeing the inside
+      Create New Editor
 
 
 
