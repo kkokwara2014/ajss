@@ -16,7 +16,7 @@
                                 <div class="form-group">
                                     <label>Title</label>
                                     <select class="form-control select2" style="width: 100%;">
-                                        <option disabled>Select Title</option>
+                                        <option selected="disabled">Select Title</option>
                                         <option>Engr.</option>
                                         <option >Dr.</option>
                                         <option>Prof.</option>
