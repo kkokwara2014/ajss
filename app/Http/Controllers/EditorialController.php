@@ -23,7 +23,8 @@ class EditorialController extends Controller
      */
     public function create()
     {
-        //
+        $pageTitle='Create Editor';
+        return view('admin.editor.create', compact('pageTitle'));
     }
 
     /**

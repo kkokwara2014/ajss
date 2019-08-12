@@ -47,7 +47,7 @@
           </span>
         </a>
         <ul class="treeview-menu">
-          <li><a href="#"><i class="fa fa-circle-o"></i>
+          <li><a href="{{ route('admin.create.editor') }}"><i class="fa fa-circle-o"></i>
               Create New</a>
           </li>
           <li><a href="#"><i class="fa fa-circle-o"></i>
