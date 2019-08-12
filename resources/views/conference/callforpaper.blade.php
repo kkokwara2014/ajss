@@ -48,12 +48,13 @@
         <!--================Welcome Area =================-->
         <section class="welcome_area pad_btm">
             <div class="container">
+                    <div class="welcome_text">
+                            <h3>Call for Paper</h3>
+                        </div>
                 <div class="welcome_inner row" style="margin-top: 50px;">
 
                     <div class="col-lg-9 col-sm-9">
-                        <div class="welcome_text">
-                            <h3>Call for Paper</h3>
-                        </div>
+                        
                         <div class="welcome_text">
 
                             <p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher
@@ -63,6 +64,9 @@
                                 conduct standards especially in the workplace.</p>
 
                         </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-3">
+                        @include('layout.rightsidebar')
                     </div>
                 </div>
             </div>

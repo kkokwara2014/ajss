@@ -23,7 +23,7 @@
     <body>
 
         <!--================Header Menu Area =================-->
-       @include('layout.headmenu')
+        @include('layout.headmenu')
         <!--================Header Menu Area =================-->
 
         <!--================Home Banner Area =================-->
@@ -48,10 +48,15 @@
         <section class="contact_area p_120">
             <div class="container">
                 
+                <div class="welcome_text">
+                    <h3>Contact Us</h3>
+                </div>
+
                 <div class="row">
-                    <div class="col-lg-3">
+
+                    <div class="col-lg-3 col-sm-3">
                         <div class="contact_info">
-                            
+
                             <div class="info_item">
                                 <i class="lnr lnr-phone-handset"></i>
                                 <h6><a href="#">+234 (0) 803 888 3919</a></h6>
@@ -64,10 +69,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-9">
-                        <form class="row contact_form" action="" method="post" id="contactForm"
-                            novalidate="novalidate">
-                            <div class="col-md-9">
+                    <div class="col-lg-6 col-sm-6">
+                        <form class="row contact_form" action="" method="post" id="contactForm" novalidate="novalidate">
+                            <div class="col-md-12 col-lg-12">
                                 <div class="form-group">
                                     <input type="text" class="form-control" id="name" name="name"
                                         placeholder="Enter your name">
@@ -88,8 +92,11 @@
                                     <button type="submit" value="submit" class="btn submit_btn">Send Message</button>
                                 </div>
                             </div>
-                                                      
+
                         </form>
+                    </div>
+                    <div class="col-lg-3 col-sm-3">
+                        @include('layout.rightsidebar')
                     </div>
                 </div>
             </div>
@@ -98,70 +105,70 @@
 
         <!--================ start footer Area  =================-->
         <footer class="footer-area p_120">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-3  col-md-3 col-sm-3">
-                            <div class="single-footer-widget tp_widgets">
-                                <h6 class="footer_title">Useful Links</h6>
-                                <ul class="list">
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">About</a></li>
-                                    <li><a href="{{ route('contact.us') }}">Contact</a></li>
-                                    <li><a href="#">Editorial</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-3  col-md-3 col-sm-3">
-                            <div class="single-footer-widget tp_widgets">
-                                <h6 class="footer_title">Publication</h6>
-                                <ul class="list">
-                                        <li><a href="#">Charges</a></li>
-                                        <li><a href="#">Steps</a></li>
-                                        <li><a href="#">Ethics</a></li>
-                                        <li><a href="#">Review Process</a></li>
-                                        <li><a href="#">Guidelines</a></li>
-                                        <li><a href="#">Mode of Payment</a></li>
-                                        <li><a href="#">Check Paper Status</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-3  col-md-3 col-sm-3">
-                            <div class="single-footer-widget tp_widgets">
-                                <h6 class="footer_title">Special Events</h6>
-                                <ul class="list">
-                                    <li><a href="#">Call for Conference</a></li>
-                                    <li><a href="#">Future Conference</a></li>
-                                    
-                                </ul>
-                            </div>
-                        </div>
-            
-                        <div class="col-lg-3  col-md-3 col-sm-3">
-                            <div class="single-footer-widget tp_widgets">
-                                <h6 class="footer_title">Downloads</h6>
-                                <ul class="list">
-                                    <li><a href="#">Copyright Form</a></li>
-                                    <li><a href="#">Paper Template</a></li>
-                                    
-                                </ul>
-                            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3  col-md-3 col-sm-3">
+                        <div class="single-footer-widget tp_widgets">
+                            <h6 class="footer_title">Useful Links</h6>
+                            <ul class="list">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="{{ route('contact.us') }}">Contact</a></li>
+                                <li><a href="#">Editorial</a></li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="row footer-bottom d-flex justify-content-between align-items-center">
-                        <p class="col-lg-8 col-md-8 footer-text m-0">
-            
-                            Copyright &copy; <script>
-                                document.write(new Date().getFullYear());
-                            </script> ajss.org | All rights reserved
-                            {{-- <div class="col-lg-4 col-md-4 footer-social">
+                    <div class="col-lg-3  col-md-3 col-sm-3">
+                        <div class="single-footer-widget tp_widgets">
+                            <h6 class="footer_title">Publication</h6>
+                            <ul class="list">
+                                <li><a href="#">Charges</a></li>
+                                <li><a href="#">Steps</a></li>
+                                <li><a href="#">Ethics</a></li>
+                                <li><a href="#">Review Process</a></li>
+                                <li><a href="#">Guidelines</a></li>
+                                <li><a href="#">Mode of Payment</a></li>
+                                <li><a href="#">Check Paper Status</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3  col-md-3 col-sm-3">
+                        <div class="single-footer-widget tp_widgets">
+                            <h6 class="footer_title">Special Events</h6>
+                            <ul class="list">
+                                <li><a href="#">Call for Conference</a></li>
+                                <li><a href="#">Future Conference</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3  col-md-3 col-sm-3">
+                        <div class="single-footer-widget tp_widgets">
+                            <h6 class="footer_title">Downloads</h6>
+                            <ul class="list">
+                                <li><a href="#">Copyright Form</a></li>
+                                <li><a href="#">Paper Template</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row footer-bottom d-flex justify-content-between align-items-center">
+                    <p class="col-lg-8 col-md-8 footer-text m-0">
+
+                        Copyright &copy; <script>
+                            document.write(new Date().getFullYear());
+                        </script> ajss.org | All rights reserved
+                        {{-- <div class="col-lg-4 col-md-4 footer-social">
                                 <a href="#"><i class="fa fa-facebook"></i></a>
                                 <a href="#"><i class="fa fa-twitter"></i></a>
                                 <a href="#"><i class="fa fa-dribbble"></i></a>
                                 <a href="#"><i class="fa fa-behance"></i></a>
                             </div> --}}
-                    </div>
                 </div>
-            </footer>
+            </div>
+        </footer>
         <!--================ End footer Area  =================-->
 
         <!--================Contact Success and Error message Area =================-->

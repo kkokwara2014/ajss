@@ -52,7 +52,7 @@
                 </div>
                 <div class="row">
 
-                    <div class="col-lg-8">
+                    <div class="col-lg-9">
                         <p>
                             Please report any difficulty on using the online paper submission
                             or failure in getting acknowledgment letter after 24 hrs
@@ -61,7 +61,7 @@
                         <br>
 
                         <form class="row contact_form" action="" method="post" id="contactForm" novalidate="novalidate">
-                            <div class="col-md-10">
+                            <div class="col-md-12 col-lg-12">
                                 <div class="form-group">
                                     <input type="text" class="form-control" id="name" name="name"
                                         placeholder="Enter your name">
@@ -106,6 +106,9 @@
                             </div>
                         </form>
                     </div>
+                    <div class="col-lg-3 col-sm-3">
+                            @include('layout.rightsidebar')
+                        </div>
                 </div>
             </div>
         </section>

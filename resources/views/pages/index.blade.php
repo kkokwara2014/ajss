@@ -48,11 +48,14 @@
 <!--================Welcome Area =================-->
 <section class="welcome_area pad_btm">
     <div class="container">
+        <div class="welcome_text">
+            <h3>Welcome to AJSSAIFPU</h3>
+        </div>
         <div class="welcome_inner row">
 
             <div class="col-lg-9 col-sm-9" style="text-align: justify">
                 <div class="welcome_text">
-                    <h3>Welcome to AJSSAIFPU</h3>
+                    {{-- <h3>Welcome to AJSSAIFPU</h3> --}}
                     <p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct
                         standards especially in the workplace. That’s why it’s crucial that, as women, our behavior on
                         the job is beyond reproach. inappropriate behavior is often laughed.</p>
@@ -62,37 +65,7 @@
                 </div>
             </div>
             <div class="col-lg-3 col-sm-3">
-                <div>
-                   <h3><span class="fa fa-link"></span> Useful Links</h3>
-                    <hr>
-                    <a href="#"></a>
-
-
-
-                </div>
-                <div>
-                    <h3><span class="fa fa-download"></span> Downloads</h3>
-                    <hr>
-                    <div> <a href="{{asset('downloads/about_authorship.pdf')}}" download="about_authorship.pdf"><span class="fa fa-file-pdf-o" style="color: red"></span> About Authorship</a>
-                    </div>
-                    <div> <a href="#"><span class="fa fa-file-pdf-o" style="color: red"></span> Peer Review</a></div>
-                    <div><a href="#"><span class="fa fa-file-pdf-o" style="color: red"></span> Duplicate Publication</a>
-                    </div>
-                    <div> <a href="#"><span class="fa fa-file-pdf-o" style="color: red"></span> About Plagiarism</a>
-                    </div>
-                    <div> <a href="#"><span class="fa fa-file-pdf-o" style="color: red"></span> Publication Charges</a>
-                    </div>
-                    <div> <a href="#"><span class="fa fa-file-pdf-o" style="color: red"></span> Publication Steps</a>
-                    </div>
-                    <div> <a href="#"><span class="fa fa-file-pdf-o" style="color: red"></span> Publication Ethics</a>
-                    </div>
-                    <div> <a href="#"><span class="fa fa-file-pdf-o" style="color: red"></span> Publication Review Process</a>
-                    </div>
-                    <div> <a href="#"><span class="fa fa-file-pdf-o" style="color: red"></span> Publication Guidelines</a>
-                    </div>
-                    <div> <a href="#"><span class="fa fa-file-pdf-o" style="color: red"></span> Mode of Payment</a>
-                    </div>
-                </div>
+                @include('layout.rightsidebar')
             </div>
         </div>
     </div>

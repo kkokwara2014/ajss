@@ -1,0 +1,19 @@
+-------------------- Auto-Git Log --------------------
+		Mon Aug 12 2019 08:22:50 GMT+0100 (West Africa Standard Time)
+------------------------------------------------------
+
+Modified files:
+* resources/views/pages/index.blade.php
+
+
+Created files:
+* public/downloads/about_authorship.pdf
+* public/downloads/about_duplicate_publication.pdf
+* public/downloads/about_ethics.pdf
+* public/downloads/about_plagiarism.pdf
+
+
+Deleted files:
+
+
+Renamed files:
