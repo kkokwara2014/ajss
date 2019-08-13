@@ -52,6 +52,8 @@ Route::group(['prefix'=>'publication'], function(){
     Route::get('/mode_of_payment','PaperController@modeofpayment')->name('payment.mode');
     Route::get('/check_paper_status','PaperController@paperstatus')->name('paper.status');
     Route::get('/published_paper','PaperController@publishedpaper')->name('published.paper');
+    
+    Route::post('/submit_paper','PaperController@store')->name('submit.paper');
 
 });
 

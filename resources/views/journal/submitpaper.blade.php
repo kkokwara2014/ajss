@@ -59,11 +59,12 @@
                             to <strong>papersubmission@ajssaifpu.org</strong>
                         </p>
                         <br>
-                        
+
                         @include('messages.success')
                         <p></p>
-
-                        <form class="row contact_form" action="" method="post" id="contactForm" novalidate="novalidate">
+                        {{-- id="contactForm" novalidate="novalidate" --}}
+                        <form class="row contact_form" action="{{ route('submit.paper') }}" method="post" enctype="multipart/form-data">
+                            {{ csrf_field() }}
                             <div class="col-md-10 col-lg-10">
                                 <div class="form-group">
                                     <label for="leadauthor">Your Name <i style="color: red">*</i></label>

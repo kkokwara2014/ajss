@@ -15,9 +15,9 @@ class PaperController extends Controller
      */
     public function index()
     {
-        $pageTitle='All Submitted Paper';
+        $pageTitle = 'All Submitted Paper';
 
-        return view('admin.submittedpaper.index',compact('pageTitle'));
+        return view('admin.submittedpaper.index', compact('pageTitle'));
     }
 
     /**
@@ -38,28 +38,38 @@ class PaperController extends Controller
      */
     public function store(Request $request)
     {
-        // $formInput=$request->except('filename');
-        $this->validate($request,[
-            'leadauthor'=>'required',
-            'email'=>'required',
-            'phone'=>'required',
-            'country_id'=>'required',
-            'papertitle'=>'required',
-            'abstract'=>'required',
+        // $title = 'Submit Paper';
+
+        $this->validate($request, [
+            'leadauthor' => 'required',
+            'email' => 'required',
+            'phone' => 'required',
+            'country_id' => 'required',
+            'papertitle' => 'required',
+            'abstract' => 'required',
             'filename' => 'required|file|max:5000|mimes:docx,doc',
         ]);
 
-        $filename=$request->filename;
+        $filename = $request->filename;
         if ($filename) {
-            $sentFilename=$filename->getClientOriginalName();
-            $filename->move('submittedpapers',$sentFilename);
-            $formInput['filename']=$sentFilename;
+            $filenameToStore = time() . '_' . $filename->getClientOriginalName();
+            $filename->move('submittedpapers', $filenameToStore);
         }
 
-        // Paper::create($formInput);
+        //    create an instance of Paper
+        $paper = new Paper;
+        $paper->paper_ref='ajssaifpu_'.rand(55000,99955);
+        $paper->leadauthor=$request->leadauthor;
+        $paper->email=$request->email;
+        $paper->phone=$request->phone;
+        $paper->country_id=$request->country_id;
+        $paper->papertitle=$request->papertitle;
+        $paper->abstract=$request->abstract;
+        $paper->filename=$filenameToStore;
 
-        return redirect()->back()->with('sucsess','Your paper has been submitted successfully!');
+        $paper->save();
 
+        return redirect()->back()->with('sucsess', 'Your paper with ref.'. $paper->paper_ref .' has been submitted successfully!');
     }
 
     /**
@@ -108,43 +118,52 @@ class PaperController extends Controller
     }
 
 
-    public function showSubmitPaperForm(){
-        $title='Submit Paper';
+    public function showSubmitPaperForm()
+    {
+        $title = 'Submit Paper';
 
-        $countries=Country::all();
-        return view('journal.submitpaper', compact('title','countries'));
+        $countries = Country::all();
+        return view('journal.submitpaper', compact('title', 'countries'));
     }
-    public function charges(){
-        $title='Publication Charges';
+    public function charges()
+    {
+        $title = 'Publication Charges';
         return view('journal.charges', compact('title'));
     }
-    public function steps(){
-        $title='Publication Steps';
+    public function steps()
+    {
+        $title = 'Publication Steps';
         return view('journal.steps', compact('title'));
     }
-    public function ethics(){
-        $title='Publication Ethics';
-        return view('journal.ethics',compact('title'));
+    public function ethics()
+    {
+        $title = 'Publication Ethics';
+        return view('journal.ethics', compact('title'));
     }
-    public function reviewprocess(){
-        $title='Publication Review Process';
+    public function reviewprocess()
+    {
+        $title = 'Publication Review Process';
         return view('journal.reviewprocess', compact('title'));
     }
-    public function guidelines(){
-        $title='Publication Guidelines';
-        return view('journal.guidelines',compact('title'));
+    public function guidelines()
+    {
+        $title = 'Publication Guidelines';
+        return view('journal.guidelines', compact('title'));
     }
-    public function modeofpayment(){
-        $title='Mode of Payment';
-        return view('journal.modeofpayment',compact('title'));
+    public function modeofpayment()
+    {
+        $title = 'Mode of Payment';
+        return view('journal.modeofpayment', compact('title'));
     }
-    public function paperstatus(){
-        $title='Check Paper Status';
+    public function paperstatus()
+    {
+        $title = 'Check Paper Status';
         return view('journal.paperstatus', compact('title'));
     }
 
-    public function publishedpaper(){
-        $title='Published Paper';
-        return view('journal.publishedpaper',compact('title'));
+    public function publishedpaper()
+    {
+        $title = 'Published Paper';
+        return view('journal.publishedpaper', compact('title'));
     }
 }
