@@ -13,7 +13,7 @@
         Dear {{ $leadauthor }},<p></p>
         <p>Thank you for your interest in AJSSAIFPU.</p>
         You have successfully submitted a paper titled: <p></p>
-        {{ $papertitled }} <br>
+        {{ $papertitle }} <br>
         
 
         <br>

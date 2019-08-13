@@ -12,8 +12,6 @@ class SubmittedPaper extends Mailable
 {
     use Queueable, SerializesModels;
 
-   
-
     /**
      * Create a new message instance.
      *
@@ -21,7 +19,7 @@ class SubmittedPaper extends Mailable
      */
     public function __construct()
     {
-       
+        //
     }
 
     /**
