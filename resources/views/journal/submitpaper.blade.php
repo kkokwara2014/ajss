@@ -66,76 +66,74 @@
                             to <strong>papersubmission@ajssaifpu.org</strong>
                         </p>
                         <br>
-
-                        @include('messages.success')
+                        <div class="row">
+                            <div class="col-md-10 col-lg-10">
+                                @include('messages.success')
+                            </div>
+                        </div>
                         <p></p>
                         {{-- id="contactForm" novalidate="novalidate" --}}
                         <form class="row contact_form" action="{{ route('submit.paper') }}" method="post"
                             enctype="multipart/form-data">
                             {{ csrf_field() }}
                             <div class="col-md-10 col-lg-10">
-                                <div class="form-group">
+                                <div class="form-group" {{$errors->has('leadauthor')?'has-error':''}}>
                                     <label for="leadauthor">Your Name <i style="color: red">*</i></label>
                                     <input type="text" class="form-control" id="leadauthor" name="leadauthor"
                                         placeholder="Enter Lead Author's Name">
+                                        {!! $errors->first('leadauthor','<p style="color:red">:message</p>') !!}
                                 </div>
-                                <div class="form-group">
+                                <div class="form-group" {{$errors->has('email')?'has-error':''}}>
                                     <label for="email">Your Email Address <i style="color: red">*</i></label>
                                     <input type="email" class="form-control" id="email" name="email"
                                         placeholder="Enter Email address">
+                                        {!! $errors->first('email','<p style="color:red">:message</p>') !!}
                                 </div>
-                                <div class="form-group">
+                                <div class="form-group" {{$errors->has('phone')?'has-error':''}}>
                                     <label for="phone">Your Phone Number <i style="color: red">*</i></label>
                                     <input type="tel" class="form-control" id="phone" name="phone"
-                                        placeholder="Enter Phone Number" maxlength="14">
+                                        placeholder="Enter Phone Number" maxlength="11">
+                                        {!! $errors->first('phone','<p style="color:red">:message</p>') !!}
+                                </div>
+                                <div class="form-group" {{$errors->has('country_id')?'has-error':''}}>
+                                    <label for="country_id">Select Country <i style="color: red">*</i></label>
+                                    <select class="form-control select2" name="country_id">
+                                        <option selected="disabled">Select Country</option>
+                                        @foreach ($countries as $country)
+                                        <option value="{{ $country->id }}">{{ $country->name }}</option>
+                                        @endforeach
+                                    </select>
+                                    {!! $errors->first('country_id','<p style="color:red">:message</p>') !!}
+                                </div>
+                                <!-- /.form-group -->
+                                <div class="form-group" {{$errors->has('papertitle')?'has-error':''}}>
+                                    <label for="name">Your Paper Title <i style="color: red">*</i></label>
+                                    <input type="text" class="form-control" id="papertitle" name="papertitle"
+                                        placeholder="Paper Title">
+                                        {!! $errors->first('papertitle','<p style="color:red">:message</p>') !!}
+                                </div>
+                                <div class="form-group" {{$errors->has('abstract')?'has-error':''}}>
+                                    <label for="name">Your Paper Abstract <i style="color: red">*</i></label>
+                                    <textarea class="form-control" name="abstract" id="abstract" rows="3"
+                                        placeholder="Enter Abstract"></textarea>
+                                        {!! $errors->first('abstract','<p style="color:red">:message</p>') !!}
                                 </div>
 
-                                {{-- <div class="form-group">
-                        <label for="country_id">Select Country <i style="color: red">*</i></label>
-                        <div class="default-select" id="default-select">
-                            <select class="form-control">
-                                <option selected="disabled">Select Country</option>
-                                @foreach ($countries as $country)
-                                <option value="{{ $country->id }}">{{ $country->name }}</option>
-                                @endforeach
-                                </select>
+                                <div class="form-group" {{$errors->has('filename')?'has-error':''}}>
+                                    <p>Upload Paper <i style="color: red">(.doc or .docx max size: 2MB)</i></p>
+                                    <input type="file" name="filename">
+                                    {!! $errors->first('filename','<p style="color:red">:message</p>') !!}
+                                </div>
                             </div>
-                    </div> --}}
-                    <div class="form-group">
-                        <label for="country_id">Select Country <i style="color: red">*</i></label>
-                        <select class="form-control select2" name="country_id">
-                            <option selected="disabled">Select Country</option>
-                            @foreach ($countries as $country)
-                            <option value="{{ $country->id }}">{{ $country->name }}</option>
-                            @endforeach
-                        </select>
+                            <div class="col-md-10 col-lg-10">
+                                <button type="submit" value="submit" class="btn submit_btn">Submit</button>
+                            </div>
+                        </form>
                     </div>
-                    <!-- /.form-group -->
-                    <div class="form-group">
-                        <label for="name">Your Paper Title <i style="color: red">*</i></label>
-                        <input type="text" class="form-control" id="papertitle" name="papertitle"
-                            placeholder="Paper Title">
-                    </div>
-                    <div class="form-group">
-                        <label for="name">Your Paper Abstract <i style="color: red">*</i></label>
-                        <textarea class="form-control" name="abstract" id="abstract" rows="3"
-                            placeholder="Enter Abstract"></textarea>
-                    </div>
-
-                    <div class="form-group">
-                        <p>Upload Paper <i style="color: red">(.doc or .docx max size: 2MB)</i></p>
-                        <input type="file" name="filename">
+                    <div class="col-lg-3 col-sm-3">
+                        @include('layout.rightsidebar')
                     </div>
                 </div>
-                <div class="col-md-10 col-lg-10">
-                    <button type="submit" value="submit" class="btn submit_btn">Submit</button>
-                </div>
-                </form>
-            </div>
-            <div class="col-lg-3 col-sm-3">
-                @include('layout.rightsidebar')
-            </div>
-            </div>
             </div>
         </section>
         <!--================Contact Area =================-->

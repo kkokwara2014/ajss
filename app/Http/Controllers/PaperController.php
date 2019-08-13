@@ -58,7 +58,7 @@ class PaperController extends Controller
 
         //    create an instance of Paper
         $paper = new Paper;
-        $paper->paper_ref='ajssaifpu_'.rand(55000,99955);
+        $paper->paper_ref='ICEIST'.date('Y').'_'.rand(55000,99955);
         $paper->leadauthor=$request->leadauthor;
         $paper->email=$request->email;
         $paper->phone=$request->phone;
@@ -69,7 +69,7 @@ class PaperController extends Controller
 
         $paper->save();
 
-        return redirect()->back()->with('sucsess', 'Your paper with ref.'. $paper->paper_ref .' has been submitted successfully!');
+        return redirect()->back()->with('success', 'Your paper with ref: '. $paper->paper_ref .' has been submitted successfully!');
     }
 
     /**
