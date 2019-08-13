@@ -1,0 +1,23 @@
+-------------------- Auto-Git Log --------------------
+		Tue Aug 13 2019 18:59:13 GMT+0100 (West Africa Standard Time)
+------------------------------------------------------
+
+Modified files:
+* app/Http/Controllers/ConferenceController.php
+* app/Http/Controllers/ContactController.php
+* resources/views/contact/contact.blade.php
+* resources/views/layout/headmenu.blade.php
+* resources/views/layout/rightsidebar.blade.php
+* routes/web.php
+
+
+Created files:
+* .autogit/logs/log-13-7-2019-18-29-5.txt
+* app/Http/Controllers/DownloadController.php
+* resources/views/downloads/moredocs.blade.php
+
+
+Deleted files:
+
+
+Renamed files:
