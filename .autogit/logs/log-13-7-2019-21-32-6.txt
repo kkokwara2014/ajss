@@ -1,0 +1,16 @@
+-------------------- Auto-Git Log --------------------
+		Tue Aug 13 2019 21:32:06 GMT+0100 (West Africa Standard Time)
+------------------------------------------------------
+
+Modified files:
+* resources/views/editorial/editors.blade.php
+
+
+Created files:
+* public/bootstrap_assets/img/nouser_image.jpg
+
+
+Deleted files:
+
+
+Renamed files:
