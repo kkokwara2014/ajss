@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Country;
 use App\Paper;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\SubmittedPaper;
 
 class PaperController extends Controller
 {
@@ -69,7 +71,16 @@ class PaperController extends Controller
 
         $paper->save();
 
+        // send email after sending paper
+        sendEmailAfterPaperSubmission();
+        
+
         return redirect()->back()->with('success', 'Your paper with ref: '. $paper->paper_ref .' has been submitted successfully!');
+    }
+
+    public function sendEmailAfterPaperSubmission($paperId){
+        $paper=Paper::find($paperId);
+        Mail::to($paper->email)->send(new SubmittedPaper($paper));
     }
 
     /**

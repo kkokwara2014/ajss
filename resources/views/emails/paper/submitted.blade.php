@@ -1,7 +1,8 @@
 @component('mail::message')
 Thank you for your interest in AJSSAIFPU.
 
-You have successfully submitted the paper titled:
+You have successfully submitted the paper titled:- <br>
+{{ $paper->papertitle }}
 
 
 @component('mail::button', ['url' => ''])

@@ -1,0 +1,17 @@
+-------------------- Auto-Git Log --------------------
+		Tue Aug 13 2019 14:05:32 GMT+0100 (West Africa Standard Time)
+------------------------------------------------------
+
+Modified files:
+
+
+Created files:
+* .autogit/logs/log-13-7-2019-13-35-26.txt
+* app/Mail/SubmittedPaper.php
+* resources/views/emails/paper/submitted.blade.php
+
+
+Deleted files:
+
+
+Renamed files:
