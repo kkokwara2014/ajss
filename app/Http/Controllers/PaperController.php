@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Country;
+use App\Paper;
 
 class PaperController extends Controller
 {
@@ -37,6 +38,7 @@ class PaperController extends Controller
      */
     public function store(Request $request)
     {
+        // $formInput=$request->except('filename');
         $this->validate($request,[
             'leadauthor'=>'required',
             'email'=>'required',
@@ -44,8 +46,20 @@ class PaperController extends Controller
             'country_id'=>'required',
             'papertitle'=>'required',
             'abstract'=>'required',
-            'filename.*' => 'required|file|max:5000|mimes:docx,doc',
+            'filename' => 'required|file|max:5000|mimes:docx,doc',
         ]);
+
+        $filename=$request->filename;
+        if ($filename) {
+            $sentFilename=$filename->getClientOriginalName();
+            $filename->move('submittedpapers',$sentFilename);
+            $formInput['filename']=$sentFilename;
+        }
+
+        // Paper::create($formInput);
+
+        return redirect()->back()->with('sucsess','Your paper has been submitted successfully!');
+
     }
 
     /**
