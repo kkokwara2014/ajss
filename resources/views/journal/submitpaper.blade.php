@@ -63,7 +63,8 @@
                         @include('messages.success')
                         <p></p>
                         {{-- id="contactForm" novalidate="novalidate" --}}
-                        <form class="row contact_form" action="{{ route('submit.paper') }}" method="post" enctype="multipart/form-data">
+                        <form class="row contact_form" action="{{ route('submit.paper') }}" method="post"
+                            enctype="multipart/form-data">
                             {{ csrf_field() }}
                             <div class="col-md-10 col-lg-10">
                                 <div class="form-group">
@@ -81,43 +82,53 @@
                                     <input type="tel" class="form-control" id="phone" name="phone"
                                         placeholder="Enter Phone Number" maxlength="14">
                                 </div>
-                                <div class="input-group-icon mt-10 form-group">
+                                {{-- <div class="input-group-icon mt-10 form-group">
                                     <div class="icon"><i class="fa fa-globe" aria-hidden="true"></i></div>
                                     <div class="form-select" id="default-select2">
                                         <select name="country_id">
                                             <option selected="disabled">Select Country</option>
                                             @foreach ($countries as $country)
                                             <option value="{{ $country->id }}">{{ $country->name }}</option>
-                                            @endforeach
-                                        </select>
-                                    </div>
-
-                                </div>
-                                <div class="form-group">
-                                    <label for="name">Your Paper Title <i style="color: red">*</i></label>
-                                    <input type="text" class="form-control" id="papertitle" name="papertitle"
-                                        placeholder="Paper Title">
-                                </div>
-                                <div class="form-group">
-                                    <label for="name">Your Paper Abstract <i style="color: red">*</i></label>
-                                    <textarea class="form-control" name="abstract" id="abstract" rows="3"
-                                        placeholder="Enter Abstract"></textarea>
-                                </div>
-
-                                <div class="form-group">
-                                    <p>Upload Paper <i style="color: red">(.doc or .docx max size: 2MB)</i></p>
-                                    <input type="file" name="filename">
-                                </div>
+                                @endforeach
+                                </select>
                             </div>
-                            <div class="col-md-10 col-lg-10">
-                                <button type="submit" value="submit" class="btn submit_btn">Submit</button>
-                            </div>
-                        </form>
+                    </div> --}}
+                    <div class="form-group">
+                        <label for="country_id">Select Country <i style="color: red">*</i></label>
+                        <div class="default-select" id="default-select">
+                            <select class="form-control">
+                                <option selected="disabled">Select Country</option>
+                                @foreach ($countries as $country)
+                                <option value="{{ $country->id }}">{{ $country->name }}</option>
+                                @endforeach
+                            </select>
+                        </div>
                     </div>
-                    <div class="col-lg-3 col-sm-3">
-                        @include('layout.rightsidebar')
+                    <div class="form-group">
+                        <label for="name">Your Paper Title <i style="color: red">*</i></label>
+                        <input type="text" class="form-control" id="papertitle" name="papertitle"
+                            placeholder="Paper Title">
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Your Paper Abstract <i style="color: red">*</i></label>
+                        <textarea class="form-control" name="abstract" id="abstract" rows="3"
+                            placeholder="Enter Abstract"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <p>Upload Paper <i style="color: red">(.doc or .docx max size: 2MB)</i></p>
+                        <input type="file" name="filename">
                     </div>
                 </div>
+                <div class="col-md-10 col-lg-10">
+                    <button type="submit" value="submit" class="btn submit_btn">Submit</button>
+                </div>
+                </form>
+            </div>
+            <div class="col-lg-3 col-sm-3">
+                @include('layout.rightsidebar')
+            </div>
+            </div>
             </div>
         </section>
         <!--================Contact Area =================-->
