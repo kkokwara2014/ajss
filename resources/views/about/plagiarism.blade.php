@@ -113,70 +113,71 @@
 
         <!--================ start footer Area  =================-->
         <footer class="footer-area p_120">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3  col-md-3 col-sm-3">
-                        <div class="single-footer-widget tp_widgets">
-                            <h6 class="footer_title">Useful Links</h6>
-                            <ul class="list">
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">About</a></li>
-                                <li><a href="{{ route('contact.us') }}">Contact</a></li>
-                                <li><a href="#">Editorial</a></li>
-                            </ul>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3  col-md-3 col-sm-3">
+                            <div class="single-footer-widget tp_widgets">
+                                <h6 class="footer_title">Useful Links</h6>
+                                <ul class="list">
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#">Editorial</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3  col-md-3 col-sm-3">
+                            <div class="single-footer-widget tp_widgets">
+                                <h6 class="footer_title">Publication</h6>
+                                <ul class="list">
+                                        <li><a href="#">Charges</a></li>
+                                        <li><a href="#">Steps</a></li>
+                                        <li><a href="#">Ethics</a></li>
+                                        <li><a href="#">Review Process</a></li>
+                                        <li><a href="#">Guidelines</a></li>
+                                        <li><a href="#">Mode of Payment</a></li>
+                                        {{-- <li><a href="#">Check Paper Status</a></li> --}}
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3  col-md-3 col-sm-3">
+                            <div class="single-footer-widget tp_widgets">
+                                <h6 class="footer_title">Special Events</h6>
+                                <ul class="list">
+                                    <li><a href="#">Call for Conference</a></li>
+                                    <li><a href="#">Future Conference</a></li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+            
+                        <div class="col-lg-3  col-md-3 col-sm-3">
+                            <div class="single-footer-widget tp_widgets">
+                                <h6 class="footer_title">Download</h6>
+                                <ul class="list">
+                                    <li><a href="#">Copyright Form</a></li>
+                                    <li><a href="#">Paper Template</a></li>
+                                    <li><a href="#">More Documents</a></li>
+                                    
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-3  col-md-3 col-sm-3">
-                        <div class="single-footer-widget tp_widgets">
-                            <h6 class="footer_title">Publication</h6>
-                            <ul class="list">
-                                <li><a href="#">Charges</a></li>
-                                <li><a href="#">Steps</a></li>
-                                <li><a href="#">Ethics</a></li>
-                                <li><a href="#">Review Process</a></li>
-                                <li><a href="#">Guidelines</a></li>
-                                <li><a href="#">Mode of Payment</a></li>
-                                <li><a href="#">Query Paper Status</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-3  col-md-3 col-sm-3">
-                        <div class="single-footer-widget tp_widgets">
-                            <h6 class="footer_title">Special Events</h6>
-                            <ul class="list">
-                                <li><a href="#">Call for Conference</a></li>
-                                <li><a href="#">Future Conference</a></li>
-
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3  col-md-3 col-sm-3">
-                        <div class="single-footer-widget tp_widgets">
-                            <h6 class="footer_title">Downloads</h6>
-                            <ul class="list">
-                                <li><a href="#">Copyright Form</a></li>
-                                <li><a href="#">Paper Template</a></li>
-
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="row footer-bottom d-flex justify-content-between align-items-center">
-                    <p class="col-lg-8 col-md-8 footer-text m-0">
-
-                        Copyright &copy; <script>
-                            document.write(new Date().getFullYear());
-                        </script> ajss.org | All rights reserved
-                        {{-- <div class="col-lg-4 col-md-4 footer-social">
+                    <div class="row footer-bottom d-flex justify-content-between align-items-center">
+                        <p class="col-lg-8 col-md-8 footer-text m-0">
+            
+                            Copyright &copy; <script>
+                                document.write(new Date().getFullYear());
+                            </script> ajssaifpu.org | All rights reserved
+                            {{-- <div class="col-lg-4 col-md-4 footer-social">
                                 <a href="#"><i class="fa fa-facebook"></i></a>
                                 <a href="#"><i class="fa fa-twitter"></i></a>
                                 <a href="#"><i class="fa fa-dribbble"></i></a>
                                 <a href="#"><i class="fa fa-behance"></i></a>
                             </div> --}}
+                    </div>
                 </div>
-            </div>
-        </footer>
+            </footer>
         <!--================ End footer Area  =================-->
 
         <!-- Optional JavaScript -->

@@ -78,7 +78,7 @@
                                 <ul class="list">
                                     <li><a href="#">Home</a></li>
                                     <li><a href="#">About</a></li>
-                                    <li><a href="{{ route('contact.us') }}">Contact</a></li>
+                                    <li><a href="#">Contact</a></li>
                                     <li><a href="#">Editorial</a></li>
                                 </ul>
                             </div>
@@ -93,7 +93,7 @@
                                         <li><a href="#">Review Process</a></li>
                                         <li><a href="#">Guidelines</a></li>
                                         <li><a href="#">Mode of Payment</a></li>
-                                        <li><a href="#">Query Paper Status</a></li>
+                                        {{-- <li><a href="#">Check Paper Status</a></li> --}}
                                 </ul>
                             </div>
                         </div>
@@ -110,10 +110,11 @@
             
                         <div class="col-lg-3  col-md-3 col-sm-3">
                             <div class="single-footer-widget tp_widgets">
-                                <h6 class="footer_title">Downloads</h6>
+                                <h6 class="footer_title">Download</h6>
                                 <ul class="list">
                                     <li><a href="#">Copyright Form</a></li>
                                     <li><a href="#">Paper Template</a></li>
+                                    <li><a href="#">More Documents</a></li>
                                     
                                 </ul>
                             </div>
@@ -124,7 +125,7 @@
             
                             Copyright &copy; <script>
                                 document.write(new Date().getFullYear());
-                            </script> ajss.org | All rights reserved
+                            </script> ajssaifpu.org | All rights reserved
                             {{-- <div class="col-lg-4 col-md-4 footer-social">
                                 <a href="#"><i class="fa fa-facebook"></i></a>
                                 <a href="#"><i class="fa fa-twitter"></i></a>

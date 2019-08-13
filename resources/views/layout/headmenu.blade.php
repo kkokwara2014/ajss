@@ -7,7 +7,7 @@
                 
                 {{-- <img src="{{asset('bootstrap_assets/img/ajssaifpu_logo.png')}}" alt="" width="50" height="50"> --}}
                 <a class="navbar-brand logo_h" href="{{ route('index') }}"
-                    style="color: whitesmoke; font-weight: bold"><img src="{{asset('bootstrap_assets/img/logoReady.png')}}" alt="" width="60" height="60"></a>
+                    style="color: whitesmoke; font-weight: bold"><img class="img-responsive" src="{{asset('bootstrap_assets/img/logoReady.png')}}" alt="" width="70" height="70"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">

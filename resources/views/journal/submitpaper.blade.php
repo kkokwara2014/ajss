@@ -81,19 +81,19 @@
                                     <label for="leadauthor">Your Name <i style="color: red">*</i></label>
                                     <input type="text" class="form-control" id="leadauthor" name="leadauthor"
                                         placeholder="Enter Lead Author's Name">
-                                        {!! $errors->first('leadauthor','<p style="color:red">:message</p>') !!}
+                                    {!! $errors->first('leadauthor','<p style="color:red">:message</p>') !!}
                                 </div>
                                 <div class="form-group" {{$errors->has('email')?'has-error':''}}>
                                     <label for="email">Your Email Address <i style="color: red">*</i></label>
                                     <input type="email" class="form-control" id="email" name="email"
                                         placeholder="Enter Email address">
-                                        {!! $errors->first('email','<p style="color:red">:message</p>') !!}
+                                    {!! $errors->first('email','<p style="color:red">:message</p>') !!}
                                 </div>
                                 <div class="form-group" {{$errors->has('phone')?'has-error':''}}>
                                     <label for="phone">Your Phone Number <i style="color: red">*</i></label>
                                     <input type="tel" class="form-control" id="phone" name="phone"
                                         placeholder="Enter Phone Number" maxlength="11">
-                                        {!! $errors->first('phone','<p style="color:red">:message</p>') !!}
+                                    {!! $errors->first('phone','<p style="color:red">:message</p>') !!}
                                 </div>
                                 <div class="form-group" {{$errors->has('country_id')?'has-error':''}}>
                                     <label for="country_id">Select Country <i style="color: red">*</i></label>
@@ -110,13 +110,13 @@
                                     <label for="name">Your Paper Title <i style="color: red">*</i></label>
                                     <input type="text" class="form-control" id="papertitle" name="papertitle"
                                         placeholder="Paper Title">
-                                        {!! $errors->first('papertitle','<p style="color:red">:message</p>') !!}
+                                    {!! $errors->first('papertitle','<p style="color:red">:message</p>') !!}
                                 </div>
                                 <div class="form-group" {{$errors->has('abstract')?'has-error':''}}>
                                     <label for="name">Your Paper Abstract <i style="color: red">*</i></label>
                                     <textarea class="form-control" name="abstract" id="abstract" rows="3"
                                         placeholder="Enter Abstract"></textarea>
-                                        {!! $errors->first('abstract','<p style="color:red">:message</p>') !!}
+                                    {!! $errors->first('abstract','<p style="color:red">:message</p>') !!}
                                 </div>
 
                                 <div class="form-group" {{$errors->has('filename')?'has-error':''}}>
@@ -140,70 +140,71 @@
 
         <!--================ start footer Area  =================-->
         <footer class="footer-area p_120">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3  col-md-3 col-sm-3">
-                        <div class="single-footer-widget tp_widgets">
-                            <h6 class="footer_title">Useful Links</h6>
-                            <ul class="list">
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">About</a></li>
-                                <li><a href="{{ route('contact.us') }}">Contact</a></li>
-                                <li><a href="#">Editorial</a></li>
-                            </ul>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3  col-md-3 col-sm-3">
+                            <div class="single-footer-widget tp_widgets">
+                                <h6 class="footer_title">Useful Links</h6>
+                                <ul class="list">
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#">Editorial</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3  col-md-3 col-sm-3">
+                            <div class="single-footer-widget tp_widgets">
+                                <h6 class="footer_title">Publication</h6>
+                                <ul class="list">
+                                        <li><a href="#">Charges</a></li>
+                                        <li><a href="#">Steps</a></li>
+                                        <li><a href="#">Ethics</a></li>
+                                        <li><a href="#">Review Process</a></li>
+                                        <li><a href="#">Guidelines</a></li>
+                                        <li><a href="#">Mode of Payment</a></li>
+                                        {{-- <li><a href="#">Check Paper Status</a></li> --}}
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3  col-md-3 col-sm-3">
+                            <div class="single-footer-widget tp_widgets">
+                                <h6 class="footer_title">Special Events</h6>
+                                <ul class="list">
+                                    <li><a href="#">Call for Conference</a></li>
+                                    <li><a href="#">Future Conference</a></li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+            
+                        <div class="col-lg-3  col-md-3 col-sm-3">
+                            <div class="single-footer-widget tp_widgets">
+                                <h6 class="footer_title">Download</h6>
+                                <ul class="list">
+                                    <li><a href="#">Copyright Form</a></li>
+                                    <li><a href="#">Paper Template</a></li>
+                                    <li><a href="#">More Documents</a></li>
+                                    
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-3  col-md-3 col-sm-3">
-                        <div class="single-footer-widget tp_widgets">
-                            <h6 class="footer_title">Publication</h6>
-                            <ul class="list">
-                                <li><a href="#">Charges</a></li>
-                                <li><a href="#">Steps</a></li>
-                                <li><a href="#">Ethics</a></li>
-                                <li><a href="#">Review Process</a></li>
-                                <li><a href="#">Guidelines</a></li>
-                                <li><a href="#">Mode of Payment</a></li>
-                                <li><a href="#">Check Paper Status</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-3  col-md-3 col-sm-3">
-                        <div class="single-footer-widget tp_widgets">
-                            <h6 class="footer_title">Special Events</h6>
-                            <ul class="list">
-                                <li><a href="#">Call for Conference</a></li>
-                                <li><a href="#">Future Conference</a></li>
-
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3  col-md-3 col-sm-3">
-                        <div class="single-footer-widget tp_widgets">
-                            <h6 class="footer_title">Downloads</h6>
-                            <ul class="list">
-                                <li><a href="#">Copyright Form</a></li>
-                                <li><a href="#">Paper Template</a></li>
-
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="row footer-bottom d-flex justify-content-between align-items-center">
-                    <p class="col-lg-8 col-md-8 footer-text m-0">
-
-                        Copyright &copy; <script>
-                            document.write(new Date().getFullYear());
-                        </script> ajss.org | All rights reserved
-                        {{-- <div class="col-lg-4 col-md-4 footer-social">
+                    <div class="row footer-bottom d-flex justify-content-between align-items-center">
+                        <p class="col-lg-8 col-md-8 footer-text m-0">
+            
+                            Copyright &copy; <script>
+                                document.write(new Date().getFullYear());
+                            </script> ajssaifpu.org | All rights reserved
+                            {{-- <div class="col-lg-4 col-md-4 footer-social">
                                 <a href="#"><i class="fa fa-facebook"></i></a>
                                 <a href="#"><i class="fa fa-twitter"></i></a>
                                 <a href="#"><i class="fa fa-dribbble"></i></a>
                                 <a href="#"><i class="fa fa-behance"></i></a>
                             </div> --}}
+                    </div>
                 </div>
-            </div>
-        </footer>
+            </footer>
         <!--================ End footer Area  =================-->
 
         <!--================Contact Success and Error message Area =================-->
