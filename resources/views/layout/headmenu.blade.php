@@ -19,7 +19,7 @@
                 <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                     <ul class="nav navbar-nav menu_nav ml-auto">
                         <li class="nav-item active"><a class="nav-link" href="{{ route('index') }}"><span
-                                    class="fa fa-home"></span></a></li>
+                                    class="fa fa-home fa-2x"></span></a></li>
                         {{-- <li class="nav-item"><a class="nav-link" href="{{ route('about.us') }}">About</a>
                         </li> --}}
 
