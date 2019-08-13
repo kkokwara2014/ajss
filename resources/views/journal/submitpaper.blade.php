@@ -59,21 +59,24 @@
                             to <strong>papersubmission@ajssaifpu.org</strong>
                         </p>
                         <br>
+                        
+                        @include('messages.success')
+                        <p></p>
 
                         <form class="row contact_form" action="" method="post" id="contactForm" novalidate="novalidate">
                             <div class="col-md-10 col-lg-10">
                                 <div class="form-group">
-                                    <label for="name">Your Name <i style="color: red">*</i></label>
-                                    <input type="text" class="form-control" id="name" name="name"
-                                        placeholder="Enter your name">
+                                    <label for="leadauthor">Your Name <i style="color: red">*</i></label>
+                                    <input type="text" class="form-control" id="leadauthor" name="leadauthor"
+                                        placeholder="Enter Lead Author's Name">
                                 </div>
                                 <div class="form-group">
-                                    <label for="name">Your Email Address <i style="color: red">*</i></label>
+                                    <label for="email">Your Email Address <i style="color: red">*</i></label>
                                     <input type="email" class="form-control" id="email" name="email"
                                         placeholder="Enter Email address">
                                 </div>
                                 <div class="form-group">
-                                    <label for="name">Your Phone Number <i style="color: red">*</i></label>
+                                    <label for="phone">Your Phone Number <i style="color: red">*</i></label>
                                     <input type="tel" class="form-control" id="phone" name="phone"
                                         placeholder="Enter Phone Number" maxlength="14">
                                 </div>

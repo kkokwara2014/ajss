@@ -37,7 +37,15 @@ class PaperController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request,[
+            'leadauthor'=>'required',
+            'email'=>'required',
+            'phone'=>'required',
+            'country_id'=>'required',
+            'papertitle'=>'required',
+            'abstract'=>'required',
+            'filename.*' => 'required|file|max:5000|mimes:docx,doc',
+        ]);
     }
 
     /**
