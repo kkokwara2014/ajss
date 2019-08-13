@@ -48,25 +48,271 @@
         <!--================Welcome Area =================-->
         <section class="welcome_area pad_btm">
             <div class="container">
-                    
+
                 <div class="welcome_inner row" style="margin-top: 50px;">
 
                     <div class="col-lg-9 col-sm-9">
                         <div class="welcome_text">
 
-                                <h3>Editorial Board</h3>
-                                
-                            <p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher
-                                conduct standards especially in the workplace. That’s why it’s crucial that, as women,
-                                our behavior on the job is beyond reproach. inappropriate behavior is often laughed.</p>
-                            <p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher
-                                conduct standards especially in the workplace.</p>
+                            <h3>Editorial Board</h3>
+                            
+
+                            {{-- editorial board members begin here --}}
+                            <div class="row team_inner">
+                                <div class="col-lg-3 col-sm-6"></div>
+                                <div class="col-lg-3 col-sm-6">
+                                    <div class="team_item">
+                                        <div class="team_img">
+                                            <img class="img-fluid"
+                                                src="{{asset('bootstrap_assets/img/nouser_image.jpg')}}" alt="">
+                                            <div class="hover">
+                                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="team_name">
+                                            <h4>Ethel Davis</h4>
+                                            <p>Managing Director (Sales)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+                                    <div class="team_item">
+
+                                        <div class="team_img">
+                                            <img class="img-fluid"
+                                                src="{{asset('bootstrap_assets/img/nouser_image.jpg')}}" alt="">
+                                            <div class="hover">
+                                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="team_name">
+                                            <h4>Ethel Davis</h4>
+                                            <p>Managing Director (Sales)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6"></div>
+                            </div>
+                            <div class="row team_inner">
+                                <div class="col-lg-3 col-sm-6">
+                                    <div class="team_item">
+                                        <div class="team_img">
+                                            <img class="img-fluid"
+                                                src="{{asset('bootstrap_assets/img/nouser_image.jpg')}}" alt="">
+                                            <div class="hover">
+                                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="team_name">
+                                            <h4>Ethel Davis</h4>
+                                            <p>Managing Director (Sales)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+                                    <div class="team_item">
+                                        <div class="team_img">
+                                            <img class="img-fluid"
+                                                src="{{asset('bootstrap_assets/img/nouser_image.jpg')}}" alt="">
+                                            <div class="hover">
+                                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="team_name">
+                                            <h4>Ethel Davis</h4>
+                                            <p>Managing Director (Sales)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+                                    <div class="team_item">
+                                        <div class="team_img">
+                                            <img class="img-fluid"
+                                                src="{{asset('bootstrap_assets/img/nouser_image.jpg')}}" alt="">
+                                            <div class="hover">
+                                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="team_name">
+                                            <h4>Ethel Davis</h4>
+                                            <p>Managing Director (Sales)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+                                    <div class="team_item">
+                                        <div class="team_img">
+                                            <img class="img-fluid"
+                                                src="{{asset('bootstrap_assets/img/nouser_image.jpg')}}" alt="">
+                                            <div class="hover">
+                                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="team_name">
+                                            <h4>Ethel Davis</h4>
+                                            <p>Managing Director (Sales)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row team_inner">
+                                <div class="col-lg-3 col-sm-6">
+                                    <div class="team_item">
+                                        <div class="team_img">
+                                            <img class="img-fluid"
+                                                src="{{asset('bootstrap_assets/img/nouser_image.jpg')}}" alt="">
+                                            <div class="hover">
+                                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="team_name">
+                                            <h4>Ethel Davis</h4>
+                                            <p>Managing Director (Sales)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+                                    <div class="team_item">
+                                        <div class="team_img">
+                                            <img class="img-fluid"
+                                                src="{{asset('bootstrap_assets/img/nouser_image.jpg')}}" alt="">
+                                            <div class="hover">
+                                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="team_name">
+                                            <h4>Ethel Davis</h4>
+                                            <p>Managing Director (Sales)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+                                    <div class="team_item">
+                                        <div class="team_img">
+                                            <img class="img-fluid"
+                                                src="{{asset('bootstrap_assets/img/nouser_image.jpg')}}" alt="">
+                                            <div class="hover">
+                                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="team_name">
+                                            <h4>Ethel Davis</h4>
+                                            <p>Managing Director (Sales)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+                                    <div class="team_item">
+                                        <div class="team_img">
+                                            <img class="img-fluid"
+                                                src="{{asset('bootstrap_assets/img/nouser_image.jpg')}}" alt="">
+                                            <div class="hover">
+                                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="team_name">
+                                            <h4>Ethel Davis</h4>
+                                            <p>Managing Director (Sales)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row team_inner">
+                                <div class="col-lg-3 col-sm-6">
+                                    <div class="team_item">
+                                        <div class="team_img">
+                                            <img class="img-fluid"
+                                                src="{{asset('bootstrap_assets/img/nouser_image.jpg')}}" alt="">
+                                            <div class="hover">
+                                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="team_name">
+                                            <h4>Ethel Davis</h4>
+                                            <p>Managing Director (Sales)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+                                    <div class="team_item">
+                                        <div class="team_img">
+                                            <img class="img-fluid"
+                                                src="{{asset('bootstrap_assets/img/nouser_image.jpg')}}" alt="">
+                                            <div class="hover">
+                                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="team_name">
+                                            <h4>Ethel Davis</h4>
+                                            <p>Managing Director (Sales)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+                                    <div class="team_item">
+                                        <div class="team_img">
+                                            <img class="img-fluid"
+                                                src="{{asset('bootstrap_assets/img/nouser_image.jpg')}}" alt="">
+                                            <div class="hover">
+                                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="team_name">
+                                            <h4>Ethel Davis</h4>
+                                            <p>Managing Director (Sales)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+                                    <div class="team_item">
+                                        <div class="team_img">
+                                            <img class="img-fluid"
+                                                src="{{asset('bootstrap_assets/img/nouser_image.jpg')}}" alt="">
+                                            <div class="hover">
+                                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="team_name">
+                                            <h4>Ethel Davis</h4>
+                                            <p>Managing Director (Sales)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
                         </div>
                     </div>
                     <div class="col-lg-3 col-sm-3">
-                            @include('layout.rightsidebar')
-                        </div>
+                        @include('layout.rightsidebar')
+                    </div>
                 </div>
             </div>
         </section>
