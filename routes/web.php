@@ -21,6 +21,8 @@ Route::group(['prefix'=>'admin','middleware'=>'auth'], function(){
     Route::get('/editor/all','EditorialController@index')->name('admin.editor.all');
     Route::get('/create/editor','EditorialController@create')->name('admin.create.editor');
     Route::get('/save/editor','EditorialController@store')->name('admin.store.editor');
+
+    Route::get('/contact/all','ContactController@index')->name('admin.contact.all');
 });
 
 Auth::routes();

@@ -7,9 +7,9 @@
   <div class="row">
     <!-- Left col -->
     <section class="col-lg-12 connectedSortable">
-      <a href="{{ route('admin.create.editor') }}" class="btn btn-success btn-sm"><span
+      {{-- <a href="{{ route('admin.create.editor') }}" class="btn btn-success btn-sm"><span
           class="fa fa-plus-circle"></span> Create Editor</a>
-      <p></p>
+      <p></p> --}}
       <div class="box">
        
         <!-- /.box-header -->

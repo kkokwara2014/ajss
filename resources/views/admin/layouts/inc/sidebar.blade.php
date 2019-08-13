@@ -23,17 +23,15 @@
 
       {{-- contact area --}}
       <li class="treeview">
-        <a href="#">
-          <i class="fa fa-envelope-o"></i>
-          <span>Contact</span>
+        <a href="{{ route('admin.contact.all') }}">
+          <i class="fa fa-envelope-o"></i><span> Contact</span>
         </a>
       </li>
 
       {{-- Editor area --}}
       <li>
         <a href="{{ route('admin.editor.all') }}">
-          <i class="fa fa-user"></i>
-          <span>Editor</span>
+          <i class="fa fa-user"></i><span> Editor</span>
         </a>
       </li>
 

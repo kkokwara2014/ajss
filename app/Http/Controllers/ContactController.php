@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Contact;
 
 class ContactController extends Controller
 {
@@ -13,7 +14,9 @@ class ContactController extends Controller
      */
     public function index()
     {
-        //
+        $pageTitle='All Contacts';
+        // $contacts=Contact::orderBy('created_at','desc')->get();
+        return view('admin.contact.index',compact('pageTitle'));
     }
 
     /**
