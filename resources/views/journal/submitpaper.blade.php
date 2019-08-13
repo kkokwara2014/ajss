@@ -80,12 +80,11 @@
                                 <div class="input-group-icon mt-10 form-group">
                                     <div class="icon"><i class="fa fa-globe" aria-hidden="true"></i></div>
                                     <div class="form-select" id="default-select2">
-                                        <select name="country">
-                                            <option value="1">Country</option>
-                                            <option value="1">Bangladesh</option>
-                                            <option value="1">India</option>
-                                            <option value="1">England</option>
-                                            <option value="1">Srilanka</option>
+                                        <select name="country_id">
+                                            <option selected="disabled">Select Country</option>
+                                            @foreach ($countries as $country)
+                                            <option value="{{ $country->id }}">{{ $country->name }}</option>
+                                            @endforeach
                                         </select>
                                     </div>
 

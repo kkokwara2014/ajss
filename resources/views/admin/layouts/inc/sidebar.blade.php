@@ -37,7 +37,7 @@
 
       {{-- submitted paper area --}}
       <li class="treeview">
-        <a href="#">
+      <a href="{{ route('admin.submittedpaper.all') }}">
           <i class="fa fa-file-pdf-o"></i>
           <span>Submitted Paper</span>
         </a>
@@ -45,7 +45,7 @@
 
       {{-- future conference area --}}
       <li class="treeview">
-        <a href="#">
+      <a href="{{ route('admin.conference.all') }}">
           <i class="fa fa-bullhorn"></i>
           <span>Future Conference</span>
         </a>

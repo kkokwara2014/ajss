@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Country;
 
 class PaperController extends Controller
 {
@@ -13,7 +14,9 @@ class PaperController extends Controller
      */
     public function index()
     {
-        //
+        $pageTitle='All Submitted Paper';
+
+        return view('admin.submittedpaper.index',compact('pageTitle'));
     }
 
     /**
@@ -85,7 +88,9 @@ class PaperController extends Controller
 
     public function showSubmitPaperForm(){
         $title='Submit Paper';
-        return view('journal.submitpaper', compact('title'));
+
+        $countries=Country::all();
+        return view('journal.submitpaper', compact('title','countries'));
     }
     public function charges(){
         $title='Publication Charges';

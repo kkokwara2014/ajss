@@ -13,8 +13,8 @@ class ConferenceController extends Controller
      */
     public function index()
     {
-        $title='Future Conference';
-        return view('conference.futureconference', compact('title'));
+        $pageTitle='Future Conference';
+        return view('admin.futureconference.index', compact('pageTitle'));
     }
 
     /**
