@@ -42,7 +42,7 @@ class ContactController extends Controller
             'name'=>'required',
             'email'=>'required|email',
             'subject'=>'required',
-            'message'=>'required',
+            'msg'=>'required',
         ]);
 
         $contact=new Contact;

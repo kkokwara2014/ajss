@@ -58,8 +58,8 @@
                                         href="{{ route('guidelines') }}">Guidelines</a></li>
                                 <li class="nav-item"><a class="nav-link" href="{{ route('payment.mode') }}">Mode
                                         of Payment</a></li>
-                                <li class="nav-item"><a class="nav-link"
-                                        href="{{ route('paper.status') }}">Check Paper Status</a></li>
+                                {{-- <li class="nav-item"><a class="nav-link"
+                                        href="{{ route('paper.status') }}">Check Paper Status</a></li> --}}
                             </ul>
                         </li>
                         <li class="nav-item submenu dropdown">
@@ -68,7 +68,7 @@
                             <ul class="dropdown-menu">
                                 <li class="nav-item"><a class="nav-link" href="#">Copyright Form</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#">Paper Template</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">More Documents</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{{ route('download.more') }}">More Documents</a></li>
                             </ul>
                         </li>
 

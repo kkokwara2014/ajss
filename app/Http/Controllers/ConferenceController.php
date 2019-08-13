@@ -87,6 +87,10 @@ class ConferenceController extends Controller
         $title='Call For Paper';
         return view('conference.callforpaper', compact('title'));
     }
+    public function futureconference(){
+        $title='Future Conference';
+        return view('conference.futureconference', compact('title'));
+    }
 
 
 }
