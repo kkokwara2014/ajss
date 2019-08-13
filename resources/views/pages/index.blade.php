@@ -92,8 +92,8 @@
                     <div style="text-align: justify">
                         AJSSAIFPU ensure that other activities which promote sharing of quality 
                         research work keep happening throughotu the year. You can visit our 
-                        <a href="{{ route('callforpaper') }}" class="btn btn-info btn-sm"> Call for Conference</a> page or 
-                        <a href="{{ route('futureconference') }}" class="btn btn-info btn-sm"> Future Conference</a> page <br>
+                        <a href="{{ route('callforpaper') }}" class="badge badge-info"> Call for Conference</a> page or 
+                        <a href="{{ route('futureconference') }}" class="badge badge-info"> Future Conference</a> page <br>
                         to get more information.
                     </div>
                 </div>
