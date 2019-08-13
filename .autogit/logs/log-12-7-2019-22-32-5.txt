@@ -1,0 +1,20 @@
+-------------------- Auto-Git Log --------------------
+		Mon Aug 12 2019 22:32:05 GMT+0100 (West Africa Standard Time)
+------------------------------------------------------
+
+Modified files:
+* resources/views/admin/editor/create.blade.php
+* resources/views/admin/editor/index.blade.php
+* resources/views/admin/layouts/inc/footer.blade.php
+* resources/views/layout/headmenu.blade.php
+
+
+Created files:
+* .autogit/logs/log-12-7-2019-22-1-46.txt
+* public/bootstrap_assets/img/ajssaifpu_logo.png
+
+
+Deleted files:
+
+
+Renamed files:
