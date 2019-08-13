@@ -49,24 +49,65 @@
         <!--================Welcome Area =================-->
         <section class="welcome_area pad_btm">
             <div class="container">
-                    
-                    <div class="welcome_inner row" style="margin-top: 50px;">
-                            
-                            <div class="col-lg-9 col-sm-9">
-                                <div class="welcome_text">
-                                        <h3>Publication Review Process</h3>
 
-                            <p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher
-                                conduct standards especially in the workplace. That’s why it’s crucial that, as women,
-                                our behavior on the job is beyond reproach. inappropriate behavior is often laughed.</p>
-                            <p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher
-                                conduct standards especially in the workplace.</p>
+                <div class="welcome_inner row" style="margin-top: 50px;">
+
+                    <div class="col-lg-9 col-sm-9">
+                        <div class="welcome_text">
+                            <h3>Publication Review Process</h3>
+
+                            <p style="text-align: justify">
+                                When a paper arrives at a journal's editorial office a few things can happen:
+                                <br>
+                                A. Editor in Chief reviews paper herself/himself
+                               <br>
+                                B. Editor in Chief assigns to Associate Editor 
+                                <br>
+                                C. Editor or AE assigns to Peer Reviewers
+                                <br><br>
+                                Editors in Chief /Associate Editors look for: <br>
+                                1. Appropriateness for the journal <br>
+                                Is the topic relevant to the journal?<br>
+                                Is the topic timely?<br>
+                                Is the topic significant?<br>
+                                Is the study unique? If so, How?<br><br>
+                                2. What type of paper/research is it?<br>
+                                If research, how is it structured?<br>
+                                Randomized, controlled, blinded Meta-analysis? <br> 
+                                Retrospective?
+                                Case series or single case <br><br>
+                                3. Did the author follow the instructions of the journal? <br>
+                                Correct Number of Authors? <br>
+                                Conflict of Interest/Disclosure Statement? <br>
+
+                                Copyright release signed? <br>
+                                Informed consent (if applicable)/Ethics considerations <br><br>
+                                4. Did the author follow the Instructions of the journal? <br>
+                                Is the article format correct? <br>
+                                Structured abstract? <br>
+                                Correct article format (Abstract, Introduction, Methods, Results,
+                                Discussion, Conclusion, Refs?) <br>
+                                Are References in correct format? Peer Reviewers look for: <br>
+                                1. Are the technical aspects correct? <br>
+                                Research Structure: <br>
+                                Correctly described and performed? <br>
+                                Statistics:
+                                Correct analysis? <br> Accurate interpretation? <br> Clear presentation
+                                Tables and Figures: <br>
+                                Accurate and clear structure, presentation, and presentation? <br>
+                                Do the numbers add up? <br>
+                                Are the data consistent with the body of the paper? <br>
+                                Abstract & Body of paper <br>
+                                Do number of patients, other data match? Conclusions consistent? <br>
+                               
+
+                            </p>
 
                         </div>
                     </div>
                     <div class="col-lg-3 col-sm-3">
-                            @include('layout.rightsidebar')
-                        </div>
+                        @include('layout.rightsidebar')
+                    </div>
                 </div>
             </div>
         </section>

@@ -23,7 +23,7 @@
     <body>
 
         <!--================Header Menu Area =================-->
-        @include('layout.headmenu')	
+        @include('layout.headmenu')
         <!--================Header Menu Area =================-->
 
         <!--================Home Banner Area =================-->
@@ -48,22 +48,41 @@
         <!--================Welcome Area =================-->
         <section class="welcome_area pad_btm">
             <div class="container">
-                   
+
                 <div class="welcome_inner row" style="margin-top: 50px;">
 
                     <div class="col-lg-9 col-sm-9">
                         <div class="welcome_text">
-                                <h3>About Peer Review</h3>
+                            <h3>About Peer Review</h3>
 
                             <p style="text-align: justify">
-                            AJSSAIFPU 
+                                AJSSAIFPU aims at rapid publication of high quality research
+                                while maintaining rigorous but sympathetic peer-review process.
+                                Manuscript (other than those that are of insufficient quality or unlikely
+                                be competitive enough for publication) will be peer-reviewed by two or more experts
+                                in the fields and a decision is returned to the authors in about one month.
+                                If due to special circumstance, the review process takes more time, authors
+                                will be informed by email. Manuscripts with significant 
+                                results will be reviewed and published at the highest priority and speed.
+                                Possible decisions on a manuscript are:
+                            </p>
+                            <ul>
+                                <li>accepted as it is</li>
+                                <li>accepted after minor revision</li>
+                                <li>accepted after major revision</li>
+                                <li>rejected</li>
+                            </ul>
+                            <p style="text-align: justify">
+                            If minor revision is required, authors should return a revised version as soon as possible
+                            within 15 days. If major revision is required, authors should return a revised version
+                             within 25 days.
                             </p>
 
                         </div>
                     </div>
                     <div class="col-lg-3 col-sm-3">
-                            @include('layout.rightsidebar')
-                        </div>
+                        @include('layout.rightsidebar')
+                    </div>
                 </div>
             </div>
         </section>

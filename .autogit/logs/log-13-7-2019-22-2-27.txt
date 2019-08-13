@@ -1,0 +1,17 @@
+-------------------- Auto-Git Log --------------------
+		Tue Aug 13 2019 22:02:27 GMT+0100 (West Africa Standard Time)
+------------------------------------------------------
+
+Modified files:
+* resources/views/about/peerreview.blade.php
+* resources/views/editorial/editors.blade.php
+
+
+Created files:
+* .autogit/logs/log-13-7-2019-21-32-6.txt
+
+
+Deleted files:
+
+
+Renamed files:

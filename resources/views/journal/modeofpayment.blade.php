@@ -56,11 +56,13 @@
                                 <div class="welcome_text">
                                         <h3>Mode of Payment</h3>
 
-                            <p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher
-                                conduct standards especially in the workplace. That’s why it’s crucial that, as women,
-                                our behavior on the job is beyond reproach. inappropriate behavior is often laughed.</p>
-                            <p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher
-                                conduct standards especially in the workplace.</p>
+                            <p style="text-align: justify">
+                            All payments should be made into the following bank account:
+                            </p>
+                            <br>
+                            <div><strong>Account Name : School of Science Conference 2016</strong></div>
+                            <div><strong>Bank : Fidelity Bank Plc.</strong></div>
+                            <div><strong>Account Number : 6060169728</strong></div>
 
                         </div>
                     </div>
@@ -160,7 +162,4 @@
         <!--gmaps Js-->
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
         <script src="{{asset('bootstrap_assets/js/gmaps.min.js')}}"></script>
-        <script src="{{asset('bootstrap_assets/js/theme.js')}}"></script>
-    </body>
-
-</html>
+        <scr
