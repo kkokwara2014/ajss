@@ -18,6 +18,13 @@
         <!-- main css -->
         <link rel="stylesheet" href="{{asset('bootstrap_assets/css/style.css')}}">
         <link rel="stylesheet" href="{{asset('bootstrap_assets/css/responsive.css')}}">
+
+        <!-- Bootstrap 3.3.7 -->
+        {{-- <link rel="stylesheet" href="{{asset('admin_assets/bower_components/bootstrap/dist/css/bootstrap.min.css')}}">
+        --}}
+
+        <!-- Select2 -->
+        <link rel="stylesheet" href="{{asset('admin_assets/bower_components/select2/dist/css/select2.min.css')}}">
     </head>
 
     <body>
@@ -82,18 +89,8 @@
                                     <input type="tel" class="form-control" id="phone" name="phone"
                                         placeholder="Enter Phone Number" maxlength="14">
                                 </div>
-                                {{-- <div class="input-group-icon mt-10 form-group">
-                                    <div class="icon"><i class="fa fa-globe" aria-hidden="true"></i></div>
-                                    <div class="form-select" id="default-select2">
-                                        <select name="country_id">
-                                            <option selected="disabled">Select Country</option>
-                                            @foreach ($countries as $country)
-                                            <option value="{{ $country->id }}">{{ $country->name }}</option>
-                                @endforeach
-                                </select>
-                            </div>
-                    </div> --}}
-                    <div class="form-group">
+
+                                {{-- <div class="form-group">
                         <label for="country_id">Select Country <i style="color: red">*</i></label>
                         <div class="default-select" id="default-select">
                             <select class="form-control">
@@ -101,9 +98,19 @@
                                 @foreach ($countries as $country)
                                 <option value="{{ $country->id }}">{{ $country->name }}</option>
                                 @endforeach
-                            </select>
-                        </div>
+                                </select>
+                            </div>
+                    </div> --}}
+                    <div class="form-group">
+                        <label for="country_id">Select Country <i style="color: red">*</i></label>
+                        <select class="form-control select2" name="country_id">
+                            <option selected="disabled">Select Country</option>
+                            @foreach ($countries as $country)
+                            <option value="{{ $country->id }}">{{ $country->name }}</option>
+                            @endforeach
+                        </select>
                     </div>
+                    <!-- /.form-group -->
                     <div class="form-group">
                         <label for="name">Your Paper Title <i style="color: red">*</i></label>
                         <input type="text" class="form-control" id="papertitle" name="papertitle"
@@ -259,6 +266,28 @@
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
         <script src="{{asset('bootstrap_assets/js/gmaps.min.js')}}"></script>
         <script src="{{asset('bootstrap_assets/js/theme.js')}}"></script>
+
+        <!-- jQuery 3 -->
+        <script src="{{asset('admin_assets/bower_components/jquery/dist/jquery.min.js')}}"></script>
+        <!-- Bootstrap 3.3.7 -->
+        <script src="{{asset('admin_assets/bower_components/bootstrap/dist/js/bootstrap.min.js')}}"></script>
+        <!-- Select2 -->
+        <script src="{{asset('admin_assets/bower_components/select2/dist/js/select2.full.min.js')}}"></script>
+
+        <!-- SlimScroll -->
+        <script src="{{asset('admin_assets/bower_components/jquery-slimscroll/jquery.slimscroll.min.js')}}"></script>
+
+        <!-- FastClick -->
+        <script src="{{asset('admin_assets/bower_components/fastclick/lib/fastclick.js')}}"></script>
+        <!-- AdminLTE for demo purposes -->
+        <script src="{{asset('admin_assets/dist/js/demo.js')}}"></script>
+        <!-- Page script -->
+        <script>
+            $(function () {
+    //Initialize Select2 Elements
+    $('.select2').select2()
+  })
+        </script>
     </body>
 
 </html>
