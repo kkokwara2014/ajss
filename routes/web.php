@@ -38,7 +38,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/logout', 'Auth\LoginController@logout')->name('logout');
 
 Route::get('/','PagesController@index')->name('index');
+
 Route::get('contact','ContactController@showContactUsPage')->name('contact.us');
+Route::post('contact','ContactController@store')->name('contact.store');
 
 Route::get('editorial','EditorialController@showEditors')->name('editors');
 
