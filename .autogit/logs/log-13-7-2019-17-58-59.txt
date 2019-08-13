@@ -1,0 +1,25 @@
+-------------------- Auto-Git Log --------------------
+		Tue Aug 13 2019 17:58:59 GMT+0100 (West Africa Standard Time)
+------------------------------------------------------
+
+Modified files:
+* app/Http/Controllers/PaperController.php
+* app/Mail/SubmittedPaper.php
+* config/mail.php
+* resources/views/emails/paper/submitted.blade.php
+
+
+Created files:
+* .autogit/logs/log-13-7-2019-17-28-51.txt
+* public/submittedpapers/1565713813_MrObuma.docx
+* public/submittedpapers/1565713868_MrObuma.docx
+* "public/submittedpapers/1565713955_BHM Manual.docx"
+* "public/submittedpapers/1565714389_BHM Manual.docx"
+* "public/submittedpapers/1565714637_BHM Manual.docx"
+* "public/submittedpapers/1565714925_Best Letter of Interest Format.docx"
+
+
+Deleted files:
+
+
+Renamed files:

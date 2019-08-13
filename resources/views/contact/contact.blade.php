@@ -69,8 +69,8 @@
                             <div class="info_item">
                                 <i class="lnr lnr-map-marker"></i>
                                 <h6><a href="#">Akanu Ibiam Fed. Poly. Unwana,
-                                Afikpo. Ebonyi State, Nigeria.    
-                                </a></h6>
+                                        Afikpo. Ebonyi State, Nigeria.
+                                    </a></h6>
                                 <p>Visit us</p>
                             </div>
                         </div>
@@ -79,24 +79,29 @@
                         @include('messages.success')
                         <p></p>
                         {{-- novalidate="novalidate" --}}
-                    <form class="row contact_form" action="{{ route('contact.store') }}" method="post">
-                        {{ csrf_field() }}
+                        <form class="row contact_form" action="{{ route('contact.store') }}" method="post">
+                            {{ csrf_field() }}
                             <div class="col-md-12 col-lg-12">
-                                <div class="form-group">
+                                <div class="form-group" {{$errors->has('name')?'has-error':''}}>
                                     <input type="text" class="form-control" id="name" name="name"
                                         placeholder="Enter your name">
+                                    {!! $errors->first('name','<p style="color:red">:message</p>') !!}
                                 </div>
-                                <div class="form-group">
+                                <div class="form-group" {{$errors->has('email')?'has-error':''}}>
                                     <input type="email" class="form-control" id="email" name="email"
                                         placeholder="Enter email address">
+                                    {!! $errors->first('email','<p style="color:red">:message</p>') !!}
                                 </div>
-                                <div class="form-group">
+                                <div class="form-group" {{$errors->has('subject')?'has-error':''}}>
                                     <input type="text" class="form-control" id="subject" name="subject"
                                         placeholder="Enter Subject">
+                                    {!! $errors->first('subject','<p style="color:red">:message</p>') !!}
                                 </div>
-                                <div class="form-group">
-                                    <textarea class="form-control" name="message" id="message" rows="1"
-                                        placeholder="Enter Message"></textarea>
+                                <div class="form-group" {{$errors->has('msg')?'has-error':''}}>
+                                    <textarea class="form-control" name="msg" id="message" rows="1"
+                                        placeholder="Enter Message">
+                                    </textarea><p></p>
+                                    {!! $errors->first('msg','<p style="color:red">:message</p>') !!}
                                 </div>
                                 <div>
                                     <button type="submit" value="submit" class="btn submit_btn">Send Message</button>
