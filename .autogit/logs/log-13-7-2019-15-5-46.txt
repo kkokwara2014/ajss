@@ -1,0 +1,21 @@
+-------------------- Auto-Git Log --------------------
+		Tue Aug 13 2019 15:05:46 GMT+0100 (West Africa Standard Time)
+------------------------------------------------------
+
+Modified files:
+* app/Http/Controllers/PaperController.php
+
+
+Created files:
+* .autogit/logs/log-13-7-2019-14-35-40.txt
+* "public/submittedpapers/1565703930_BHM Manual.docx"
+* "public/submittedpapers/1565704552_BHM Manual.docx"
+* "public/submittedpapers/1565704679_BHM Manual.docx"
+* "public/submittedpapers/1565704725_BHM Manual.docx"
+* public/submittedpapers/1565704953_MrObuma.docx
+
+
+Deleted files:
+
+
+Renamed files:
