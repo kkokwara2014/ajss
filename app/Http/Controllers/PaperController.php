@@ -69,19 +69,23 @@ class PaperController extends Controller
         $paper->abstract=$request->abstract;
         $paper->filename=$filenameToStore;
 
-        $paper->save();
+        // $paper->save();
 
-        // send email after sending paper
-        sendEmailAfterPaperSubmission();
-        
+        if ($paper->save()) {
+            // send email after sending paper
+            // $paperId=Paper::find($paper->id);
+            // $this->sendEmailAfterPaperSubmission($paperId);
+            Mail::to($request->email)->send(new SubmittedPaper($paper));
+            
+        }
 
         return redirect()->back()->with('success', 'Your paper with ref: '. $paper->paper_ref .' has been submitted successfully!');
     }
 
-    public function sendEmailAfterPaperSubmission($paperId){
-        $paper=Paper::find($paperId);
-        Mail::to($paper->email)->send(new SubmittedPaper($paper));
-    }
+    // public function sendEmailAfterPaperSubmission($paperId){
+    //     $paper=Paper::find($paperId);
+    //     Mail::to($paper->email)->send(new SubmittedPaper($paper));
+    // }
 
     /**
      * Display the specified resource.
