@@ -47,7 +47,14 @@ class ContactController extends Controller
 
         $contact=new Contact;
 
-        
+        $contact->name=$request->name;
+        $contact->email=$request->email;
+        $contact->subject=$request->subject;
+        $contact->message=$request->message;
+
+        $contact->save();
+
+        return redirect()->back()->with('success','Your message has been sent successfully! Thank you.');
     }
 
     /**

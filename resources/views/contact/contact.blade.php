@@ -76,10 +76,11 @@
                         </div>
                     </div>
                     <div class="col-lg-6 col-sm-6">
-                        @include('message.success')
+                        @include('messages.success')
                         <p></p>
                         {{-- novalidate="novalidate" --}}
                     <form class="row contact_form" action="{{ route('contact.store') }}" method="post">
+                        {{ csrf_field() }}
                             <div class="col-md-12 col-lg-12">
                                 <div class="form-group">
                                     <input type="text" class="form-control" id="name" name="name"
