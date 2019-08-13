@@ -60,26 +60,23 @@ class PaperController extends Controller
 
         //    create an instance of Paper
         $paper = new Paper;
-        $paper->paper_ref='ICEIST'.date('Y').'_'.rand(55000,99955);
-        $paper->leadauthor=$request->leadauthor;
-        $paper->email=$request->email;
-        $paper->phone=$request->phone;
-        $paper->country_id=$request->country_id;
-        $paper->papertitle=$request->papertitle;
-        $paper->abstract=$request->abstract;
-        $paper->filename=$filenameToStore;
+        $paper->paper_ref = 'ICEIST' . date('Y') . '_' . rand(55000, 99955);
+        $paper->leadauthor = $request->leadauthor;
+        $paper->email = $request->email;
+        $paper->phone = $request->phone;
+        $paper->country_id = $request->country_id;
+        $paper->papertitle = $request->papertitle;
+        $paper->abstract = $request->abstract;
+        $paper->filename = $filenameToStore;
 
-        // $paper->save();
+        $paperSaved = $paper->save();
 
-        if ($paper->save()) {
-            // send email after sending paper
-            // $paperId=Paper::find($paper->id);
-            // $this->sendEmailAfterPaperSubmission($paperId);
-            Mail::to($request->email)->send(new SubmittedPaper($paper));
-            
+        if ($paperSaved) {
+
+            Mail::send(new SubmittedPaper);
         }
 
-        return redirect()->back()->with('success', 'Your paper with ref: '. $paper->paper_ref .' has been submitted successfully!');
+        return redirect()->back()->with('success', 'Your paper with ref: ' . $paper->paper_ref . ' has been submitted successfully!');
     }
 
     /**

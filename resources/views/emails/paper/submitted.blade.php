@@ -1,14 +1,27 @@
-@component('mail::message')
-Thank you for your interest in AJSSAIFPU.
+<!DOCTYPE html>
+<html lang="en">
 
-You have successfully submitted the paper titled:- <br>
-{{ $paper->papertitle }}
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title></title>
+    </head>
 
+    <body>
+        <br>
+        Dear {{ $leadauthor }},<p></p>
+        <p>Thank you for your interest in AJSSAIFPU.</p>
+        You have successfully submitted a paper titled: <p></p>
+        {{ $papertitled }} <br>
+        
 
-@component('mail::button', ['url' => ''])
-Button Text
-@endcomponent
+        <br>
+        <br>
+        Thank you.
 
-Thanks,<br>
-{{ config('app.name') }}
-@endcomponent
+        <br><br>
+        Editorial Team.
+    </body>
+
+</html>
