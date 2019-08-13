@@ -81,72 +81,7 @@
                 the difference in price.
                 You may see some for as low as $.17 each.</div>
         </div>
-        <div class="row team_inner">
-            <div class="col-lg-3 col-sm-6">
-                <div class="team_item">
-                    <div class="team_img">
-                        <img class="img-fluid" src="{{asset('bootstrap_assets/img/team/team-1.jpg')}}" alt="">
-                        <div class="hover">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-linkedin"></i></a>
-                        </div>
-                    </div>
-                    <div class="team_name">
-                        <h4>Ethel Davis</h4>
-                        <p>Managing Director (Sales)</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-                <div class="team_item">
-                    <div class="team_img">
-                        <img class="img-fluid" src="{{asset('bootstrap_assets/img/team/team-2.jpg')}}" alt="">
-                        <div class="hover">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-linkedin"></i></a>
-                        </div>
-                    </div>
-                    <div class="team_name">
-                        <h4>Ethel Davis</h4>
-                        <p>Managing Director (Sales)</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-                <div class="team_item">
-                    <div class="team_img">
-                        <img class="img-fluid" src="{{asset('bootstrap_assets/img/team/team-3.jpg')}}" alt="">
-                        <div class="hover">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-linkedin"></i></a>
-                        </div>
-                    </div>
-                    <div class="team_name">
-                        <h4>Ethel Davis</h4>
-                        <p>Managing Director (Sales)</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-                <div class="team_item">
-                    <div class="team_img">
-                        <img class="img-fluid" src="{{asset('bootstrap_assets/img/team/team-4.jpg')}}" alt="">
-                        <div class="hover">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-linkedin"></i></a>
-                        </div>
-                    </div>
-                    <div class="team_name">
-                        <h4>Ethel Davis</h4>
-                        <p>Managing Director (Sales)</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
     </div>
 </section>
 <!--================End Editorial Board Area =================-->

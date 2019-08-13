@@ -62,7 +62,7 @@
                             <br>
                             <div><strong>Account Name : School of Science Conference 2016</strong></div>
                             <div><strong>Bank : Fidelity Bank Plc.</strong></div>
-                            <div><strong>Account Number : 6060169728</strong></div>
+                            <div><strong>Account Number : 6060-169-728</strong></div>
 
                         </div>
                     </div>
@@ -162,4 +162,7 @@
         <!--gmaps Js-->
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
         <script src="{{asset('bootstrap_assets/js/gmaps.min.js')}}"></script>
-        <scr
+        <script src="{{asset('bootstrap_assets/js/theme.js')}}"></script>
+    </body>
+
+</html>

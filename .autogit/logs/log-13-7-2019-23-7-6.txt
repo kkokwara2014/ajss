@@ -1,0 +1,20 @@
+-------------------- Auto-Git Log --------------------
+		Tue Aug 13 2019 23:07:06 GMT+0100 (West Africa Standard Time)
+------------------------------------------------------
+
+Modified files:
+* resources/views/about/peerreview.blade.php
+* resources/views/journal/modeofpayment.blade.php
+* resources/views/journal/reviewprocess.blade.php
+* resources/views/layout/headmenu.blade.php
+
+
+Created files:
+* .autogit/logs/log-13-7-2019-22-2-27.txt
+* public/bootstrap_assets/img/logoReady.png
+
+
+Deleted files:
+
+
+Renamed files:

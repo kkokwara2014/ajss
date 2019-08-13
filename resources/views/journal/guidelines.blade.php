@@ -56,11 +56,7 @@
                                 <div class="welcome_text">
                                         <h3>Publication Guidelines</h3>
 
-                            <p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher
-                                conduct standards especially in the workplace. That’s why it’s crucial that, as women,
-                                our behavior on the job is beyond reproach. inappropriate behavior is often laughed.</p>
-                            <p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher
-                                conduct standards especially in the workplace.</p>
+                            <blockquote>Coming soon!</blockquote>
 
                         </div>
                     </div>

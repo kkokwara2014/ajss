@@ -55,11 +55,26 @@
                         <div class="welcome_text">
                             <h3>About Duplicate Publication</h3>
 
-                            <p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher
-                                conduct standards especially in the workplace. That’s why it’s crucial that, as women,
-                                our behavior on the job is beyond reproach. inappropriate behavior is often laughed.</p>
-                            <p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher
-                                conduct standards especially in the workplace.</p>
+                            <p style="text-align: justify">
+                                Material submitted to AJSSAIFPU must be original and not published or
+                                submitted for publication elsewhere. Authors submitting a contribution to
+                                the Journal who have related materials under consideration or in press elsewhere
+                                should upload a clearly marked copy at the time of submission and draw the Editor's
+                                attention to it in their cover letter.
+                                If a part of contribution that an author wishes to submit to the Journal has appeared
+                                 or will appear elsewhere, the author must specify the details in the cover letter.
+                                  Consideration by the AJSSAIFPU is possible if the main result, conclusion, or 
+                                  publications are apparent from the other work, or if there are other factors, 
+                                  for example, if the other work is published in a language other than English. 
+                        
+                            </p>
+                            <p style="text-align: justify">
+                            Author is responsible to get permission from previous publisher or 
+                            copyright holder if an author is reusing any part of paper (i.e figure or figures) 
+                            published elsewhere, or that is copyrighted. <br>
+                            The Editors consider all materials in good faith that their journals have full permission
+                             to publish every part of the submitted material including illustration.
+                            </p>
 
                         </div>
                     </div>
