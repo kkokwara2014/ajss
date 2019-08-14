@@ -56,11 +56,7 @@
                                 <div class="welcome_text">
                                         <h3>Publication Steps</h3>
 
-                            <p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher
-                                conduct standards especially in the workplace. That’s why it’s crucial that, as women,
-                                our behavior on the job is beyond reproach. inappropriate behavior is often laughed.</p>
-                            <p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher
-                                conduct standards especially in the workplace.</p>
+                            <p style="text-align: justify">Coming soon!</p>
 
                         </div>
                     </div>
@@ -74,72 +70,7 @@
 
 
         <!--================ start footer Area  =================-->
-        <footer class="footer-area p_120">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-3  col-md-3 col-sm-3">
-                            <div class="single-footer-widget tp_widgets">
-                                <h6 class="footer_title">Useful Links</h6>
-                                <ul class="list">
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">About</a></li>
-                                    <li><a href="#">Contact</a></li>
-                                    <li><a href="#">Editorial</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-3  col-md-3 col-sm-3">
-                            <div class="single-footer-widget tp_widgets">
-                                <h6 class="footer_title">Publication</h6>
-                                <ul class="list">
-                                        <li><a href="#">Charges</a></li>
-                                        <li><a href="#">Steps</a></li>
-                                        <li><a href="#">Ethics</a></li>
-                                        <li><a href="#">Review Process</a></li>
-                                        <li><a href="#">Guidelines</a></li>
-                                        <li><a href="#">Mode of Payment</a></li>
-                                        {{-- <li><a href="#">Check Paper Status</a></li> --}}
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-3  col-md-3 col-sm-3">
-                            <div class="single-footer-widget tp_widgets">
-                                <h6 class="footer_title">Special Events</h6>
-                                <ul class="list">
-                                    <li><a href="#">Call for Conference</a></li>
-                                    <li><a href="#">Future Conference</a></li>
-                                    
-                                </ul>
-                            </div>
-                        </div>
-            
-                        <div class="col-lg-3  col-md-3 col-sm-3">
-                            <div class="single-footer-widget tp_widgets">
-                                <h6 class="footer_title">Download</h6>
-                                <ul class="list">
-                                    <li><a href="#">Copyright Form</a></li>
-                                    <li><a href="#">Paper Template</a></li>
-                                    <li><a href="#">More Documents</a></li>
-                                    
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row footer-bottom d-flex justify-content-between align-items-center">
-                        <p class="col-lg-8 col-md-8 footer-text m-0">
-            
-                            Copyright &copy; <script>
-                                document.write(new Date().getFullYear());
-                            </script> ajssaifpu.org | All rights reserved
-                            {{-- <div class="col-lg-4 col-md-4 footer-social">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-dribbble"></i></a>
-                                <a href="#"><i class="fa fa-behance"></i></a>
-                            </div> --}}
-                    </div>
-                </div>
-            </footer>
+        @include('layout.footerwriteup')
         <!--================ End footer Area  =================-->
 
         <!-- Optional JavaScript -->
