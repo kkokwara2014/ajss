@@ -75,11 +75,18 @@
                                                         THEME : INNOVATIONS IN SCIENCE AND TECHNOLOGY: A TOOL FOR ECONOMIC DIVERSIFICATION.
                                                     </h4>
                                                     <p style="text-align: justify">
-                                                        <div><span class="fa fa-clock-o fa-2x"></span> </div>
+                                                            <div><span class="fa fa-calendar-check-o fa-2x"></span> 
+                                                                Wed. 9th - Fri. 11th Octorber, 2019. 
+                                                            </div> <br>
+                                                            <div><span class="fa fa-clock-o fa-2x"></span> 
+                                                                10:00 AM Daily
+                                                            </div> <br>
+                                                            <div><span class="fa fa-map-marker fa-2x"></span> 
+                                                                Old Lecture Theatre, Akanu Ibiam Federal Polytechnic, 
+                                                                Unwana, Afikpo. Ebonyi State.
+                                                            </div> <br>
                                                     </p>
-                                                    <p class="mb-0">Duis aute irure dolor in reprehenderit in voluptate
-                                                        velit esse cillum dolore eu
-                                                        fugiat nulla pariatur.</p>
+                                                   
                                                 </div>
                                                 
                                             </div>
