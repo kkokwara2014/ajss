@@ -66,7 +66,13 @@
                             {{-- editorial board members begin here --}}
                             <div class="row team_inner">
                                 <div class="col-lg-3 col-sm-6"></div>
-                                <a href="#">
+
+                                {{-- <a href="#" data-toggle="modal" data-target="#cyrilModal"><img
+                                        src="assets/images/keystaff/cyril_pix.jpg"
+                                        class="img-responsive img-circle"></a> --}}
+
+
+                                <a href="#" data-toggle="modal" data-target="#dikeModal">
                                     <div class="col-lg-3 col-sm-6">
                                         <div class="team_item">
                                             <div class="team_img">
@@ -85,6 +91,42 @@
                                         </div>
                                     </div>
                                 </a>
+
+                                <!--the modal for GM status-->
+                                <div class="modal fade" id="dikeModal" tabindex="-1" role="dialog">
+                                    <div class="modal-dialog">
+                                        <!--modal-sm-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title"><strong>Dr. O. A Dike's Profile</strong></h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-hidden="true">&times;</button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img width="90" height="90"
+                                                    src="{{asset('bootstrap_assets/img/nouser_image.jpg')}}"
+                                                    class="img-responsive pull-left">
+
+                                                <p class="text-justify">
+                                                    Cyril Ezeaku has over 20 years of Professional Safety & Environment
+                                                    experience in the Oil & Gas and Construction Industry, within
+                                                    Nigeria &
+                                                    beyond, which includes excellent understanding of Oil spill and
+                                                    environmental
+                                                    waste Management.
+                                                </p>
+
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-success btn-sm"
+                                                    data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div><!-- /.modal-content -->
+                                    </div>
+
+                                </div>
+
+
                                 <a href="#">
                                     <div class="col-lg-3 col-sm-6">
                                         <div class="team_item">
