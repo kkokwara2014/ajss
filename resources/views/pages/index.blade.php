@@ -56,11 +56,20 @@
             <div class="col-lg-9 col-sm-9" style="text-align: justify">
                 <div class="welcome_text">
 
-                    <p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct
-                        standards especially in the workplace. That’s why it’s crucial that, as women, our behavior on
-                        the job is beyond reproach. inappropriate behavior is often laughed.</p>
-                    <p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct
-                        standards especially in the workplace.</p>
+                    <p style="text-align: justify">
+                    AJSSAIFPU is a peer reviewed journal that publishes high quality
+                     articles in the field of life sciences. The journal is focused 
+                     on publishing research works and review papers from, but not limited
+                      to the following topics: <br>
+                      Computer Science, Information  & Communication Technology (ICT), 
+                      Biology, Applied Biology, Chemical Sciences, Microbiology, 
+                      Biochemistry, Industrial Physics, Botany, Zoology, Anatomy, 
+                      Molecular Biology, Biotechnology, Physiology. <br>
+                      Food Science Technology, Nutrition and Dietetics, Agricultural 
+                      Science and Technology, Mathematics, Mathematical Computing, 
+                      Statistics, Population and Medical Statistics, Demography 
+                      Studies and Biometrics and Allied disciplines. <br> 
+                    </p>
 
                 </div>
             </div>
