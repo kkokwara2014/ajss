@@ -52,10 +52,10 @@ class PaperController extends Controller
             'filename' => 'required|file|max:5000|mimes:docx,doc',
         ]);
 
-        $filename = $request->filename;
-        if ($filename) {
-            $filenameToStore = time() . '_' . $filename->getClientOriginalName();
-            $filename->move('submittedpapers', $filenameToStore);
+        
+        if ($request->hasFile('filename')) {
+            $filenameWithTime = time() . '_' . $request->filename->getClientOriginalName();
+            $filenameToStore=$request->filename->storeAs('public/submittedpapers', $filenameWithTime);
         }
 
         //    create an instance of Paper
