@@ -67,11 +67,6 @@
                             <div class="row team_inner">
                                 <div class="col-lg-3 col-sm-6"></div>
 
-                                {{-- <a href="#" data-toggle="modal" data-target="#cyrilModal"><img
-                                        src="assets/images/keystaff/cyril_pix.jpg"
-                                        class="img-responsive img-circle"></a> --}}
-
-
                                 <a href="#" data-toggle="modal" data-target="#dikeModal">
                                     <div class="col-lg-3 col-sm-6">
                                         <div class="team_item">
@@ -103,18 +98,26 @@
                                                     aria-hidden="true">&times;</button>
                                             </div>
                                             <div class="modal-body">
-                                                <img width="90" height="90"
-                                                    src="{{asset('bootstrap_assets/img/nouser_image.jpg')}}"
-                                                    class="img-responsive pull-left">
-
-                                                <p class="text-justify">
-                                                    Cyril Ezeaku has over 20 years of Professional Safety & Environment
-                                                    experience in the Oil & Gas and Construction Industry, within
-                                                    Nigeria &
-                                                    beyond, which includes excellent understanding of Oil spill and
-                                                    environmental
-                                                    waste Management.
-                                                </p>
+                                                <div class="row">
+                                                    <div class="col-sm-3 col-lg-3">
+                                                        <img width="90" height="90"
+                                                            src="{{asset('bootstrap_assets/img/nouser_image.jpg')}}"
+                                                            class="img-responsive pull-left">
+                                                    </div>
+                                                    <div class="col-sm-9 col-lg-9">
+                                                        <p class="text-justify">
+                                                            Cyril Ezeaku has over 20 years of Professional Safety &
+                                                            Environment
+                                                            experience in the Oil & Gas and Construction Industry,
+                                                            within
+                                                            Nigeria &
+                                                            beyond, which includes excellent understanding of Oil spill
+                                                            and
+                                                            environmental
+                                                            waste Management.
+                                                        </p>
+                                                    </div>
+                                                </div>
 
                                             </div>
                                             <div class="modal-footer">
