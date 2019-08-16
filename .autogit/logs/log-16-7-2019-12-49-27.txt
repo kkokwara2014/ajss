@@ -1,0 +1,17 @@
+-------------------- Auto-Git Log --------------------
+		Fri Aug 16 2019 12:49:27 GMT+0100 (West Africa Standard Time)
+------------------------------------------------------
+
+Modified files:
+* database/migrations/2019_08_11_091730_create_contacts_table.php
+* database/migrations/2019_08_11_103039_create_papers_table.php
+
+
+Created files:
+* .autogit/logs/log-16-7-2019-7-53-25.txt
+
+
+Deleted files:
+
+
+Renamed files:
