@@ -20,9 +20,9 @@ class CreatePapersTable extends Migration
             $table->string('email');
             $table->string('phone');
             $table->string('country_id');
-            $table->string('papertitle');
-            $table->string('abstract');
-            $table->string('filename');
+            $table->text('papertitle');
+            $table->text('abstract');
+            $table->text('filename');
             $table->timestamps();
         });
     }
