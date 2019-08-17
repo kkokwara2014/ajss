@@ -18,8 +18,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::group(['prefix'=>'admin','middleware'=>'auth'], function(){
 
-    // Route::get('/register', 'Auth\RegisterController@showRegistrationForm')->name('register');
-
     Route::get('/','AdminController@index')->name('admin.index');
     Route::get('/editor/all','EditorialController@index')->name('admin.editor.all');
     Route::get('/create/editor','EditorialController@create')->name('admin.create.editor');
@@ -41,10 +39,6 @@ Route::group(['prefix'=>'admin','middleware'=>'auth'], function(){
 $this->get('login', 'Auth\LoginController@showLoginForm')->name('login');
 $this->post('login', 'Auth\LoginController@login');
 $this->post('logout', 'Auth\LoginController@logout')->name('logout');
-
-// Registration Routes...
-// $this->get('register', 'Auth\RegisterController@showRegistrationForm')->name('register');
-// $this->post('register', 'Auth\RegisterController@register');
 
 // Password Reset Routes...
 $this->get('password/reset', 'Auth\ForgotPasswordController@showLinkRequestForm')->name('password.request');

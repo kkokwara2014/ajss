@@ -1,0 +1,19 @@
+-------------------- Auto-Git Log --------------------
+		Sat Aug 17 2019 07:06:07 GMT+0100 (West Africa Standard Time)
+------------------------------------------------------
+
+Modified files:
+* app/Exceptions/Handler.php
+* routes/web.php
+
+
+Created files:
+* .autogit/logs/log-17-7-2019-6-36-0.txt
+
+
+Deleted files:
+
+
+Renamed files:
+* [object Object]
+* [object Object]
