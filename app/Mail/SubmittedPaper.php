@@ -6,9 +6,8 @@ use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
-use Illuminate\Http\Request;
 
-class SubmittedPaper extends Mailable
+class Submittedpaper extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -27,8 +26,8 @@ class SubmittedPaper extends Mailable
      *
      * @return $this
      */
-    public function build(Request $request)
+    public function build()
     {
-        return $this->view('emails.paper.submitted',['leadauthor'=>$request->leadauthor,'papertitle'=>$request->papertitle])->to($request->email);
+        return $this->view('emails.paper.submitted');
     }
 }
