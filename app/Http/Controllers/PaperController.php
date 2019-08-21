@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Country;
 use App\Paper;
 use Illuminate\Support\Facades\Mail;
-use App\Mail\SubmittedPaper;
+use App\Mail\Submittedpaper;
 
 class PaperController extends Controller
 {
@@ -75,7 +75,7 @@ class PaperController extends Controller
         
         return redirect()->back()->with('success', 'Your paper with ref: ' . $paper->paper_ref . ' has been submitted successfully!');
         
-        Mail::send(new SubmittedPaper());
+        Mail::send(new Submittedpaper());
         // Mail::to($request->email)->send(new SubmittedPaper($paper));
 
     }
