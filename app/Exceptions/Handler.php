@@ -49,13 +49,13 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $exception)
     {
-        if ($exception instanceof NotFoundHttpException) {
-            if ( \Auth::guest() ) {
-                return redirect()->to('/login');
-            }
+        // if ($exception instanceof NotFoundHttpException) {
+        //     if ( \Auth::guest() ) {
+        //         return redirect()->to('/login');
+        //     }
         
-            return response()->view('errors.404', [], 404);
-        }
-        // return parent::render($request, $exception);
+        //     return response()->view('errors.404', [], 404);
+        // }
+        return parent::render($request, $exception);
     }
 }

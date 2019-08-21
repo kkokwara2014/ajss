@@ -71,8 +71,11 @@ class PaperController extends Controller
 
         
         // Mail::send(new SubmittedPaper());
+        Mail::to($paper)->send(new SubmittedPaper($paper));
         
         $paper->save();
+
+
 
         return redirect()->back()->with('success', 'Your paper with ref: ' . $paper->paper_ref . ' has been submitted successfully!');
     }
