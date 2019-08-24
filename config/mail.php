@@ -2,12 +2,12 @@
 
 return [
     'driver' => env('MAIL_DRIVER', 'smtp'),
-    'host' => env('MAIL_HOST', 'server148.web-hosting.com'),
+    'host' => env('MAIL_HOST', 'smtp.gmail.com'),
     'port' => env('MAIL_PORT', 465),
-    'from' => ['address' => 'tellus@ajssaifpu.org', 'name' => 'AJSSAIFPU'],
-    'encryption' => env('MAIL_ENCRYPTION', 'tls'),
-    'username' => env('tellus@ajssaifpu.org'),
-    'password' => env('@Victorkk78'),
+    'from' => ['address' => 'kkokwara2014@gmail.com', 'name' => 'Email Sender'],
+    'encryption' => env('MAIL_ENCRYPTION', 'ssl'),
+    'username' => env('kkokwara2014@gmail.com'),
+    'password' => env('victorkk'),
     'sendmail' => '/usr/sbin/sendmail -bs',
     'pretend' => false,
 

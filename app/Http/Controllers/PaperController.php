@@ -7,6 +7,7 @@ use App\Country;
 use App\Paper;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\Submittedpaper;
+use Illuminate\Support\Facades\Session;
 
 class PaperController extends Controller
 {
@@ -52,32 +53,57 @@ class PaperController extends Controller
             'filename' => 'required|file|max:5000|mimes:docx,doc',
         ]);
 
-        
+
         if ($request->hasFile('filename')) {
             $filenameWithTime = time() . '_' . $request->filename->getClientOriginalName();
-            $filenameToStore=$request->filename->storeAs('public/submittedpapers', $filenameWithTime);
+            $filenameToStore = $request->filename->storeAs('public/submittedpapers', $filenameWithTime);
         }
 
         //    create an instance of Paper
-        $paper = new Paper;
-        $paper->paper_ref = 'ICEIST' . date('Y') . '_' . rand(55000, 99955);
-        $paper->leadauthor = $request->leadauthor;
-        $paper->email = $request->email;
-        $paper->phone = $request->phone;
-        $paper->country_id = $request->country_id;
-        $paper->papertitle = $request->papertitle;
-        $paper->abstract = $request->abstract;
-        $paper->filename = $filenameToStore;
+        // $paper = new Paper;
+        // $paper->paper_ref = 'ICEIST' . date('Y') . '_' . rand(55000, 99955);
+        // $paper->leadauthor = $request->leadauthor;
+        // $paper->email = $request->email;
+        // $paper->phone = $request->phone;
+        // $paper->country_id = $request->country_id;
+        // $paper->papertitle = $request->papertitle;
+        // $paper->abstract = $request->abstract;
+        // $paper->filename = $filenameToStore;
 
-        
-        
-        $paper->save();
-        
-        return redirect()->back()->with('success', 'Your paper with ref: ' . $paper->paper_ref . ' has been submitted successfully!');
-        
-        Mail::send(new Submittedpaper());
-        // Mail::to($request->email)->send(new SubmittedPaper($paper));
+        // $newPaper=$paper->save();
 
+        $paper = Paper::create([
+            'paper_ref' => 'ICEIST' . date('Y') . '_' . rand(55000, 99955),
+            'leadauthor' => $request->leadauthor,
+            'email' => $request->email,
+            'phone' => $request->phone,
+            'country_id' => $request->country_id,
+            'papertitle' => $request->papertitle,
+            'abstract' => $request->abstract,
+            'filename' => $filenameToStore,
+        ]);
+
+        $thisPaper=Paper::findOrFail($paper->id);
+
+        // Session::flash('success', 'Your paper with ref: ' . $thisPaper->paper_ref . ' has been submitted successfully!');
+        // $this->sendEmail($thisPaper);
+        
+        // return redirect()->back()->with('success', 'Your paper with ref: ' . $thisPaper->paper_ref . ' has been submitted successfully!');
+        
+        // Mail::send(new Submittedpaper());
+
+        Mail::send('newUser', function($message){
+            $message->from('testmail@gg.lv');
+            $message->subject('welcome');
+            $message->to('pokkers.karlis@gmail.com');
+        });
+
+        return $paper;
+    }
+
+    public function sendEmail($thisPaper)
+    {
+        Mail::to($thisPaper->email)->send(new Submittedpaper($thisPaper));
     }
 
     /**

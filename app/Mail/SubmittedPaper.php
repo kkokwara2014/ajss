@@ -2,6 +2,7 @@
 
 namespace App\Mail;
 
+use App\Paper;
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
@@ -13,16 +14,16 @@ class Submittedpaper extends Mailable
 {
     use Queueable, SerializesModels;
 
-    // public $paper;
+    public $paper;
 
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct(Paper $paper)
     {
-      
+        $this->paper = $paper;
     }
 
     /**
@@ -30,8 +31,8 @@ class Submittedpaper extends Mailable
      *
      * @return $this
      */
-    public function build(Request $request)
+    public function build()
     {
-        return $this->view('emails.paper.submitted',['leadauthor'=>$request->leadauthor,'papertitle'=>$request->papertitle])->to($request->email);
+        return $this->view('emails.paper.submitted');
     }
 }

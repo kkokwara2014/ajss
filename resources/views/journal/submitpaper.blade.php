@@ -69,6 +69,9 @@
                         <div class="row">
                             <div class="col-md-10 col-lg-10">
                                 @include('messages.success')
+                                {{-- @if (session('success'))
+                                {{session('success')}}
+                                @endif --}}
                             </div>
                         </div>
                         <p></p>

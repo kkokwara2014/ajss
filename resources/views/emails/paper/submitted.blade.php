@@ -10,10 +10,10 @@
 
     <body>
         <br>
-        Dear {{$leadauthor}} ,<p></p>
+        Dear {{$paper->leadauthor}} ,<p></p>
         <p>Thank you for your interest in AJSSAIFPU.</p>
         You have successfully submitted a paper titled: <p></p>
-        {{ $papertitle}} <br>
+        {{ $paper->papertitle}} <br>
         
 
         <br>
@@ -21,7 +21,7 @@
         Thank you.
 
         <br><br>
-        Editorial Team.
+        AJSSAIFPU Editorial Team.
     </body>
 
 </html>
