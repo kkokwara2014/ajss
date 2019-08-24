@@ -86,18 +86,13 @@ class PaperController extends Controller
         $thisPaper=Paper::findOrFail($paper->id);
 
         // Session::flash('success', 'Your paper with ref: ' . $thisPaper->paper_ref . ' has been submitted successfully!');
-        // $this->sendEmail($thisPaper);
+        $this->sendEmail($thisPaper);
         
         // return redirect()->back()->with('success', 'Your paper with ref: ' . $thisPaper->paper_ref . ' has been submitted successfully!');
         
         // Mail::send(new Submittedpaper());
 
-        Mail::send('newUser', function($message){
-            $message->from('testmail@gg.lv');
-            $message->subject('welcome');
-            $message->to('pokkers.karlis@gmail.com');
-        });
-
+        
         return $paper;
     }
 
