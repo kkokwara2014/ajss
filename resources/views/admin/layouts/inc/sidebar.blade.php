@@ -5,7 +5,7 @@
     <!-- Sidebar user panel -->
     <div class="user-panel">
       <div class="pull-left image">
-        <img src="{{asset('admin_assets/dist/img/user2-160x160.jpg')}}" class="img-circle" alt="User Image">
+        <img src="{{asset('admin_assets/dist/img/nouser2.jpg')}}" class="img-circle" alt="User Image">
       </div>
       <div class="pull-left info">
         <p>{{ ucfirst(Auth::user()->name) }}</p>
@@ -20,40 +20,39 @@
           <i class="fa fa-dashboard"></i> <span>Dashboard</span>
         </a>
       </li>
-
+      
+      {{-- submitted paper area --}}
+      <li>
+      <a href="{{ route('admin.submittedpaper.all') }}">
+          <i class="fa fa-file-pdf-o"></i>
+          <span>Submitted Papers</span>
+        </a>
+      </li>
       {{-- contact area --}}
-      <li class="treeview">
+      <li>
         <a href="{{ route('admin.contact.all') }}">
-          <i class="fa fa-envelope-o"></i><span> Contact</span>
+          <i class="fa fa-envelope-o"></i><span> Contacts</span>
         </a>
       </li>
 
       {{-- Editor area --}}
       <li>
         <a href="{{ route('admin.editor.all') }}">
-          <i class="fa fa-user"></i><span> Editor</span>
-        </a>
-      </li>
-
-      {{-- submitted paper area --}}
-      <li class="treeview">
-      <a href="{{ route('admin.submittedpaper.all') }}">
-          <i class="fa fa-file-pdf-o"></i>
-          <span>Submitted Paper</span>
+          <i class="fa fa-user"></i><span> Editors</span>
         </a>
       </li>
 
       {{-- future conference area --}}
-      <li class="treeview">
+      {{-- <li class="treeview">
       <a href="{{ route('admin.conference.all') }}">
           <i class="fa fa-bullhorn"></i>
           <span>Future Conference</span>
         </a>
-      </li>
+      </li> --}}
 
       <!-- the Admin links-->
-      <li class="treeview">
-        <a href="#">
+      <li>
+      <a href="{{ route('admin.admins.all') }}">
           <i class="fa fa-users"></i>
           <span>Admins</span>
         </a>

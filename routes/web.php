@@ -19,6 +19,16 @@ use Illuminate\Support\Facades\Route;
 Route::group(['prefix'=>'admin','middleware'=>'auth'], function(){
 
     Route::get('/','AdminController@index')->name('admin.index');
+
+
+    // Handling all about the Admins
+    Route::get('/all','AdminController@allAdmins')->name('admin.admins.all');
+    Route::get('/create/new','AdminController@create')->name('admin.admins.create');
+    Route::post('/create/new','AdminController@store')->name('admin.admins.store');
+    Route::get('/edit/{id}','AdminController@edit')->name('admin.admins.edit');
+    Route::match(['put', 'patch'],'update/{id}','AdminController@update')->name('admin.admins.update');
+
+
     Route::get('/editor/all','EditorialController@index')->name('admin.editor.all');
     Route::get('/create/editor','EditorialController@create')->name('admin.create.editor');
     Route::get('/save/editor','EditorialController@store')->name('admin.store.editor');

@@ -6,7 +6,7 @@
 <section class="content">
   <div class="row">
     <!-- Left col -->
-    <section class="col-lg-12 connectedSortable">
+    <section class="col-lg-9 connectedSortable">
       {{-- <a href="{{ route('admin.create.editor') }}" class="btn btn-success btn-sm"><span
           class="fa fa-plus-circle"></span> Create Editor</a>
       <p></p> --}}
