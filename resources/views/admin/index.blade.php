@@ -13,7 +13,7 @@
           <!-- small box -->
           <div class="small-box bg-fuchsia">
             <div class="inner">
-              <h3>400</h3>
+            <h3>{{$submittedPapers}}</h3>
               <p>Submitted Papers</p>
             </div>
             <div class="icon">
@@ -28,7 +28,7 @@
           <!-- small box -->
           <div class="small-box bg-aqua">
             <div class="inner">
-              <h3>10</h3>
+            <h3>{{$contacts}}</h3>
 
               <p>Contacts</p>
             </div>
@@ -43,7 +43,7 @@
           <!-- small box -->
           <div class="small-box bg-green">
             <div class="inner">
-              <h3>18</h3>
+            <h3>{{$editors}}</h3>
               <p>Committee Members</p>
             </div>
             <div class="icon">
@@ -57,7 +57,7 @@
           <!-- small box -->
           <div class="small-box bg-yellow">
             <div class="inner">
-              <h3>5</h3>
+            <h3>{{$admins}}</h3>
               <p>Admins</p>
             </div>
             <div class="icon">

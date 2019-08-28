@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Contact;
+use App\Editorial;
+use App\Paper;
 use Illuminate\Http\Request;
 
 use App\User;
@@ -10,7 +13,11 @@ class AdminController extends Controller
 {
     public function index(){
         $pageTitle='Dashboard';
-        return view('admin.index',compact('pageTitle'));
+        $submittedPapers=Paper::count();
+        $admins=User::count();
+        $editors=Editorial::count();
+        $contacts=Contact::count();
+        return view('admin.index',compact('pageTitle','submittedPapers','admins','editors','contacts'));
     }
 
     public function create(){

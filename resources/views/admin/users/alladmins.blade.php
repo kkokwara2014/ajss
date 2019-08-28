@@ -32,11 +32,26 @@
                             <tr>
                                 <td>{{ $admin->name }}</td>
                                 <td>{{ $admin->email }}</td>
-                                <td>{{ $admin->created_at }}</td>
+                                <td>{{ $admin->created_at->diffForHumans() }}</td>
                                 <td>
                                 <a href="{{ route('admin.admins.edit',$admin->id) }}"><span class="fa fa-pencil-square fa-2x text-primary"></span></a>
                                 </td>
-                                <td><a href="#"><span class="fa fa-trash fa-2x text-danger"></span></a></td>
+                                <td>
+                                <form id="delete-form-{{$admin->id}}" style="display: none" action="{{ route('admin.destroy',$admin->id) }}" method="post">
+                                    {{ csrf_field() }}
+                                    {{method_field('DELETE')}}
+                                </form>    
+                                    <a href="" onclick="
+                                        if (confirm('Are you sure you want to delete this?')) {
+                                            event.preventDefault();
+                                        document.getElementById('delete-form-{{$admin->id}}').submit();
+                                        } else {
+                                            event.preventDefault();
+                                        }
+                                    "><span class="fa fa-trash fa-2x text-danger"></span>
+                                    </a>
+                                
+                                </td>
                             </tr>
                             @endforeach
 
