@@ -1,0 +1,21 @@
+-------------------- Auto-Git Log --------------------
+		Wed Aug 28 2019 22:17:41 GMT+0100 (West Africa Standard Time)
+------------------------------------------------------
+
+Modified files:
+* app/Http/Controllers/AdminController.php
+* composer.json
+* composer.lock
+* resources/views/admin/editor/index.blade.php
+* resources/views/admin/index.blade.php
+* resources/views/admin/users/alladmins.blade.php
+* routes/web.php
+
+
+Created files:
+
+
+Deleted files:
+
+
+Renamed files:

@@ -21,12 +21,14 @@
                 <th>Department</th>
                 <th>Phone</th>
                 <th>Email</th>
-                <th>View</th>
+                <th>View Details</th>
                 <th>Edit</th>
                 <th>Delete</th>
               </tr>
             </thead>
             <tbody>
+
+              
            
               <tr>
                 <td>Webkit</td>
@@ -34,7 +36,7 @@
                 <td>OSX.4+</td>
                 <td>419.3</td>
                 <td>A</td>
-                <td>A</td>
+                <td>B</td>
                 <td>A</td>
               </tr>
               
@@ -45,7 +47,7 @@
                   <th>Department</th>
                   <th>Phone</th>
                   <th>Email</th>
-                  <th>View</th>
+                  <th>View Details</th>
                   <th>Edit</th>
                   <th>Delete</th>
               </tr>
