@@ -60,40 +60,40 @@ class PaperController extends Controller
         }
 
         //    create an instance of Paper
-        // $paper = new Paper;
-        // $paper->paper_ref = 'ICEIST' . date('Y') . '_' . rand(55000, 99955);
-        // $paper->leadauthor = $request->leadauthor;
-        // $paper->email = $request->email;
-        // $paper->phone = $request->phone;
-        // $paper->country_id = $request->country_id;
-        // $paper->papertitle = $request->papertitle;
-        // $paper->abstract = $request->abstract;
-        // $paper->filename = $filenameToStore;
+        $paper = new Paper;
+        $paper->paper_ref = 'ICEIST' . date('Y') . '_' . rand(55000, 99955);
+        $paper->leadauthor = $request->leadauthor;
+        $paper->email = $request->email;
+        $paper->phone = $request->phone;
+        $paper->country_id = $request->country_id;
+        $paper->papertitle = $request->papertitle;
+        $paper->abstract = $request->abstract;
+        $paper->filename = $filenameToStore;
 
-        // $newPaper=$paper->save();
+        $newPaper=$paper->save();
 
-        $paper = Paper::create([
-            'paper_ref' => 'ICEIST' . date('Y') . '_' . rand(55000, 99955),
-            'leadauthor' => $request->leadauthor,
-            'email' => $request->email,
-            'phone' => $request->phone,
-            'country_id' => $request->country_id,
-            'papertitle' => $request->papertitle,
-            'abstract' => $request->abstract,
-            'filename' => $filenameToStore,
-        ]);
+        // $paper = Paper::create([
+        //     'paper_ref' => 'ICEIST' . date('Y') . '_' . rand(55000, 99955),
+        //     'leadauthor' => $request->leadauthor,
+        //     'email' => $request->email,
+        //     'phone' => $request->phone,
+        //     'country_id' => $request->country_id,
+        //     'papertitle' => $request->papertitle,
+        //     'abstract' => $request->abstract,
+        //     'filename' => $filenameToStore,
+        // ]);
 
-        $thisPaper=Paper::findOrFail($paper->id);
+        // $thisPaper=Paper::findOrFail($paper->id);
 
         // Session::flash('success', 'Your paper with ref: ' . $thisPaper->paper_ref . ' has been submitted successfully!');
-        $this->sendEmail($thisPaper);
+        // $this->sendEmail($thisPaper);
         
-        // return redirect()->back()->with('success', 'Your paper with ref: ' . $thisPaper->paper_ref . ' has been submitted successfully!');
+        return redirect()->back()->with('success', 'Your paper with ref: ' . $paper->paper_ref . ' has been submitted successfully!');
         
         // Mail::send(new Submittedpaper());
 
         
-        return $paper;
+        // return $paper;
     }
 
     public function sendEmail($thisPaper)
