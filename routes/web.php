@@ -38,6 +38,7 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
     Route::get('/edit/editor/{id}', 'EditorialController@edit')->name('admin.edit.editor');
     Route::match(['put', 'patch'], 'update/{id}', 'EditorialController@update')->name('admin.update.editor');
     Route::match(['delete'], '/delete/editor/{id}', 'EditorialController@destroy')->name('admin.delete.editor');
+    Route::get('/editor/details', 'EditorialController@show')->name('admin.details.editor');
 
     // Managing Contacts
     Route::get('/contact/all', 'ContactController@index')->name('admin.contact.all');

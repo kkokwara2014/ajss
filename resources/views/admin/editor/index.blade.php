@@ -40,7 +40,7 @@
                 <td>{{$editor->phone}}</td>
                 <td>{{$editor->email}}</td>
                 <td>{{$editor->country->name}}</td>
-                <td><a href="#"><span class="fa fa-eye fa-2x"></span></a></td>
+              <td><a href="{{ route('admin.details.editor',$editor->id) }}"><span class="fa fa-eye fa-2x"></span></a></td>
                 <td><a href="{{ route('admin.edit.editor',$editor->id) }}"><span
                       class="fa fa-pencil-square-o fa-2x"></span></a></td>
                 <td>

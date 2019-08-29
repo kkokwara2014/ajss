@@ -56,7 +56,7 @@ class EditorialController extends Controller
             $filenameWithTime = time() . '_' . $request->editor_image->getClientOriginalName();
             $filenameToStore = $request->editor_image->storeAs('public/editors', $filenameWithTime);
         }else{
-            $filenameToStore='nouser2.jpg';
+            $filenameToStore='public/editors/nouser2.jpg';
         }
 
         $editor=new Editorial;
@@ -85,7 +85,9 @@ class EditorialController extends Controller
      */
     public function show($id)
     {
-        //
+        $pageTitle='Editor\'s Details';
+        $editor=Editorial::find($id);
+        return view('admin.editor.show',compact('pageTitle','editor'));
     }
 
     /**
