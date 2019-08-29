@@ -6,7 +6,7 @@
 <section class="content">
   <div class="row">
     <!-- Left col -->
-    <section class="col-lg-9 connectedSortable">
+    <section class="col-lg-12 connectedSortable">
       {{-- <a href="{{ route('admin.create.editor') }}" class="btn btn-success btn-sm"><span
           class="fa fa-plus-circle"></span> Create Editor</a>
       <p></p> --}}
@@ -14,58 +14,45 @@
        
         <!-- /.box-header -->
         <div class="box-body">
+          @forelse ($contacts as $contact)
           <table id="example1" class="table table-bordered table-striped">
             <thead>
               <tr>
-                <th>Rendering engine</th>
-                <th>Browser</th>
-                <th>Platform(s)</th>
-                <th>Engine version</th>
-                <th>CSS grade</th>
+                <th>Sender</th>
+                <th>Sender Email</th>
+                <th>Subject</th>
+                <th>Message</th>
+                <th>Sent at</th>
+                <th>Delete</th>
               </tr>
             </thead>
             <tbody>
            
               <tr>
-                <td>Webkit</td>
-                <td>Safari 2.0</td>
-                <td>OSX.4+</td>
-                <td>419.3</td>
-                <td>A</td>
+                <td>{{$contact->name}}</td>
+                <td>{{$contact->email}}</td>
+                <td>{{$contact->subject}}</td>
+                <td>{{$contact->message}}</td>
+                <td>{{$contact->created_at->diffForHumans()}}</td>
+                <td><a href="#"><span class="fa fa-trash-o fa-2x text-danger"></span></a></td>
               </tr>
-              <tr>
-                <td>Webkit</td>
-                <td>Safari 3.0</td>
-                <td>OSX.4+</td>
-                <td>522.1</td>
-                <td>A</td>
-              </tr>
-              <tr>
-                <td>Webkit</td>
-                <td>OmniWeb 5.5</td>
-                <td>OSX.4+</td>
-                <td>420</td>
-                <td>A</td>
-              </tr>
-              <tr>
-                <td>Webkit</td>
-                <td>iPod Touch / iPhone</td>
-                <td>iPod</td>
-                <td>420.1</td>
-                <td>A</td>
-              </tr>
-            
+                        
             </tbody>
             <tfoot>
               <tr>
-                <th>Rendering engine</th>
-                <th>Browser</th>
-                <th>Platform(s)</th>
-                <th>Engine version</th>
-                <th>CSS grade</th>
+                  <th>Sender</th>
+                  <th>Sender Email</th>
+                  <th>Subject</th>
+                  <th>Message</th>
+                  <th>Sent at</th>
+                  <th>Delete</th>
               </tr>
             </tfoot>
           </table>
+              
+          @empty
+          <p class="alert alert-warning">No Message has been recieved!</p>
+          @endforelse
         </div>
         <!-- /.box-body -->
       </div>

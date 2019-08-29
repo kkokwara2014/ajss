@@ -1,0 +1,18 @@
+-------------------- Auto-Git Log --------------------
+		Thu Aug 29 2019 10:39:47 GMT+0100 (West Africa Standard Time)
+------------------------------------------------------
+
+Modified files:
+* app/Http/Controllers/EditorialController.php
+* resources/views/admin/contact/index.blade.php
+* resources/views/admin/editor/index.blade.php
+
+
+Created files:
+* .autogit/logs/log-29-7-2019-10-9-38.txt
+
+
+Deleted files:
+
+
+Renamed files:
