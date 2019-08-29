@@ -19,7 +19,6 @@ class PaperController extends Controller
     public function index()
     {
         $pageTitle = 'All Submitted Papers';
-        // $downloads=DB::table('papers')->get();
         $submittedPapers=Paper::all();
 
         return view('admin.submittedpaper.index', compact('pageTitle','submittedPapers'));
@@ -74,35 +73,12 @@ class PaperController extends Controller
 
         $newPaper=$paper->save();
 
-        // $paper = Paper::create([
-        //     'paper_ref' => 'ICEIST' . date('Y') . '_' . rand(55000, 99955),
-        //     'leadauthor' => $request->leadauthor,
-        //     'email' => $request->email,
-        //     'phone' => $request->phone,
-        //     'country_id' => $request->country_id,
-        //     'papertitle' => $request->papertitle,
-        //     'abstract' => $request->abstract,
-        //     'filename' => $filenameToStore,
-        // ]);
-
-        // $thisPaper=Paper::findOrFail($paper->id);
-
-        // Session::flash('success', 'Your paper with ref: ' . $thisPaper->paper_ref . ' has been submitted successfully!');
-        // $this->sendEmail($thisPaper);
         
         return redirect()->back()->with('success', 'Your paper with ref: ' . $paper->paper_ref . ' has been submitted successfully!');
-        
-        // Mail::send(new Submittedpaper());
-
-        
-        // return $paper;
+       
     }
 
-    public function sendEmail($thisPaper)
-    {
-        Mail::to($thisPaper->email)->send(new Submittedpaper($thisPaper));
-    }
-
+   
     /**
      * Display the specified resource.
      *
@@ -198,9 +174,5 @@ class PaperController extends Controller
         return view('journal.publishedpaper', compact('title'));
     }
 
-    // public function download()
-    // {
-    //     $downloads=DB::table('posts')->get();
-    //     return view('download.downloadfiles',compact('downloads'));
-    // }
+    
 }
