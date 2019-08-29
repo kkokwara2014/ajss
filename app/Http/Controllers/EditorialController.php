@@ -131,7 +131,7 @@ class EditorialController extends Controller
             $filenameToStore='nouser2.jpg';
         }
 
-        $editor=new Editorial;
+        $editor=Editorial::find($id);
         $editor->title=$request->title;
         $editor->surname=$request->surname;
         $editor->firstname=$request->firstname;

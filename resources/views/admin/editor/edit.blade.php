@@ -21,9 +21,9 @@
                                             <label>Title</label>
                                             <select name="title" class="form-control select2" style="width: 100%;">
                                                 <option selected="disabled">Select Title</option>
-                                                <option value="1" {{ old('title') == 1 ? 'selected' : '' }}>Engr.</option>
-                                                <option value="2" {{ old('title') == 2 ? 'selected' : '' }}>Dr.</option>
-                                                <option value="3" {{ old('title') == 3 ? 'selected' : '' }}>Prof.</option>
+                                                <option>Engr.</option>
+                                                <option>Dr.</option>
+                                                <option>Prof.</option>
                                             </select>
                                         </div>
                                         <div class="form-group">
