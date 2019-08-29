@@ -51,27 +51,28 @@ class EditorialController extends Controller
         ]);
 
         if ($request->hasFile('editor_image')) {
-            $filenameWithTime = time() . '_' . $request->filename->getClientOriginalName();
-            $filenameToStore = $request->filename->storeAs('public/editors', $filenameWithTime);
+            $filenameWithTime = time() . '_' . $request->editor_image->getClientOriginalName();
+            $filenameToStore = $request->editor_image->storeAs('public/editors', $filenameWithTime);
         }else{
             $filenameToStore='nouser2.jpg';
         }
 
-        $editor=new Editorial;
-        $editor->title=$request->title;
-        $editor->surname=$request->surname;
-        $editor->firstname=$request->firstname;
-        $editor->othername=$request->othername;
-        $editor->organization=$request->organization;
-        $editor->country_id=$request->country_id;
-        $editor->phone=$request->phone;
-        $editor->email=$request->email;
-        $editor->editor_image=$request->editor_image;
+        // $editor=new Editorial;
+        // $editor->title=$request->title;
+        // $editor->surname=$request->surname;
+        // $editor->firstname=$request->firstname;
+        // $editor->othername=$request->othername;
+        // $editor->organization=$request->organization;
+        // $editor->country_id=$request->country_id;
+        // $editor->phone=$request->phone;
+        // $editor->email=$request->email;
+        // $editor->editor_image=$request->editor_image;
 
-        $editor->save();
+        // $editor->save();
 
-        return redirect(route('admin.editor.all'))->with('success','New Editor has been created successfully!');
+        // return redirect(route('admin.editor.all'))->with('success','New Editor has been created successfully!');
 
+        return $request->all();
     }
 
     /**
