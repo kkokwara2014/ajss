@@ -14,6 +14,7 @@
        
         <!-- /.box-header -->
         <div class="box-body">
+          @forelse ($editors as $editor)
           <table id="example1" class="table table-bordered table-striped">
             <thead>
               <tr>
@@ -21,25 +22,24 @@
                 <th>Department</th>
                 <th>Phone</th>
                 <th>Email</th>
+                <th>From</th>
                 <th>View Details</th>
                 <th>Edit</th>
                 <th>Delete</th>
               </tr>
             </thead>
             <tbody>
-
               
-           
               <tr>
-                <td>Webkit</td>
-                <td>Safari 2.0</td>
-                <td>OSX.4+</td>
-                <td>419.3</td>
-                <td>A</td>
+                <td>{{$editor->title.' '.($editor->surname.' '.$editor->firstname.' '.$editor->othename)}}</td>
+                <td>{{$editor->department}}</td>
+                <td>{{$editor->phone}}</td>
+                <td>{{$editor->email}}</td>
+                <td>{{$editor->country()->name}}</td>
+                <td><a href="#"><span class="fa fa-eye fa-2x"></span></a></td>
                 <td>B</td>
                 <td>A</td>
               </tr>
-              
             </tbody>
             <tfoot>
               <tr>
@@ -47,12 +47,17 @@
                   <th>Department</th>
                   <th>Phone</th>
                   <th>Email</th>
+                  <th>From</th>
                   <th>View Details</th>
                   <th>Edit</th>
                   <th>Delete</th>
               </tr>
             </tfoot>
           </table>
+              
+          @empty
+          <p class="alert alert-warning">No Editor has been added!</p>
+          @endforelse
         </div>
         <!-- /.box-body -->
       </div>

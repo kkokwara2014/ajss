@@ -16,7 +16,8 @@ class EditorialController extends Controller
     public function index()
     {
         $pageTitle='All Editors';
-        return view('admin.editor.index',compact('pageTitle'));
+        $editors=Editorial::orderBy('created_at','desc')->get();
+        return view('admin.editor.index',compact('pageTitle','editors'));
     }
 
     /**

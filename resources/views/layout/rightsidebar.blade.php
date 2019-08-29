@@ -6,7 +6,7 @@
     <div><a href="{{ route('editors') }}"><span class="fa fa-users"></span> Editorial Board</a></div>
     <div><a href="{{ route('submit.paper.form') }}"><span class="fa fa-paper-plane-o"></span> Submit Paper</a></div>
     <div><a href="{{ route('contact.us') }}"><span class="fa fa-envelope-o"></span> Contact Us</a></div>
-    <div><a href="https://server148.web-hosting.com:2096" target="_blank">My Email</a></div>
+    <div><a href="https://server148.web-hosting.com:2096" target="_blank"><span class="fa fa-envelope-square"></span> My Email</a></div>
 </div>
 <hr>
 <br>
