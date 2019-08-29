@@ -16,7 +16,7 @@
                 <div class="col-md-12 col-lg-12">
                     <div class="panel">
                         <div class="panel-body">
-                            <form role="form" action="" method="POST" enctype="multipart/form-data">
+                        <form role="form" action="{{ route('admin.store.editor') }}" method="POST" enctype="multipart/form-data">
                                 {{ csrf_field() }}
                                 <div class="row">
                                     <div class="col-sm-6 col-lg-6">

@@ -27,8 +27,8 @@ class EditorialController extends Controller
      */
     public function create()
     {
-        $countries=Country::all();
         $pageTitle='Create Editor';
+        $countries=Country::all();
         return view('admin.editor.create', compact('pageTitle','countries'));
     }
 
@@ -40,7 +40,37 @@ class EditorialController extends Controller
      */
     public function store(Request $request)
     {
+        $this->validate($request,[
+            'title'=>'required',
+            'surname'=>'required',
+            'firstname'=>'required',
+            'othername'=>'required',
+            'country_id'=>'required',
+            'phone'=>'required',
+            'email'=>'required',
+        ]);
+
+        if ($request->hasFile('editor_image')) {
+            $filenameWithTime = time() . '_' . $request->filename->getClientOriginalName();
+            $filenameToStore = $request->filename->storeAs('public/editors', $filenameWithTime);
+        }else{
+            $filenameToStore='nouser2.jpg';
+        }
+
         $editor=new Editorial;
+        $editor->title=$request->title;
+        $editor->surname=$request->surname;
+        $editor->firstname=$request->firstname;
+        $editor->othername=$request->othername;
+        $editor->organization=$request->organization;
+        $editor->country_id=$request->country_id;
+        $editor->phone=$request->phone;
+        $editor->email=$request->email;
+        $editor->editor_image=$request->editor_image;
+
+        $editor->save();
+
+        return redirect(route('admin.editor.all'))->with('success','New Editor has been created successfully!');
 
     }
 
