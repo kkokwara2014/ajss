@@ -96,7 +96,10 @@ class EditorialController extends Controller
      */
     public function edit($id)
     {
-        //
+        $pageTitle='Edit Editor';
+        $countries=Country::all();
+        $editors=Editorial::where('id',$id)->first();
+        return view('admin.editor.edit',compact('pageTitle','editors','countries'));
     }
 
     /**
@@ -108,7 +111,41 @@ class EditorialController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        
+        $this->validate($request,[
+            'title'=>'required',
+            'surname'=>'required',
+            'firstname'=>'required',
+            'othername'=>'required',
+            'organization'=>'required',
+            'department'=>'required',
+            'country_id'=>'required',
+            'phone'=>'required',
+            'email'=>'required',
+        ]);
+
+        if ($request->hasFile('editor_image')) {
+            $filenameWithTime = time() . '_' . $request->editor_image->getClientOriginalName();
+            $filenameToStore = $request->editor_image->storeAs('public/editors', $filenameWithTime);
+        }else{
+            $filenameToStore='nouser2.jpg';
+        }
+
+        $editor=new Editorial;
+        $editor->title=$request->title;
+        $editor->surname=$request->surname;
+        $editor->firstname=$request->firstname;
+        $editor->othername=$request->othername;
+        $editor->organization=$request->organization;
+        $editor->department=$request->department;
+        $editor->country_id=$request->country_id;
+        $editor->phone=$request->phone;
+        $editor->email=$request->email;
+        $editor->editor_image=$filenameToStore;
+
+        $editor->save();
+
+        return redirect(route('admin.editor.all'));
     }
 
     /**
@@ -119,7 +156,8 @@ class EditorialController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $editors=Editorial::where('id',$id)->delete();
+        return redirect()->back();
     }
 
     public function showEditors(){

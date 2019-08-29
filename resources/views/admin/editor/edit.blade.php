@@ -12,74 +12,81 @@
                 <div class="col-md-12 col-lg-12">
                     <div class="panel">
                         <div class="panel-body">
-                            <form role="form">
+                        <form action="{{ route('admin.update.editor',$editors->id) }}" method="POST" enctype="multipart/form-data" role="form">
+                                {{ csrf_field() }}
+                                {{method_field('PUT')}}
                                 <div class="row">
                                     <div class="col-sm-6 col-lg-6">
                                         <div class="form-group">
                                             <label>Title</label>
                                             <select name="title" class="form-control select2" style="width: 100%;">
                                                 <option selected="disabled">Select Title</option>
-                                                <option>Engr.</option>
-                                                <option>Dr.</option>
-                                                <option>Prof.</option>
+                                                <option value="1" {{ old('title') == 1 ? 'selected' : '' }}>Engr.</option>
+                                                <option value="2" {{ old('title') == 2 ? 'selected' : '' }}>Dr.</option>
+                                                <option value="3" {{ old('title') == 3 ? 'selected' : '' }}>Prof.</option>
                                             </select>
                                         </div>
                                         <div class="form-group">
                                             <label for="surname">Surname</label>
                                             <input type="text" class="form-control" id="surname" name="surname"
-                                        placeholder="Enter Surname" value="{{$editor->surname}}">
+                                                placeholder="Enter Surname" value="{{$editors->surname}}">
                                         </div>
                                         <div class="form-group">
                                             <label for="firstname">First Name</label>
                                             <input type="text" class="form-control" id="firstname" name="firstname"
-                                                placeholder="Enter First Name">
+                                                placeholder="Enter First Name" value="{{$editors->firstname}}">
                                         </div>
                                         <div class="form-group">
                                             <label for="othername">Other Name</label>
                                             <input type="text" class="form-control" id="othername" name="othername"
-                                                placeholder="Enter Other Name">
+                                                placeholder="Enter Other Name" value="{{$editors->othername}}">
                                         </div>
                                         <div class="form-group">
                                             <label for="organization">Organization</label>
                                             <input type="text" class="form-control" id="organization"
-                                                name="organization"
+                                                name="organization" value="{{$editors->organization}}"
                                                 placeholder="Enter Organization e.g. Akanu Ibiam Federal Poly. Unwana">
                                         </div>
                                     </div>
 
                                     <div class="col-sm-6 col-lg-6">
-                                            <div class="form-group">
-                                                <label for="department">Department</label>
-                                                <input type="text" class="form-control" id="Department" name="department"
-                                                    placeholder="Enter Department e.g. Computer Science">
-                                            </div>
-                                            <div class="form-group">
-                                                <label>Country</label>
-                                                <select name="country_id" class="form-control select2" style="width: 100%;">
-                                                    <option selected="disabled">Select Country</option>
-                                                    <option>Engr.</option>
-                                                    <option>Dr.</option>
-                                                    <option>Prof.</option>
-                                                </select>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="phone">Phone</label>
-                                                <input type="tel" class="form-control" id="phone" name="phone"
-                                                    placeholder="Enter phone e.g. 08038883919" maxlength="11">
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="email">Email Address</label>
-                                                <input type="email" class="form-control" id="email" name="email"
-                                                    placeholder="Enter Email Address">
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="editor_image">Editor Image</label>
-                                                <input type="file" id="editor_image" name="editor_image">
-                                            </div>
+                                        <div class="form-group">
+                                            <label for="department">Department</label>
+                                            <input type="text" class="form-control" id="Department" name="department"
+                                                placeholder="Enter Department e.g. Computer Science"
+                                                value="{{$editors->department}}">
                                         </div>
+                                        <div class="form-group">
+                                            <label>Country</label>
+                                            <select name="country_id" class="form-control select2" style="width: 100%;">
+                                                <option selected="disabled">Select Country</option>
+                                                @foreach ($countries as $country)
+                                                <option value="{{$country->id}}" @if(old('country_id')==$country->id)
+                                                    {{ 'selected' }} @endif>{{$country->name}}</option>
+                                                @endforeach
+
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="phone">Phone</label>
+                                            <input type="tel" class="form-control" id="phone" name="phone"
+                                                placeholder="Enter phone e.g. 08038883919" maxlength="11"
+                                                value="{{$editors->phone}}">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="email">Email Address</label>
+                                            <input type="email" class="form-control" id="email" name="email"
+                                                placeholder="Enter Email Address" value="{{$editors->email}}">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="editor_image">Editor Image</label>
+                                            <input type="file" id="editor_image" name="editor_image">
+                                        </div>
+                                    </div>
                                 </div>
 
-                                <button type="submit" class="btn btn-primary">Add Editor</button>
+                                <button type="submit" class="btn btn-primary">Update Editor</button>
+                                <a href="{{ route('admin.editor.all') }}" class="btn btn-danger"> Cancel</a>
 
                             </form>
                         </div>
