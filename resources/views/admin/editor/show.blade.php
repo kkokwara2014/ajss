@@ -21,7 +21,7 @@
                 <div class="row">
                     <h2>{{$editor->title.' '.($editor->surname.' '.$editor->firstname.' '.$editor->othename)}}</h2>
                   <div class="col-md-2">
-                      <img src="{{$editor->editor_image}}" style="width:30%;">
+                      <img src="{{'storage/editors/'.$editor->editor_image}}" style="width:50%;">
                   </div>
                   <div class="col-md-8">
                   <div>{{$editor->organization}}</div>
