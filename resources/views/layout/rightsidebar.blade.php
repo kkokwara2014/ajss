@@ -6,6 +6,7 @@
     <div><a href="{{ route('editors') }}"><span class="fa fa-users"></span> Editorial Board</a></div>
     <div><a href="{{ route('submit.paper.form') }}"><span class="fa fa-paper-plane-o"></span> Submit Paper</a></div>
     <div><a href="{{ route('contact.us') }}"><span class="fa fa-envelope-o"></span> Contact Us</a></div>
+    <div><a href="https://server148.web-hosting.com:2096" target="_blank">My Email</a></div>
 </div>
 <hr>
 <br>
@@ -27,6 +28,7 @@
     <div> <a href="{{asset('downloads/about_ethics.pdf')}}" download="about_ethics.pdf"><span class="fa fa-file-pdf-o"
                 style="color: red"></span> Publication Ethics</a>
     </div>
+    
     <p></p>
 <div><a href="{{ route('download.more') }}" class="badge badge-info"><span class="fa fa-download"></span> Download more...</a></div>
 
