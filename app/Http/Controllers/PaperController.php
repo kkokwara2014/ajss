@@ -18,9 +18,11 @@ class PaperController extends Controller
      */
     public function index()
     {
-        $pageTitle = 'All Submitted Paper';
+        $pageTitle = 'All Submitted Papers';
+        // $downloads=DB::table('papers')->get();
+        $submittedPapers=Paper::all();
 
-        return view('admin.submittedpaper.index', compact('pageTitle'));
+        return view('admin.submittedpaper.index', compact('pageTitle','submittedPapers'));
     }
 
     /**
@@ -195,4 +197,10 @@ class PaperController extends Controller
         $title = 'Published Paper';
         return view('journal.publishedpaper', compact('title'));
     }
+
+    // public function download()
+    // {
+    //     $downloads=DB::table('posts')->get();
+    //     return view('download.downloadfiles',compact('downloads'));
+    // }
 }

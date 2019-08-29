@@ -8,106 +8,59 @@
     <!-- Left col -->
     <section class="col-lg-12 connectedSortable">
       {{-- <a href="{{ route('admin.create.editor') }}" class="btn btn-success btn-sm"><span
-          class="fa fa-plus-circle"></span> Create Future Conference</a> --}}
+        class="fa fa-plus-circle"></span> Create Future Conference</a> --}}
       <p></p>
       <div class="box">
-       
+
         <!-- /.box-header -->
         <div class="box-body">
+          @if (count($submittedPapers)!=0)
           <table id="example1" class="table table-bordered table-striped">
             <thead>
               <tr>
-                <th>Rendering engine</th>
-                <th>Browser</th>
-                <th>Platform(s)</th>
-                <th>Engine version</th>
-                <th>CSS grade</th>
+                <th>Paper Ref.</th>
+                <th>Lead Author</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Paper Title</th>
+                <th>Submited</th>
+                <th>Download</th>
               </tr>
             </thead>
             <tbody>
-           
+              @foreach ($submittedPapers as $submitpaper)
               <tr>
-                <td>Webkit</td>
-                <td>Safari 2.0</td>
-                <td>OSX.4+</td>
-                <td>419.3</td>
-                <td>A</td>
+                <td>{{$submitpaper->paper_ref}}</td>
+                <td>{{$submitpaper->leadauthor}}</td>
+                <td>{{$submitpaper->email}}</td>
+                <td>{{$submitpaper->phone}}</td>
+                <td>{{$submitpaper->papertitle}}</td>
+                <td>{{$submitpaper->created_at->diffForHumans()}}</td>
+                <td>
+                  <a href="{{asset(Storage::disk('local')->url($submitpaper->filename))}}" download="{{$submitpaper->filename}}"
+                    class="btn btn-success btn-sm"><span class="fa fa-download"></span> Download</a>
+                </td>
               </tr>
-              <tr>
-                <td>Webkit</td>
-                <td>Safari 3.0</td>
-                <td>OSX.4+</td>
-                <td>522.1</td>
-                <td>A</td>
-              </tr>
-              <tr>
-                <td>Webkit</td>
-                <td>OmniWeb 5.5</td>
-                <td>OSX.4+</td>
-                <td>420</td>
-                <td>A</td>
-              </tr>
-              <tr>
-                <td>Webkit</td>
-                <td>iPod Touch / iPhone</td>
-                <td>iPod</td>
-                <td>420.1</td>
-                <td>A</td>
-              </tr>
-              <tr>
-                <td>Webkit</td>
-                <td>S60</td>
-                <td>S60</td>
-                <td>413</td>
-                <td>A</td>
-              </tr>
-              <tr>
-                <td>Presto</td>
-                <td>Opera 7.0</td>
-                <td>Win 95+ / OSX.1+</td>
-                <td>-</td>
-                <td>A</td>
-              </tr>
-             
-              <tr>
-                <td>Misc</td>
-                <td>Lynx</td>
-                <td>Text only</td>
-                <td>-</td>
-                <td>X</td>
-              </tr>
-              <tr>
-                <td>Misc</td>
-                <td>IE Mobile</td>
-                <td>Windows Mobile 6</td>
-                <td>-</td>
-                <td>C</td>
-              </tr>
-              <tr>
-                <td>Misc</td>
-                <td>PSP browser</td>
-                <td>PSP</td>
-                <td>-</td>
-                <td>C</td>
-              </tr>
-              <tr>
-                <td>Other browsers</td>
-                <td>All others</td>
-                <td>-</td>
-                <td>-</td>
-                <td>U</td>
-              </tr>
+
+              @endforeach
+
             </tbody>
             <tfoot>
               <tr>
-                <th>Rendering engine</th>
-                <th>Browser</th>
-                <th>Platform(s)</th>
-                <th>Engine version</th>
-                <th>CSS grade</th>
+                <th>Paper Ref.</th>
+                <th>Lead Author</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Paper Title</th>
+                <th>Submited</th>
+                <th>Download</th>
               </tr>
             </tfoot>
           </table>
+
+          @else
+          <p class="alert alert-warning">No Paper has been submitted!</p>
+          @endif
         </div>
         <!-- /.box-body -->
       </div>
