@@ -35,7 +35,7 @@
             <tbody>
               @foreach ($editors as $editor)
               <tr>
-                <td>{{$editor->title.' '.($editor->surname.' '.$editor->firstname.' '.$editor->othename)}}</td>
+                <td>{{$editor->title.' '.($editor->surname.' '.$editor->firstname.' '.$editor->othername)}}</td>
                 <td>{{$editor->department}}</td>
                 <td>{{$editor->phone}}</td>
                 <td>{{$editor->email}}</td>
