@@ -26,7 +26,7 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
     Route::get('/all', 'AdminController@allAdmins')->name('admin.admins.all');
     Route::get('/create/new', 'AdminController@create')->name('admin.admins.create');
     Route::post('/create/new', 'AdminController@store')->name('admin.admins.store');
-    Route::get('/edit/{id}', 'AdminController@edit')->name('admin.admins.edit');
+    Route::get('/edit/admin/{id}', 'AdminController@edit')->name('admin.admins.edit');
     Route::match(['put', 'patch'], 'update/{id}', 'AdminController@update')->name('admin.admins.update');
     Route::match(['delete'], '/delete/{id}', 'AdminController@destroy')->name('admin.destroy');
 
@@ -35,9 +35,9 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
     Route::get('/editor/all', 'EditorialController@index')->name('admin.editor.all');
     Route::get('/create/editor', 'EditorialController@create')->name('admin.create.editor');
     Route::post('/save/editor', 'EditorialController@store')->name('admin.store.editor');
-    Route::get('/edit/{id}', 'EditorialController@edit')->name('admin.edit.editor');
+    Route::get('/edit/editor/{id}', 'EditorialController@edit')->name('admin.edit.editor');
     Route::match(['put', 'patch'], 'update/{id}', 'EditorialController@update')->name('admin.update.editor');
-    Route::match(['delete'], '/delete/{id}', 'EditorialController@destroy')->name('admin.destroy.editor');
+    Route::match(['delete'], '/delete/editor/{id}', 'EditorialController@destroy')->name('admin.delete.editor');
 
     // Managing Contacts
     Route::get('/contact/all', 'ContactController@index')->name('admin.contact.all');

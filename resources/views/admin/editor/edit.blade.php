@@ -27,7 +27,7 @@
                                         <div class="form-group">
                                             <label for="surname">Surname</label>
                                             <input type="text" class="form-control" id="surname" name="surname"
-                                                placeholder="Enter Surname">
+                                        placeholder="Enter Surname" value="{{$editor->surname}}">
                                         </div>
                                         <div class="form-group">
                                             <label for="firstname">First Name</label>
