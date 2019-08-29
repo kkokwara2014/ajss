@@ -1,0 +1,16 @@
+-------------------- Auto-Git Log --------------------
+		Thu Aug 29 2019 07:49:22 GMT+0100 (West Africa Standard Time)
+------------------------------------------------------
+
+Modified files:
+* app/Http/Controllers/EditorialController.php
+
+
+Created files:
+* .autogit/logs/log-29-7-2019-7-19-11.txt
+
+
+Deleted files:
+
+
+Renamed files:

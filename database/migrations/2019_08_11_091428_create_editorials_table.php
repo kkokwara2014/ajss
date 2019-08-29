@@ -19,8 +19,8 @@ class CreateEditorialsTable extends Migration
             $table->string('surname');
             $table->string('firstname');
             $table->string('othername');
-            $table->string('organization');
-            $table->string('department');
+            $table->string('organization')->nullable();
+            $table->string('department')->nullable();
             $table->integer('country_id');
             $table->string('phone');
             $table->string('email');
