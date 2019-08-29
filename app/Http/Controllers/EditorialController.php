@@ -45,6 +45,8 @@ class EditorialController extends Controller
             'surname'=>'required',
             'firstname'=>'required',
             'othername'=>'required',
+            'organization'=>'required',
+            'department'=>'required',
             'country_id'=>'required',
             'phone'=>'required',
             'email'=>'required',
@@ -67,7 +69,7 @@ class EditorialController extends Controller
         $editor->country_id=$request->country_id;
         $editor->phone=$request->phone;
         $editor->email=$request->email;
-        $editor->editor_image=$request->editor_image;
+        $editor->editor_image=$filenameToStore;
 
         $editor->save();
 

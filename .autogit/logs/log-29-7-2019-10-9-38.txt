@@ -1,0 +1,17 @@
+-------------------- Auto-Git Log --------------------
+		Thu Aug 29 2019 10:09:38 GMT+0100 (West Africa Standard Time)
+------------------------------------------------------
+
+Modified files:
+* app/Http/Controllers/EditorialController.php
+* database/migrations/2019_08_11_091428_create_editorials_table.php
+
+
+Created files:
+* .autogit/logs/log-29-7-2019-7-49-22.txt
+
+
+Deleted files:
+
+
+Renamed files:
