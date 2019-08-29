@@ -46,8 +46,7 @@
                                         </div>
                                         <div class="form-group">
                                             <label for="organization">Organization</label>
-                                            <input type="text" class="form-control" id="organization"
-                                                name="organization"
+                                            <input type="text" class="form-control" name="organization"
                                                 placeholder="Enter Organization e.g. Akanu Ibiam Federal Poly. Unwana">
                                         </div>
                                     </div>
@@ -55,7 +54,7 @@
                                     <div class="col-sm-6 col-lg-6">
                                         <div class="form-group">
                                             <label for="department">Department</label>
-                                            <input type="text" class="form-control" id="Department" name="department"
+                                            <input type="text" class="form-control" name="department"
                                                 placeholder="Enter Department e.g. Computer Science">
                                         </div>
                                         <div class="form-group">
@@ -69,17 +68,17 @@
                                         </div>
                                         <div class="form-group">
                                             <label for="phone">Phone</label>
-                                            <input type="tel" class="form-control" id="phone" name="phone"
+                                            <input type="tel" class="form-control" name="phone"
                                                 placeholder="Enter phone e.g. 08038883919" maxlength="11">
                                         </div>
                                         <div class="form-group">
                                             <label for="email">Email Address</label>
-                                            <input type="email" class="form-control" id="email" name="email"
+                                            <input type="email" class="form-control" name="email"
                                                 placeholder="Enter Email Address">
                                         </div>
                                         <div class="form-group">
                                             <label for="editor_image">Editor Image</label>
-                                            <input type="file" id="editor_image" name="editor_image">
+                                            <input type="file" name="editor_image">
                                         </div>
                                     </div>
                                 </div>
