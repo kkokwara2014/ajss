@@ -38,7 +38,7 @@
                 <td>{{$submitpaper->created_at->diffForHumans()}}</td>
                 <td>
                     {{-- Storage::disk('local')->url($submitpaper->filename) --}}
-                  <a href="{{asset()}}" download="{{$submitpaper->filename}}"
+                  <a href="{{asset('storage/submittedpapers/'.$submitpaper->filename)}}" download="{{$submitpaper->filename}}"
                     class="btn btn-success btn-sm"><span class="fa fa-download"></span> Download</a>
                 </td>
               </tr>
