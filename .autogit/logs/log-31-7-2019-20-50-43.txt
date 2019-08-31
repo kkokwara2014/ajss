@@ -1,0 +1,16 @@
+-------------------- Auto-Git Log --------------------
+		Sat Aug 31 2019 20:50:43 GMT+0100 (West Africa Standard Time)
+------------------------------------------------------
+
+Modified files:
+* resources/views/admin/submittedpaper/index.blade.php
+
+
+Created files:
+* .autogit/logs/log-30-7-2019-19-31-32.txt
+
+
+Deleted files:
+
+
+Renamed files:
