@@ -48,20 +48,44 @@
         <!--================Welcome Area =================-->
         <section class="welcome_area pad_btm">
             <div class="container">
-                    
+
                 <div class="welcome_inner row" style="margin-top: 50px;">
 
                     <div class="col-lg-9 col-sm-9">
                         <div class="welcome_text">
-                                <h3>Download More Documents</h3>
-                                
-                           <p style="text-align: justify">You can download more documents from here.</p>
+                            <h3>Download More Documents</h3>
+
+                            <p style="text-align: justify">You can download more documents from here.</p>
+                            <div> <a href="{{asset('downloads/about_authorship.pdf')}}"
+                                    download="about_authorship.pdf"><span class="fa fa-file-pdf-o fa-2x"
+                                        style="color: red"></span> About Authorship</a>
+                            </div>
+
+                            <div><a href="{{asset('downloads/about_duplicate_publication.pdf')}}"
+                                    download="about_duplicate_publication.pdf"><span class="fa fa-file-pdf-o fa-2x"
+                                        style="color: red"></span>
+                                    Duplicate Publication</a>
+                            </div>
+                            <div> <a href="{{asset('downloads/about_plagiarism.pdf')}}"
+                                    download="about_plagiarism.pdf"><span class="fa fa-file-pdf-o fa-2x"
+                                        style="color: red"></span> About Plagiarism</a>
+                            </div>
+
+                            <div> <a href="{{asset('downloads/about_ethics.pdf')}}" download="about_ethics.pdf"><span
+                                        class="fa fa-file-pdf-o fa-2x" style="color: red"></span> Publication Ethics</a>
+                            </div>
+                            <div> <a href="{{asset('downloads/about_ethics.pdf')}}" download="about_ethics.pdf"><span
+                                        class="fa fa-file-pdf-o fa-2x" style="color: red"></span> Conference Communique</a>
+                            </div>
+                            <div> <a href="{{asset('downloads/about_ethics.pdf')}}" download="about_ethics.pdf"><span
+                                        class="fa fa-file-pdf-o fa-2x" style="color: red"></span> Conference Account</a>
+                            </div>
 
                         </div>
                     </div>
                     <div class="col-lg-3 col-sm-3">
-                            @include('layout.rightsidebar')
-                        </div>
+                        @include('layout.rightsidebar')
+                    </div>
                 </div>
             </div>
         </section>

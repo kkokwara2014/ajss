@@ -28,6 +28,9 @@
     <div> <a href="{{asset('downloads/about_ethics.pdf')}}" download="about_ethics.pdf"><span class="fa fa-file-pdf-o"
                 style="color: red"></span> Publication Ethics</a>
     </div>
+    <div> <a href="{{asset('downloads/about_ethics.pdf')}}" download="about_ethics.pdf"><span class="fa fa-file-pdf-o"
+                style="color: red"></span> Conference Communique</a>
+    </div>
     
     <p></p>
 <div><a href="{{ route('download.more') }}" class="badge badge-info"><span class="fa fa-download"></span> Download more...</a></div>
