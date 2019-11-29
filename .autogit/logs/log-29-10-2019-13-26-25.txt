@@ -1,0 +1,17 @@
+-------------------- Auto-Git Log --------------------
+		Fri Nov 29 2019 13:26:25 GMT+0100 (West Africa Standard Time)
+------------------------------------------------------
+
+Modified files:
+* resources/views/downloads/moredocs.blade.php
+* resources/views/layout/rightsidebar.blade.php
+
+
+Created files:
+* .autogit/logs/log-12-8-2019-10-47-44.txt
+
+
+Deleted files:
+
+
+Renamed files:
