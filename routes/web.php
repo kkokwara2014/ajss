@@ -101,4 +101,5 @@ Route::group(['prefix' => 'conference'], function () {
 });
 Route::group(['prefix' => 'download'], function () {
     Route::get('/more_documents', 'DownloadController@moredocs')->name('download.more');
+    Route::get('/file', 'DownloadController@file')->name('download.file');
 });

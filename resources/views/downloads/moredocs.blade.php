@@ -56,7 +56,7 @@
                             <h3>Download More Documents</h3>
 
                             <p style="text-align: justify">You can download more documents from here.</p>
-                            <div> <a href="{{asset('downloads/about_authorship.pdf')}}"
+                            <div> <a href="{{url('/download/file/about_authorship.pdf')}}"
                                     download="about_authorship.pdf"><span class="fa fa-file-pdf-o fa-2x"
                                         style="color: red"></span> About Authorship</a>
                             </div>
