@@ -1,0 +1,21 @@
+-------------------- Auto-Git Log --------------------
+		Sun Dec 01 2019 05:21:55 GMT+0100 (West Africa Standard Time)
+------------------------------------------------------
+
+Modified files:
+* app/Http/Controllers/DownloadController.php
+* resources/views/downloads/moredocs.blade.php
+* resources/views/layout/rightsidebar.blade.php
+* routes/web.php
+
+
+Created files:
+* .autogit/logs/log-1-11-2019-4-51-37.txt
+* public/downloads/Conference_communique.pdf
+* public/downloads/Conference_financial_report.pdf
+
+
+Deleted files:
+
+
+Renamed files:
