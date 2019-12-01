@@ -56,28 +56,28 @@
                             <h3>Download More Documents</h3>
 
                             <p style="text-align: justify">You can download more documents from here.</p>
-                            <div> <a href="{{url('/download/file/about_authorship.pdf')}}"
+                            <div> <a href="{{route('downloadfile','about_authorship.pdf')}}"
                                     download="about_authorship.pdf"><span class="fa fa-file-pdf-o fa-2x"
                                         style="color: red"></span> About Authorship</a>
                             </div>
 
-                            <div><a href="{{asset('downloads/about_duplicate_publication.pdf')}}"
+                            <div><a href="{{route('downloadfile','about_duplicate_publication.pdf')}}"
                                     download="about_duplicate_publication.pdf"><span class="fa fa-file-pdf-o fa-2x"
                                         style="color: red"></span>
                                     Duplicate Publication</a>
                             </div>
-                            <div> <a href="{{asset('downloads/about_plagiarism.pdf')}}"
+                            <div> <a href="{{route('downloadfile','about_plagiarism.pdf')}}"
                                     download="about_plagiarism.pdf"><span class="fa fa-file-pdf-o fa-2x"
                                         style="color: red"></span> About Plagiarism</a>
                             </div>
 
-                            <div> <a href="{{asset('downloads/about_ethics.pdf')}}" download="about_ethics.pdf"><span
+                            <div> <a href="{{route('downloadfile','about_ethics.pdf')}}" download="about_ethics.pdf"><span
                                         class="fa fa-file-pdf-o fa-2x" style="color: red"></span> Publication Ethics</a>
                             </div>
-                            <div> <a href="{{asset('downloads/about_ethics.pdf')}}" download="about_ethics.pdf"><span
+                            <div> <a href="{{route('downloadfile','Conference_communique.pdf')}}" download="Conference_communique.pdf"><span
                                         class="fa fa-file-pdf-o fa-2x" style="color: red"></span> Conference Communique</a>
                             </div>
-                            <div> <a href="{{asset('downloads/about_ethics.pdf')}}" download="about_ethics.pdf"><span
+                            <div> <a href="{{route('downloadfile','Conference_financial_report.pdf')}}" download="Conference_financial_report.pdf"><span
                                         class="fa fa-file-pdf-o fa-2x" style="color: red"></span> Conference Account</a>
                             </div>
 

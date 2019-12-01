@@ -12,9 +12,8 @@ class DownloadController extends Controller
         return view('downloads.moredocs',compact('title'));
     }
 
-    public function file(){
-        // $file = '../storage/app/uploads/1.pdf';
-        $file = url('/downloads/about_authorship.pdf');
+    public function file($filename){
+        $file = public_path('downloads/'.$filename);
         $name = basename($file);
         return response()->download($file, $name);
     }
